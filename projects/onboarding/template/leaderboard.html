@@ -1,0 +1,59 @@
+<!--CONTENT_START-->
+<style>
+	.trophy{margin-top:1em;}
+	#trophies_container li img.trophy_current{
+		-webkit-filter:none;
+		-moz-filter: none;
+		filter: none;
+	}
+</style>
+<div class="principal_container">
+	<div class="main leaderboard">
+		<section class="buttonset">
+			<button  type="button" id="showLeftPush"><img src="./media/img/nav-btn.png"></button>
+		</section>
+		<section class="title">
+			<h3>Points + Badges</h3>
+		</section>
+		<section class="img_header">
+			<!--<a href=""><img src="./media/img/comment_header.png" alt="" class="h_img"></a>-->
+			<a href="?mod=usr2session&ac=r_leader_board"><img src="./media/img/rank_header.png" alt="" class="h_img" style="mainrgin-right:8px;"></a>
+		</section>
+		[#notification]
+	</div>
+
+	<div class="content container topbar">
+
+		<div class="row h-40">
+			<h4 class="name_leaderboard">[#ssname] <!--: [#rank]--></h4>
+			[#trophies]
+
+			<div class="row">
+				<div class="leaderboard_score">
+					<div class="leaderboard_percent" style='width:[#score_percentage]%'>
+						<h5>[#score]/[#score_end]</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" style="margin-bottom:15px;">
+				<strong>Points to complete next trophy level</strong>
+			</div>
+		</div>
+
+		<div class="cont_table row h-60">
+			<div class="leaderboard_table">
+				<!--LOOP_START-->
+				<ul class='cell leaderboard_row_[#ucolor]'>
+					<li class="rank_position">#[#number]</li>
+					<li class="name_gamer">[#name]</li>
+					<li class="score_position">[#person_score]</li>
+				</ul>
+				<!--LOOP_END-->
+			</div>
+		</div>
+
+	</div>
+</div>
+<style>body{background:#f3f3f3;}</style>
+<!--CONTENT_END-->

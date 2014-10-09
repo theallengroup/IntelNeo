@@ -1,0 +1,3 @@
+[submodule "include"]
+	path = include
+	url = https://larsdgis@bitbucket.org/jonathanaug/intel-backend.git

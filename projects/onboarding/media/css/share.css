@@ -1,0 +1,70 @@
+/*
+  HIDESHARE CSS
+*/
+#droppedimage{
+    position:static!important;
+}
+#droppedimage img  {
+  position: relative;
+    top: 2em!important;
+}
+#botonFotoRetake, #botonFotosend{
+    padding:10px!important;
+}
+.hideshare-wrap {
+  margin: 0 auto;
+  text-align: center;
+  /*position: relative;
+  /*top:93%;
+  top: .4em;*/
+  bottom: 0px;
+}
+.hideshare-wrap .hideshare-list {
+  position: absolute;
+  top:72%!important;/*-124px!important;*/
+  background-color: black;
+    opacity: .7;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  /*display:none;*/
+}
+
+.hideshare-wrap.shown .hideshare-list{
+    display:inline-block!important;
+}
+.hideshare-wrap li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  margin: 10px 5px 0;
+}
+.hideshare-wrap span {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+
+.hideshare-list a {
+  color: #dedede;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.hideshare-list a:hover {
+  color: #ffffff;
+}
+@media only screen and (min-width:640px){
+	.hideshare-wrap .hideshare-list{ font-size: 21px; }
+}
+
+/**  iphone5 only **/
+@media screen and (device-aspect-ratio: 40/71) {
+    
+    .hideshare-wrap .hideshare-list {
+        top: 68%!important;
+    }
+}    

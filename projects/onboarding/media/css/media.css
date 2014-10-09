@@ -1,0 +1,246 @@
+/******************************************/
+/***                                   ****/
+/******************************************/
+@media only screen and (max-width:1400px){
+	body { font-size: 32px; }
+	#letras input, #teclas input { height: 2.5em; width: 2.5em; }
+}
+/******************************************/
+/***                                   ****/
+/******************************************/
+@media only screen and (max-width:1280px){
+	body { font-size: 28px; }
+	#letras input, #teclas input { height: 2.5em; width: 2.5em; }
+}
+/******************************************/
+/***                                   ****/
+/******************************************/
+@media only screen and (max-width:1068px){
+	body { font-size: 26px; }
+	#letras input, #teclas input { height: 2.5em; width: 2.5em; }
+}
+/******************************************/
+/***                                   ****/
+/******************************************/
+@media only screen and (max-width:880px){
+	body { font-size: 24px; }
+	#letras input, #teclas input { height: 2.5em; width: 2.5em; }
+}
+/******************************************/
+/***      DESIGN FOR TABLETS           ****/
+/******************************************/
+@media only screen and (max-width:768px){
+	body { font-size: 22px; }
+	#letras input, #teclas input { height: 2.5em; width: 2.5em; }
+}
+/******************************************/
+/*****    DESIGN FOR MOBILE 640        *****/
+/******************************************/
+@media only screen and (max-width:640px){
+	body { font-size: 20px; }
+	#letras input, #teclas input { height: 2em; width: 2em; }
+}
+/******************************************/
+/*****   DESIGN FOR MOBILE 480        *****/
+/******************************************/
+@media only screen and (max-width:480px){
+	body { font-size: 18px; }
+	#letras input, #teclas input { height: 1.8em; width: 1.8em; }
+}
+/******************************************/
+/*****    DESIGN FOR MOBILE 400       *****/
+/******************************************/
+@media only screen and (max-width:400px){
+	body { font-size: 16px; }
+	#letras input, #teclas input { height: 1.5em; width: 1.5em; }
+}
+/******************************************/
+/*****    DESIGN FOR MOBILE 320       *****/
+/******************************************/
+@media only screen and (max-width:320px){
+	body { font-size: 14px; }
+	#letras input, #teclas input { height: 1.5em; width: 1.5em; }
+}
+/******************************************/
+/*****    DESIGN FOR MOBILE 240       *****/
+/******************************************/
+@media only screen and (max-width:240px){
+	body { font-size: 12px; }
+	#letras input, #teclas input { height: 1.5em; width: 1.5em; }
+}
+
+
+
+
+
+
+
+/******************************************/
+/***                                   ****/
+/******************************************/
+@media only screen and (max-width:991px){
+	p.title-ruleta{
+		padding-left: 6%;
+		padding-right: 6%;
+		text-align: center;
+		top: 5%;
+		width: 95%;
+		font-size: 5.6vw;
+		top:5%;
+	}
+	#Texto {
+		width: 40%;
+	}
+}
+
+/******************************************/
+/***                                   ****/
+/******************************************/
+@media only screen and (max-width:880px){
+	p.title-ruleta{
+		padding-left: 6%;
+		padding-right: 6%;
+		text-align: center;
+		top: 5%;
+		width: 95%;
+		font-size: 6.6vw;
+		top:5%;
+	}
+}
+
+
+/******************************************/
+/***      DESIGN FOR TABLETS           ****/
+/******************************************/
+@media only screen and (max-width:768px){
+
+	.content{
+		width:100%;
+	}/*
+	.question{
+		max-width:98%;
+	}
+	#question_text{
+		width:90%;
+	}*/
+	p.title-ruleta{
+		padding-left: 6%;
+		padding-right: 6%;
+		text-align: center;
+		top: 5%;
+		width: 95%;
+		font-size: 8.5vw;
+		top:5%;
+	}
+}
+/******************************************/
+/*****    DESIGN FOR MOBILE 640        *****/
+/******************************************/
+@media only screen and (max-width:640px){
+	/*.form_input div input{
+		width:465px;
+	}*/
+	p.title-ruleta{
+		padding-left: 6%;
+		padding-right: 6%;
+		text-align: center;
+		top: 5%;
+		width: 94%;
+		font-size: 8.5vw;
+		top:5%;
+	}
+}
+/******************************************/
+/*****   DESIGN FOR MOBILE 480        *****/
+/******************************************/
+@media only screen and (max-width:480px){
+	/*.form_input div input{
+		width:375px;
+	}/*
+	.question{
+		max-width:98%;
+	}
+	#question_text{
+		width:80%;
+	}*/
+	.bottom_pell{
+		width:65px;
+	}
+	.complement{
+		margin-bottom:55px;
+	}
+
+	p.title-ruleta{
+		padding-left: 6%;
+		padding-right: 6%;
+		text-align: center;
+		top: 5%;
+		width: 93%;
+		font-size: 8.5vw;
+		top:5%;
+	}
+}
+/******************************************/
+/*****    DESIGN FOR MOBILE 400       *****/
+/******************************************/
+@media only screen and (max-width:400px){
+	/*.form_input div input{
+		width:280px;
+	}*/
+	p.title-ruleta{
+		padding-left: 6%;
+		padding-right: 6%;
+		text-align: center;
+		top: 5%;
+		width: 91%;
+		font-size: 8.5vw;
+		top:5%;
+	}
+}
+/******************************************/
+/*****    DESIGN FOR MOBILE 320       *****/
+/******************************************/
+@media only screen and (max-width:320px){
+	/*.form_input div input{
+		width:215px;
+	}*/
+	.img_messaging img{
+		width:100%;
+		height:auto;
+	}
+	.img_{
+		width:75px;
+		height: auto;
+	}
+	.index_p{
+		font-size:12px;
+	}
+	/*.header_p{
+		padding: 5px 0px 5px 0px;
+	}*/
+
+	p.title-ruleta{
+		padding-left: 6%;
+		padding-right: 6%;
+		text-align: center;
+		top: 5%;
+		width: 90%;
+		font-size: 8.5vw;
+		top:5%;
+	}
+	#Texto {
+		width: 80%;
+	}
+}
+/******************************************/
+/*****    DESIGN FOR MOBILE 240       *****/
+/******************************************/
+@media only screen and (max-width:240px){
+	/*.form_input div input{
+		width:130px;
+	}*/
+
+	#Texto {
+		width: 100%;
+	}
+}

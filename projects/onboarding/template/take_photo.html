@@ -1,0 +1,77 @@
+
+<script src='./media/js/jquery-1.11.1.min.js'></script>
+<script src='./media/js/camara.js'></script>
+       <style type="text/css">
+        
+        .contenedor{width: 50%;
+            height: auto;}
+        .titulo{ font-size: 12pt; font-weight: bold;}
+        #camara, #foto{
+            width: 50%;
+            height: auto;
+            
+        }
+        #botonFotoRetake,#botonFotosend
+        {
+            width: 200px;
+        }
+
+    </style>
+
+    <div class="principal_container">
+        <div class="main photo_op">
+            <section class="buttonset">
+                <button type="button" id="showLeftPush"><img src="./media/img/nav-btn.png"></button>
+            </section>
+            <section class="title">
+                <h3>Photo Op</h3>
+            </section>
+            <section class="img_header">
+                <!--<a href=""><img src="./media/img/comment_header.png" alt="" class="h_img"></a>-->
+                <a href="?mod=usr2session&ac=r_leader_board"><img src="./media/img/rank_header.png" alt="" class="h_img" style="margin-right:8px;"></a>
+            </section>
+        </div>
+        <!--end header-->
+
+        <div class="content container">
+    		<div class="take_photo row">
+    			<!--<input id="image-picker" type="file" accept="image/*" />-->
+    		    <div class="photo" >
+    			    <!--<video id="video" class=p_video></video>
+    			    <canvas id="canvas" class=p_canvas></canvas>
+                    <img src="" id="photo" alt="photo" class=p_photo>
+                     <button id="startbutton">take photo</button>-->
+                    <div id='botonera'>
+                    <!--<input id='botonIniciar' type='button' value = 'Iniciar'></input>-->
+                    <!--<input id='botonDetener' type='button' value = 'Aceptar'></input>-->
+                    <!--<input id='botonFoto' type='button' value = 'Foto'></input>-->
+                    </div>                
+
+                    <div id="contenedorCamara"class="contenedor">
+                        <video id="camara" autoplay controls></video>
+                    <!--<canvas id="foto"></canvas>-->
+                    <!--style="{ display: none; }-->
+                    </div>
+
+                    <div id="contenedorFoto" class="contenedor">
+                    <!--<canvas id="foto"></canvas>-->
+                    <!--style="{ display: none; }-->
+                    </div>
+
+                    <div id= "MenuCamera">
+                        <div class="icon_take">
+                            <input type="button" id='botonFoto' class="b_photo"> 
+                        <!--<div>
+                                <a href="#"><img src="./media/img/red1.png" alt=""></a>
+                                <a href="#"><img src="./media/img/red2.png" alt=""></a>
+                                <a href="#"><img src="./media/img/red3.png" alt=""></a>
+                                <a href="#"><img src="./media/img/red4.png" alt=""></a>
+                            </div>-->
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+	</div>
+	

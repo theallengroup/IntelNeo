@@ -1,0 +1,78 @@
+<!--CONTENT_START-->
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' ></script>
+<script src='./media/js/shuffle_quiz.js' ></script>
+
+<script type="text/javascript">	
+	$(document).ready(function(){
+		// Keep the score.
+		question_count = parseInt('[#activity_count]');
+		var questionsNum = parseInt('[#activity_count]');
+	});
+</script>
+
+<div id="tutorial_container">
+	<div id="overlay"></div>
+	<div id="slideshow" class="dragslider">
+		<section class="img-dragger img-dragger-large dragdealer">
+			<div class="handle">
+
+				<div class="slide">
+				  <div class="content_slide">
+					<img src="./media/tutorial/Poll/1.png">
+				  </div>
+				  <div class="bottom_bar"></div>
+				</div>
+
+				<div class="slide">
+					<div class="content_slide">
+						<img src="./media/tutorial/Poll/2.png">
+					</div>
+					<div id="close" class="bottom_bar"><p>START NOW</p></div>
+				</div>
+
+			</div>
+		</section>
+	</div>
+	<ul class="centered-btns_tabs list-inline">
+		<li class="dot centered-btns_here"><a href="#" class="centered-btns1_s1">1</a></li>
+		<li class="dot"><a href="#" class="centered-btns1_s2">2</a></li>
+	</ul>
+</div>
+
+<div class="principal_container poll activity-bg">
+	[#navigation]
+    <div style="height: 78%;">
+    
+		<form method="GET" action="?" id="quiz" class="activity_count_[#activity_count]">
+			<input type="hidden" id="score_data" value="" data-maxScore="[#puntaje]" data-countQuestions="[#activity_count]" />
+			<input type="hidden" name="ac" value="r_run_activity" />
+			<input type="hidden" name="pf" value="1" />
+			<input type="hidden" name="team_id" value="[#team_id]" />
+			<input type="hidden" name="activity_id" value="[#activity_id]" />
+			<input type="hidden" name="mod" value="usr2session" />
+
+			<!--LOOP_START-->
+			<div class="content_shuffle content_poll activity_count_[#activity_count]"  id='section_[#current]' data-ball='ball[#id]' style='display:[#display]'>
+				<div class="question_shuffle_container">
+					<div class="question_shuffle">
+						<p id="poll_title">[#name] <br/> [#description]</p>
+					</div>
+					[#options]
+				</div>
+			</div>
+			<!--LOOP_END-->
+		</form>
+	</div>
+	
+	<div id="id_poll_submit">
+		<a class="btn-submit" href="#">SUBMIT</a>
+	</div>
+	
+</div>
+
+<script src="./media/js/dragdealer.js"></script>
+<script src="./media/js/classie2.js"></script>
+<script src="./media/js/dragslideshow.js"></script>
+<script src="./media/js/slider_tutorial.js"></script>
+
+<!--CONTENT_END-->

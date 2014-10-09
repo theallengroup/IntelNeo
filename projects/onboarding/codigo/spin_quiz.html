@@ -1,0 +1,74 @@
+         <!--CONTENT_START-->
+        <script type="text/javascript" src="./codigo/spin.js"></script>
+        <div id="tutorial_container">
+            <div id="overlay"></div>
+            <div id="slideshow" class="dragslider">
+                <section class="img-dragger img-dragger-large dragdealer">
+                <div class="handle">
+                    <div class="slide">
+                      <div class="content_slide">
+                        <img src="./media/tutorial/SpinQuiz/1.png">
+                      </div>
+                      <div class="bottom_bar"></div> 
+                    </div>
+
+                    <div class="slide">
+                      <div class="content_slide">
+                        <img src="./media/tutorial/SpinQuiz/2.png">
+                      </div>
+                      <div class="bottom_bar"></div> 
+                    </div>
+
+                    <div class="slide">
+                      <div class="content_slide">
+                        <img src="./media/tutorial/SpinQuiz/3.png">
+                      </div>
+                      <div id="close" class="bottom_bar"><p>START NOW</p></div> 
+                    </div>
+
+                    </div>
+                </section>
+            </div>
+            <ul class="centered-btns_tabs list-inline">
+              <li class="dot centered-btns_here"><a href="#" class="centered-btns1_s1">1</a></li>
+              <li class="dot"><a href="#" class="centered-btns1_s2">2</a></li>
+              <li class="dot"><a href="#" class="centered-btns1_s3">3</a></li>
+            </ul>
+        </div>
+
+        <div class="principal_container spinquiz">
+            <div class="content container">
+                <div class="top">
+                    <div id="cinta" class="row">
+                        <div id="bg_img" class="center-block col-md-6">
+                          <!-- Le agregue una clase al parrafo para poderlo modificar -->
+                          <p class="title-ruleta">SPIN THE WHEEL</p>
+                            <img src="./media/img/title_game.png">
+                        </div>
+                    </div>
+
+                    <div id="description_quiz" class="col-xs-10 col-md-6 center-block">
+                        <p>You can earn the following amount of points if you get the next question right</p>
+                    </div>
+
+                    <div class="numero-puntaje col-xs-10 col-md-6 center-block" id="Texto">
+                        <div id="Resultado"></div>
+                    </div>
+                </div>
+                <div id="wheel" class="row">
+                    <canvas id="canvas" width="400" height="400"></canvas>
+                </div>
+                <div id="log"></div>
+            </div>
+        </div>
+
+
+    <script src="./media/js/dragdealer.js"></script>
+    <script src="./media/js/classie2.js"></script>
+    <script src="./media/js/dragslideshow.js"></script>
+    <script src="./media/js/slider_tutorial.js"></script>
+
+
+    <!--LOOP_START-->
+<!--LOOP_END-->
+<!--CONTENT_END-->

@@ -1,0 +1,18 @@
+<!-- TUTORIAL -->
+<script>
+	var ff = function (event){
+		console.log("prevent");
+		event.preventDefault();
+	        event.stopPropagation();
+		//document.title=window.pageYOffset
+	};
+	
+</script>
+
+<!--CONTENT_START-->
+<script>;var pages;</script>
+<div onscroll="void()" class="modal tutorial_container" ontouchstart='handleTouchStart(event)' ontouchmove='handleTouchMove(event)' onclick='move_left()' id=container>
+<!--LOOP_START--><script>;window.onmousewheel = ff;window.onscroll = ff;pages=parseInt('[#pages]',10);</script><img class=tutorial_screen src="[#filename]" id=[#width]px><!--LOOP_END--></div>
+<script src="./media/js/slide_tutorial.js"></script>
+<!--CONTENT_END-->
+<!-- END TUTORIAL -->

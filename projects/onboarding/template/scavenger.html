@@ -1,0 +1,32 @@
+<!--CONTENT_START-->
+<script type="text/javascript">
+    question_count = parseInt('[#activity_count]');
+</script>
+
+<div class="principal_container scavenger activity-bg">
+	<div class="content container">
+		[#navigation]
+
+		<form id="scavenger" method="POST" action="?mod=usr2session&amp;ac=r_run_activity">
+			<input type=hidden name=pf value='1' />
+			<input type=hidden name=activity_id value='[#activity_id]' />
+
+			<div class="scavenger cont_sca">
+				<!--LOOP_START-->
+	  			<div class="content_shuffle row activity_count_[#activity_count]"  id='section_[#current]' style='display:[#display]'>
+					<div class="box_text_sca">
+						<h3>CHALLENGE</h3>
+						<p>[#name]</p>
+					</div>
+					<div class="cont2_sca">
+						<textarea class="textarea_sca" name="option[[#id]]" placeholder="Type the answer here..." maxlength="255"></textarea>
+						<input type="submit" class="btn-submit send3" value="SUBMIT" onclick="return show_next_section();">
+						<br>
+					</div>
+				</div>
+				<!--LOOP_END-->
+			</div>
+		</form>
+	</div>
+</div>
+<!--CONTENT_END-->

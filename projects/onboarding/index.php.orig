@@ -1,0 +1,57 @@
+<?php
+// error handler function
+	function print_it_no_matter_what($errno, $errstr, $errfile, $errline)
+	{
+		ob_end_flush();
+		if (!(error_reporting() & $errno)) {
+			// This error code is not included in error_reporting
+			return;
+		}
+		file_put_contents("./errlog.txt","$errno:$errstr $errfile:$errline\n");
+		switch ($errno) {
+		case E_USER_ERROR:
+			echo "<b>My ERROR</b> [$errno] $errstr<br />\n";
+			echo "  Fatal error on line $errline in file $errfile";
+			echo ", PHP " . PHP_VERSION . " (" . PHP_OS . ")<br />\n";
+			echo "Aborting...<br />\n";
+			
+			exit(1);
+			break;
+
+		case E_USER_WARNING:
+			echo "<b>My WARNING</b> [$errno] $errstr<br />\n";
+			break;
+
+		case E_USER_NOTICE:
+			echo "<b>My NOTICE</b> [$errno] $errstr<br />\n";
+			break;
+
+		default:
+			echo "Unknown error type: [$errno] $errstr<br />\n";
+			break;
+		}
+
+		return false;
+	}
+	$old_error_handler = set_error_handler("print_it_no_matter_what");
+
+	#define('DEBUG','1');
+	if($_SERVER["HTTP_HOST"] != "locahost"){
+		error_reporting(E_ALL&~E_NOTICE&~E_STRICT&~E_DEPRECATED);
+		error_reporting(0);
+		define('DEBUG','0');
+	}else{
+	#	error_reporting(E_ALL&E_NOTICE);
+		define('DEBUG','1');
+	
+	}
+
+	define('STD_LOCATION','../../core/');
+	include(STD_LOCATION."include/std.php");
+	std::load('onboarding');
+	$main=new onboarding_base();
+	$main->app_init();
+
+
+
+?>

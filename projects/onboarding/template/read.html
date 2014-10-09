@@ -1,0 +1,40 @@
+ <!--CONTENT_START-->
+ 
+<script src='./media/js/shuffle_quiz.js' ></script>
+
+<script type="text/javascript">
+    question_count = parseInt('[#activity_count]');
+</script>
+
+<div class="principal_container read activity-bg">
+	[#navigation]
+	<div class="content container varioa">
+		<form method=GET  action="?" id='quiz' class="activity_count_[#activity_count] varioa">
+			<input type=hidden name=ac value=r_run_activity />
+			<input type=hidden name=pf value='1' />		
+			<input type=hidden name=team_id value='[#team_id]' />		
+			<input type=hidden name=activity_id value='[#activity_id]' />
+			<input type=hidden name=mod value=usr2session />
+
+			<!--LOOP_START-->
+			<div class="content_shuffle row activity_count_[#activity_count]"  id='section_[#current]' style='display:[#display]'>
+				<article class="read_article">
+					<div class="title_read"><h3>[#name]</h3></div>
+					<div class="points_read">+[#puntaje]</div>
+					<br><br>
+					[#image]
+					<p>[#description]</p>
+                    <input type="hidden" value='[#id]' id='option[[#id]]' name='option[[#id]]' />
+				</article>
+			</div>
+			<!--LOOP_END-->
+		</form> 
+	</div>
+</div>
+
+<script src="./media/js/dragdealer.js"></script>
+<script src="./media/js/classie2.js"></script>
+<script src="./media/js/dragslideshow.js"></script>
+<script src="./media/js/slider_tutorial.js"></script>
+
+<!--CONTENT_END-->

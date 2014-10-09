@@ -1,0 +1,34 @@
+<!--FOOTER-->
+<script src="./media/js/classie.js"></script>
+<script>
+		var menu_state = 0;
+		var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+			showRightPush = document.getElementById( 'showRightPush' ),
+			body = document.body;
+		  $('#showLeftPush').click(function() {
+				  classie.toggle( this, 'active' );
+				  classie.toggle( body, 'cbp-spmenu-push-toright' );
+				  classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				  disableOther( 'showLeftPush' );
+
+				  menu_state++;
+				  if(menu_state == 2){
+					    menu_state = 0;
+			  	}
+				  if(menu_state == 1){
+					    window.onscroll = function (event){
+						      window.scrollTo(0,0);
+						      //document.title=window.pageYOffset
+					    }
+				  }else if(menu_state == 0){
+					    window.onscroll = function (){
+					    }
+				  }
+		  });
+		function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+						classie.toggle( showLeftPush, 'disabled' );
+				}
+		}
+</script>
+</body></html>

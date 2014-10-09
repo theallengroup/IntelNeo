@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=ISO-8859-1\">
+		<title>
+			[#_title]
+		</title>
+		[#_stylesheet]
+		[#_icon]
+		[#_user_stylesheet]
+		[#_script]
+	</head>
+	<body onkeyup=keyC(event)>
+		[#_body_before]
+	<script>
+		function menu(){
+			if (document.getElementById('options').style.display == 'none'){
+				document.getElementById('options').style.display='block';
+				document.getElementById('arrow_down').style.display='none';
+				document.getElementById('perfil').style.marginRight='37px';
+				
+			}else{
+				document.getElementById('options').style.display='none';
+				document.getElementById('arrow_down').style.display='block';
+				document.getElementById('perfil').style.marginRight='0px';
+			}
+		}
+	</script>
+	<table class='head head_[#_is_inside]' >
+		<tr>
+			<td valign=middle class=head_page>
+				<div class=perfil id=perfil>
+					<a href=# onclick="menu()">
+						Hi [#_ssname]
+						<div class=arrow_down id=arrow_down>
+						</div>
+					</a>
+				</div>
+				
+				<div class=options style='display:none' id=options>
+					<div class=arrow_up></div>
+					<ul>
+						<a href='?logout=1'><li>Logout</li></a>
+					</ul>
+				</div>
+			</td>
+		</tr>
+		<tr class=collapse>
+			<td valign=middle class=collapse>
+				<div class="help-cont">
+					<div class="help">
+						<a href="?mod=help&ac=help">
+						Help
+						<div class=arrow_down style='margin-right:0'>
+						</div>
+						</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<table border=0 cellpadding=0 cellspacing=0 width=100%>
+		<tr>
+			<td valign=top class=menu>
+				<!--start-->		
+				[#_menu]
+			</td>
+			<td valign=top   class='container_ppal standard_text'>
+				[#_page]
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

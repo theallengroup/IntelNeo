@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    	<title>Demo</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="cbp-spmenu-push">
+           	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+				<h3>Menu</h3>
+				<a href="home.html">Home</a>
+                <a href="read.html">Read</a>
+                <a href="watch.html">Watch</a>
+                <a href="leaderboard.html">Leaderboard and Rank</a>
+                <a href="answers.html">My Answers</a>
+                <h3>Settings</h3>
+                <a href="#">Mute Sounds Toggle</a>
+                <a href="index.html">Logout</a>
+			</nav>
+        <div class="principal_container">
+            <div class="container">
+                <div class="main">
+                    <section class="buttonset">
+                       <button id="showLeftPush"><img src="img/nav-btn.png"></button>
+                    </section>
+                    <section class="title">
+                    	<h3>Spin Quiz</h3>
+                    </section>
+                </div>
+                <script type="text/javascript">
+					function a(obj){
+						var n = Math.round(Math.random()*10000);
+						obj.style.transform="rotate("+n+"deg)";
+					}
+				</script>
+                <div class="content">
+					<div class="roulette">
+						<div class=a onclick='a(this)'>
+							<div class="a_roulette">
+								<div class="value25" id="25"><p>25</p></div>
+								<div class="value50" id="50"><p>50</p></div>
+								<div class="value75" id="75"><p>75</p></div>
+								<div class="value100" id="100"><p>100</p></div>
+							</div>
+						</div>
+						<div class="select_r"><img src="img/select_r.png"></div>
+					</div>
+					<div id="text_value"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<!--CONTENT_START-->
+<script type="text/javascript" src="./media/js/wager.js"></script>
+
+<div class="principal_container wager activity-bg">
+	<div id="tutorial_container">
+		<div id="overlay"></div>
+		<div id="slideshow" class="dragslider">
+			<section class="img-dragger img-dragger-large dragdealer">
+				<div class="slide">
+					<div class="content_slide">
+						<img src="./media/tutorial/WagerQuiz/1.png">
+					</div>
+					<div id="close" class="bottom_bar"><p>START NOW</p></div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<div class="content container">
+		<h1 class="title-header row">INTEL HISTORY</h1>
+		<div class="content_wager row">
+			<div id="content_question">
+				<h2 id="question"></h2>
+				<div class="description">
+					Select how many points you'd like to wager based on the topic above
+				</div>
+			</div>
+
+			<form action="" method="post">
+				<input type="button" id="button1" class="wager_btn" value="100" />
+				<input type="button" id="button2" class="wager_btn" value="200" /><br/>
+				<input type="button" id="button3" class="wager_btn" value="300" />
+				<input type="button" id="button4" class="wager_btn" value="400" />
+			</form>
+		</div>
+
+		<div id="log"></div>
+	</div>
+</div>
+<script>
+        jQuery(document).ready(function(){
+           var val = [#puntaje]; 
+            console.log(val);
+            var baseVal = val/10;
+            jQuery('.wager_btn').each(function(){
+                var me  = jQuery(this);
+                var id  = me.attr('id');
+                var multiplier = id.charAt(id.length-1);
+                var wager      = baseVal * multiplier;
+                me.val(wager);
+                me.on('click',function(){
+                    Preguntar(wager);
+                });
+            }); 
+        });
+
+</script>
+<script src="./media/js/slider_tutorial.js"></script>
+<!--LOOP_START-->
+<!--LOOP_END-->
+<!--CONTENT_END-->

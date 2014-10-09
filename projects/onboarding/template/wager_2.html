@@ -1,0 +1,78 @@
+<!--CONTENT_START-->
+<div class="principal_container">
+	<form medthod=GET>
+		<input type=hidden name=ac value=r_engage />
+		<input type=hidden name=mod value=usr2session />
+                <div class="container">
+                [#main]
+                <div class="content">
+			<section class="question">
+			<!--LOOP_START-->
+			<article id='section_[#current]' style='display:[#display]'>
+				<div id='wager_select_[#current]' >
+					WAGER SELECT
+					<table width='100%'>
+						<tr>
+							<td>
+								<a class=wager_thigie href='#' onclick='select_wager("[#current]", 25)'>25</a>
+							</td>
+
+							<td>
+								<a class=wager_thigie href='#' onclick='select_wager("[#current]", 50)'>50</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a class=wager_thigie href='#' onclick='select_wager("[#current]", 75)'>75</a>
+							</td>
+
+							<td>
+								<a class=wager_thigie href='#' onclick='select_wager("[#current]", 50)'>100</a>
+							</td>
+						</tr>
+					</table>
+
+				</div>
+				<div id='subsection_[#current]' style='display:none'>
+					<h3>[#name]</h3>
+					<div id=wager_show_[#current]></div>
+					<input id=wager_value_[#current] type=hidden name="wager_value[[#current]]" value=0>
+					<p>[#description]</p>
+					<p>[#options]</p>
+					<br/>
+					
+					<!--NAVIGATION SECTION-->
+					<table width=100%>
+						<tr>
+							<td align=left>
+								<div style='display:[#d_previous]'>
+									<a href='#' onclick='show_section("section_[#previous]")'>&lt;</a>
+								</div>
+							</td>
+							<td align=right>
+								<div style='display:[#d_next]'>
+									<a href='#' onclick='show_section("section_[#next]")'>&gt;</a>
+								</div>
+								<div style='display:[#d_end]'>
+									<a href='#' onclick='alert("Submit")'>Finalizar</a>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!--END NAVIGATION-->
+			    </article>
+		       <!--LOOP_END-->
+                    </section>
+                </div>
+	</div>
+       </form>
+            <footer class="question">
+                <form action="?">
+                    <input type="text" name="question" placeholder="Ask A Questions Or Share A  Comment" id="question_text">
+                    <input type="submit" value="Send" class="send">
+                </form>
+            </footer>
+    </div>
+    <!--CONTENT_END-->
+    

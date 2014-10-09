@@ -1,0 +1,41 @@
+<!--CONTENT_START-->
+<div class="principal_container comments">
+	<div class="main comments">
+		<section class="buttonset">
+			<button type="button" id="showLeftPush"><img src="./media/img/nav-btn.png"></button>
+		</section>
+		<section class="title">
+			<h3>Comments & Questions</h3>
+		</section>
+		<section class="img_header">
+			<a href="?mod=usr2session&ac=r_leader_board"><img src="./media/img/rank_header.png" alt="" class="h_img" style="margin-right:4px;"></a>
+		</section>
+		[#notification]
+	</div>
+	<div class="content container topbar">
+			<div class="inbox_menu row">
+				<a href="?mod=usr2session&ac=r_questions_and_comments" class="menu_i">&lt; INBOX</a>
+				<a href="?mod=usr2session&ac=r_write"><img src="./media/img/img_inbox.png" alt="" class="img_inbox"></a>
+			</div>
+			<div class="clear"></div>
+		<div class="inbox full_message">
+				<!--LOOP_START-->
+			<div class="message">
+				<div>
+					<h3 class="instructor_n">[#source]</h3>
+				</div>
+				<div class="hour">
+					[#creation_time]
+				</div>
+				<p>[#body]</br>
+
+				<hr style="margin-top: 0px; margin-bottom: 4px; border: 0; border-top: 1px solid #000;"/>
+				[#answer]</p>
+			</div>
+	<!--LOOP_END-->
+
+		</div>
+	</div>
+</div>
+	<!--CONTENT_END-->
+<style>body{background:#f3f3f3;}</style>

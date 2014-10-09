@@ -1,0 +1,49 @@
+<!--CONTENT_START-->
+<script src="./media/js/slider_tutorial.js"></script>
+
+<script type="text/javascript">
+	question_count = parseInt('[#activity_count]');
+</script>
+
+<div class="principal_container s_acronym js-tla-activity activity-bg">
+	<div id="tutorial_container">
+		<div id="overlay"></div>
+		<div id="slideshow" class="dragslider">
+			<section class="img-dragger img-dragger-large dragdealer">
+				<div class="handle">
+					<div class="slide slide-acronym">
+						<div class="content_slide">
+							<img src="./media/tutorial/Acronym/1.png">
+						</div>
+						<div id="close" class="bottom_bar"><p>START NOW</p></div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div><!--end tutorial-->
+
+	[#navigation]
+	<div class="content container topbar">
+		<section class="question">
+			<form id="acronym" method="POST" action="?mod=usr2session&amp;ac=r_run_activity">
+				<input type=hidden name=pf value='1' />
+				<input type=hidden name=team_id value='[#team_id]' />
+                <input type=hidden name=activity_id value='[#activity_id]' />
+                
+				<!--LOOP_START-->
+				<article id='section_[#current]' style='display:[#display]' class="activity_count_[#activity_count]">
+					<div class="row"><p id="acronym_title">Define the acronym below</p></div>
+					<h3 class="acronym">"[#name]"</h3>
+					<!-- <p>[#description]</p> -->
+					[#options]
+					<div id="id_acronym_submit">
+						<input class="btn-submit" id="tla_btn" type="submit" value="SUBMIT" onclick="return show_next_section();">
+					</div>
+				</article>
+				<!--LOOP_END-->
+			</form>
+		</section>
+	</div>
+</div>
+
+<!--CONTENT_END-->

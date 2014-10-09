@@ -1,0 +1,47 @@
+<!--CONTENT_START-->
+<script>
+	function reply(){
+		if (document.getElementById("reply").style.display == 'none'){
+			document.getElementById("reply").style.display = 'block';
+		}else{
+			document.getElementById("reply").style.display = 'none';
+		}
+	}
+</script>
+<div class="cont-questions">
+	<h2 class="session-tittle">Individual leaderboards</h2>
+	<div class="clear-button"></div>
+	<div class="clear-button"></div>
+	<div class="content-tabs">
+		<ul>
+			<li><a href="?mod=leaderboard&ac=le_&blink=1">Shuffle Quiz Results</a></li>
+			<li><a href="?mod=leaderboard&ac=le_&blink=2">Wager Quiz Results</a></li>
+			<li><a href="?mod=leaderboard&ac=le_&blink=3">Spin Quiz Results</a></li>
+			<li id="active-tabs"><a href="?mod=leaderboard&ac=le_&blink=4">Poll Survey/ Results</a></li>
+			<li><a href="?mod=leaderboard&ac=le_&blink=5">Acronym Results</a></li>
+			<li><a href="?mod=leaderboard&ac=le_&blink=6">Scavenger Hunt Result</a></li>
+		</ul>
+	</div>
+	<div class='tabs-cont-tabs'>
+	<div id='tab-1'>
+		<!--LOOP_START-->
+		<div class="post">
+			<div class="post-content">
+				<h5>Name Survey | Question..?</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iusto eius suscipit laudantium non adipisci dolorem iure quos dolores, optio architecto! Ducimus impedit eveniet esse voluptate perferendis voluptatibus quidem quas?</p>
+				<p>Report | <a href="#" onclick='reply()' style='color:75d1f2'>Reply</a></p>
+			</div>
+		</div>
+		<div class=reply id=reply>
+			<textarea class=area_reply></textarea>
+			<input type=button class='form_ok cancel_area' value=Cancel onclick='reply()'>
+			<input type=submit class='form_ok submit_area' value=Reply style='background-color:#75d1f2'>
+		</div>
+		<!--LOOP_END-->
+	</div>
+	</div>
+</div>
+<!--CONTENT_END-->
+
+
+

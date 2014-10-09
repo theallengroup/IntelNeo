@@ -1,0 +1,71 @@
+<!--CONTENT_START-->
+<script src="media/js/jquery.knob.min.js"></script>
+<script src="media/js/jquery.awesomeCloud-0.2.min.js"></script>
+<script>
+	$(document).ready(function(){ 
+		$('.knob').knob({
+			width: "60",
+			height: "60",
+			thickness: ".2",
+			//fgColor: "#fdb813",
+			inputColor: "#999",
+			format: function(v) {
+				return v + "%";
+			}
+		});
+		var wc_settings = {
+			"size" : {
+			    "grid" : 8, // word spacing, smaller is more tightly packed
+			    "factor" : 0, // font resize factor, 0 means automatic
+			    "normalize" : true // reduces outliers for more attractive output
+			},
+			"color" : {
+			    "background" : "rgba(255,255,255,0)", // background color, transparent by default
+			    "start" : "#20f", // color of the smallest font, if options.color = "gradient""
+			    "end" : "rgb(200,0,0)" // color of the largest font, if options.color = "gradient"
+			},
+			"options" : {
+			    "color" : "gradient", // if "random-light" or "random-dark", color.start and color.end are ignored
+			    "rotationRatio" : 0.3, // 0 is all horizontal, 1 is all vertical
+			    "printMultiplier" : 1, // set to 3 for nice printer output; higher numbers take longer
+			    "sort" : "highest" // "highest" to show big words first, "lowest" to do small words first, "random" to not care
+			},
+			"font" : "Helvetica, Arial, sans-serif", // the CSS font-family string
+			"shape" : "circle" // the selected shape keyword, or a theta function describing a shape
+		};
+	});
+</script>
+
+<div class="principal_container answers">
+		<div class="main answers">
+			<section class="buttonset"><button type=button id="showLeftPush"><img alt="" src="./media/img/nav-btn.png"></button>
+			</section>
+			<section class="title"><h3>My Answers</h3></section>
+			<section class="img_header">
+				<!--<a href=""><img src="./media/img/comment_header.png" alt="" class="h_img"></a>-->
+				<a href="?mod=usr2session&ac=r_leader_board"><img src="./media/img/rank_header.png" alt="" class="h_img" style="margin-right:8px;"></a>
+			</section>
+			[#notification]
+		</div>
+
+		<div class="content container">
+			<section class="row answer show_[#activity_type]">
+				<div class="activity-name row">[#activity_name]</div>
+				<!--LOOP_START-->
+				<article class="box_answer">
+					<p class="question-title">
+						<span class="question-number">[#question_number].&nbsp;</span>
+						[#question_name]
+					</p>
+					<div class="question-content">[#question_content]</div>
+				</article>
+				<!--LOOP_END-->
+			</section>
+		</div>
+		<div id="wordcloud" style="border:1px solid #f00;height:150px;width:150px;">
+    		<!--LOOP_START-->
+    		<span data-weight="[#chosen]">[#question_option]</span>
+   			<!--LOOP_END-->
+		</div>
+</div>
+<!--CONTENT_END-->

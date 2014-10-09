@@ -1,0 +1,75 @@
+<!--CONTENT_START-->
+<script src="media/js/jquery.awesomeCloud-0.2.min.js"></script>
+<script>
+	$(document).ready(function(){ 
+		var width = window.innerWidth;
+		var height = window.innerHeight*.8;
+		var wrdcld = $( "#wordcloud" );
+		//wrdcld.css({'width':width,'height':height,'margin-top':'-30px'});
+		var factor = getFactor(width);
+		var mult   = getMultiplier(width);
+
+		var wc_settings = {
+			"size" : {
+			    "grid" : 1, // word spacing, smaller is more tightly packed
+			    "factor" : factor, // font resize factor, 0 means automatic
+			    "normalize" : true // reduces outliers for more attractive output
+			},
+			"color" : {
+			    "background" : "rgba(255,255,255,0)", // background color, transparent by default
+			    "start" : "#83D1F7",//"#83D1F7",//"#06447e","#20f", // color of the smallest font, if options.color = "gradient""
+			    "end" : "#06528C", //"rgb(200,0,0)" // color of the largest font, if options.color = "gradient"
+			},
+			"options" : {
+			    "color" : "gradient", // if "random-light" or "random-dark", color.start and color.end are ignored
+			    "rotationRatio" : 0.35, // 0 is all horizontal, 1 is all vertical
+			    "printMultiplier" : mult, // set to 3 for nice printer output; higher numbers take longer
+			    "sort" : "highest" // "highest" to show big words first, "lowest" to do small words first, "random" to not care
+			},
+			"font" : "Intelbold", // the CSS font-family string
+			"shape" : "square" // the selected shape keyword, or a theta function describing a shape
+		};
+		console.log(wc_settings);
+		$( "#wordcloud" ).awesomeCloud( wc_settings );
+	});
+function getFactor(width){
+	if(width <= 400) return 70;          
+    if(width <=568) return  75;
+    return  80;
+}
+function getMultiplier(width){
+	if(width <= 400) return  14;
+    if(width <=568)  return  13;
+    return  9;
+}
+</script>
+
+<div class="principal_container answers">
+		<div class="main answers">
+			<section class="buttonset"><button type=button id="showLeftPush"><img alt="" src="./media/img/nav-btn.png"></button>
+			</section>
+			<section class="title"><h3>My Answers</h3></section>
+			<section class="img_header">
+				<!--<a href=""><img src="./media/img/comment_header.png" alt="" class="h_img"></a>-->
+				<a href="?mod=usr2session&ac=r_leader_board"><img src="./media/img/rank_header.png" alt="" class="h_img" style="margin-right:8px;"></a>
+			</section>
+			[#notification]
+		</div>
+
+		<div class="content container">
+			<section class="row answer show_[#activity_type]">
+				<div class="activity-name row">[#activity_name]</div>
+				<div id="wordcloud" style="min-width:320px;min-height:440px;margin-top:-50px;">
+    			<!--LOOP_START-->
+    				[#cloud_opts]
+   				<!--LOOP_END-->
+				</div>
+			</section>
+
+		</div>
+
+		
+</div>
+<!--CONTENT_END-->
+
+

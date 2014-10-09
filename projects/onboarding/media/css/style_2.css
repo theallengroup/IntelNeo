@@ -1,0 +1,1053 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.wager .slide, .shuffle .slide, .s_acronym .slide { display: block; }
+
+/*====== Photo Op ======*/
+.p_canvas, .p_video, .p_photo {
+	width:100%;
+	display:block;
+	//height: 360px;
+
+}
+
+.op_photo{
+	min-height: 500px;
+	padding-top: 3.1em;
+}
+#photo_op_icon {
+	height: 40%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+.img_photo{
+	height:100%;
+	width: auto;
+	margin: 0px auto;
+}
+.op_photo h3, p{
+	color: #555555;
+}
+.op_photo h3{
+	font-size:15pt;
+}
+.op_photo p{
+	font-size:12pt;
+	text-align: center;
+}
+.button_photo{
+	margin-top:20px;
+}
+.button_photo button{
+	width:100%;
+	background-color: #0072BF;
+	border: 0px;
+	padding: 10px 0px;
+	color: white;
+	border-radius: 3px;
+}
+.button_photo .choose {
+	margin-top: 10px;
+	background-color: #83D1F5;
+}
+
+.button_1 div{
+	text-decoration: none;
+	color:#fff;
+	margin:0px auto;
+	background: #0072bf;
+	width: 85%;
+	padding:10px;
+	border-radius:3px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.button_2 div{
+	text-decoration: none;
+	color:#fff;
+	margin:0px auto;
+	background: #83d1f5;
+	width: 85%;
+	padding:10px;
+	border-radius:3px;
+	font-weight: bold;
+}
+.photo{
+	background: #555555;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#MenuCamera {
+	height: 20%;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background-color: rgba(0,0,0,0.2);
+	padding: 12px 15px;
+}
+#MenuCamera  #botonFotoRetake, #MenuCamera form  {
+	width: 50%;
+	display: inline-block;
+}
+#botonFotoRetake, #botonFotosend {
+	background: none;
+	width: 48%;
+	margin-right: 1%;
+	margin-left: 1%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #2BADE9;
+	margin-top: 0px !important;
+	text-transform: uppercase;
+	color: #2BADE9;
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.social_net{
+	width: 100%;
+	position:fixed;
+	left:0;
+	bottom: 0;
+	background: #b4b4b4;
+}
+.social_net div{
+	margin: 0px auto;
+}
+.social_net img{
+	width:40px;
+	margin: 10px;
+}
+.recap_photo{
+	background:#f3f3f3;
+}
+.recap_photo h3{
+	color: #555555;
+}
+.star_s{
+	margin-top: 20px;
+}
+.star_s img{
+	width: 50px;
+}
+.box_rankp{
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	background: #ccc;
+}
+.rankp{
+	width: 50%;
+	border-radius: 5px;
+	background: #2aade8;
+}
+#dropbox { 
+	width: 100%; 
+	z-index: 10; 
+}
+#droppedimage img { 
+	width: 100%; 
+	height: auto; 
+}
+#MenuOptions {
+	position: absolute; 
+	bottom: 0px;
+	left: 0px; 
+	z-index: 2; 
+	width: 100%; 
+	height: 12%;
+	padding: 0 15px;
+}
+.icon_retake {
+	position: absolute;
+	width: 90%;
+	top: 50%;
+	margin-top: -22px;
+}
+.b_photo{
+	position: absolute; top:0px; visibility: hidden; width: 100%; display: block;
+}
+
+/*===== Settings =====*/
+.settings_container{
+	background:#ececec;
+	min-height:500px;
+}
+.c_title{
+	font-size: 1em;
+	font-family: IntelBold;
+	padding-top: 4em;
+	padding-bottom: 5%;
+}
+.border_{
+	border:2px solid;
+}
+
+.t_sounds p{
+	color:rgb(85,85,85);
+	font-family: IntelBold;
+	font-size: 1em;
+	margin-bottom: 0px !important;
+}
+.s_sound{
+	border-bottom:1px solid #9a9a9a;
+	padding-top: 1.75em;
+	padding-bottom: 0.5em;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+.checkbox-2{
+	width: 3.1em;
+	height: 1.6em;
+	margin: 0 0.9em 0 0;
+	position: relative;
+	float: right;
+}
+
+.checkbox-2 div
+{
+    width: 100%;
+    height:100%;
+   	background: #EC1111;
+   	border-radius: 50px;
+	position: relative;
+	float: right;
+	top: -1.5em;
+}
+
+.checkbox-3:before {
+	/*content: 'Sí';*/
+	position: absolute;
+	top: 0;
+	left: 10px;
+	color: #555555;
+	font-size: 10px;
+    line-height: 30px;
+}
+
+.checkbox-3:after {
+	/*content: 'No';*/
+    color: #555555;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	font-size: 10px;
+    line-height: 30px;
+}
+.checkbox-2 label {
+	background: #fff;
+	display: block;
+	width: 1.3em;
+	height: 1.3em;
+	border-radius: 3em;
+
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+
+	cursor: pointer;
+	position: absolute;
+	top: 2.2px;
+	z-index: 1;
+	left: 2.2px;
+}
+.checkbox-2 input[type=checkbox]:checked + label {
+	left: 1.65em;
+}
+
+.checkbox-2 input[type=checkbox]:checked ~ div
+{
+    background: #4fbe79;
+}
+
+/*------*/
+
+.flatRoundedCheckbox
+{
+    width: 120px;
+    height: 40px;
+    margin: 20px 50px;
+    position: relative;
+}
+.flatRoundedCheckbox div
+{
+    width: 100%;
+    height:100%;
+    background: #d3d3d3;
+    border-radius: 50px;
+    position: relative;
+    top:-30px;
+}
+
+.flatRoundedCheckbox label
+{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    left: 8px;
+    background: #FFF;
+}
+
+
+.flatRoundedCheckbox input[type=checkbox]:checked ~ div
+{
+    background: #4fbe79;
+}
+
+.flatRoundedCheckbox input[type=checkbox]:checked ~ label {
+    left: 85px;
+}
+
+/*---*/
+
+/*===== Start Now =====*/
+.start_now img{
+	width: 100px;
+}
+.start_now p{
+	color: #fff;
+	width: 80%;
+	margin: 0px auto;
+	padding-bottom: 30px;
+}
+.tc_start{
+	color:#06447e;
+	font-size: 18pt;
+	margin:25px auto;
+}
+
+/*===== Shuffle =====*/
+
+
+.shuffle {
+	background-color: #0A70C5;
+}
+
+.shuffle #quiz {
+	height: 100%;
+}
+
+/*.shuffle #quiz.activity_count_1 {
+	height: 88%;
+}
+*/
+.a_shuffle input[type=radio], .a_shuffle input[type="checkbox"] {
+	display:none;
+}
+
+.a_shuffle input[type="radio"]:checked + label, .a_shuffle input[type="checkbox"]:checked + label  {
+    color:black;
+}
+.select_sh {
+	-webkit-transition: all 0.3s cubic-bezier(.5,-0.5,.5,1.5);
+	-moz-transition: all 0.3s cubic-bezier(.5,-0.5,.5,1.5);
+	transition: all 0.3s cubic-bezier(.5,-0.5,.5,1.5);
+	
+	position: absolute;
+	right: 10%;
+	top: 30%;
+}
+.shuffle_label {
+	display: block;
+	color: #fff;
+	padding: 3.5%;
+	font-weight: bold;
+	height: 100%; /** this value cannot be changed javascript depends on it. */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0px !important;	
+}
+
+
+.shuffle_input {
+	opacity:0.1;
+}
+
+.question_shuffle_container {
+	position: relative;
+	height: 90%;
+	overflow: auto;
+	z-index: 1000;
+}
+
+.question_shuffle {
+	background-image: url("../img/wood_q.jpg");
+	border-top: 3px solid #fff;
+	/** height: 18%; **/
+	font-size: 150%;
+}
+.question_shuffle p {
+	color: #FFFFFF;
+	padding: 15px;
+	margin: 0px;
+	font-weight: bold;
+	text-align: center;
+	font-family: IntelBold;
+}
+.a_shuffle {	
+	background-image: url("../img/wood.jpg");
+	/**height: 12%;**/
+	position: relative;
+	text-align: center;
+	border-top: 3px solid #fff;
+}
+.a_shuffle:last-child {
+	border-bottom: 3px solid #fff;
+}
+.a_shuffle p {
+	color:#fff;
+	padding: 20px 10px 20px 10px;
+	font-weight: bold;
+}
+.select_question {
+	background:#0A70C5;
+	height: 5px;
+}
+.select_question p {
+	color:#fff;
+	font-family: IntelBold;
+	font-size: 14pt;
+}
+.select_question div {
+	display: inline-block;
+}
+.select_question img {
+	width: 20px;
+	height: auto;
+	margin-bottom: 10px;
+}
+.s_right {
+	float: right;
+	margin-right:10px;
+}
+.s_left {
+	float: left;
+	margin-left:10px;
+}
+
+.content_shuffle {
+	position: relative;
+	height: 100%;	
+}
+
+.content_shuffle ul {}
+
+.shuffle .content_shuffle ul {
+	
+}
+
+#content_shuffle_header{ height: 10%; background-color: #0A70C5; }
+#shuffle_answers { height: 90%; }
+
+#shuffle_options { height: 80%; }
+
+
+.shuffle_ob {
+	background:#0A70C5;
+	height: 10%;
+	padding: 1%;	
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	text-align: center;
+}
+.shuffle_ob:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.shuffle_ob .select_sh {
+	position: relative;	
+	right: auto;
+	top: auto;
+	display: inline-block; 
+	text-align: center; 
+	vertical-align: middle; 
+}
+
+.shuffle_ob .messageBox {
+	display: inline-block; 
+	text-align: center; 
+	vertical-align: middle; 
+}
+
+.shuffle_ob .messageBox p {
+	font-size: 14px;
+	color: #FFFFFF;	
+	padding: 0;
+	margin: 0;
+}
+
+.select_sh img, .shuffle_ob img {
+	width: 40px;
+	height: 100%;
+	margin-left: 5px;
+}
+/*===== Complement Answer =====*/
+.activity-name { font-size: 20px; font-family: Intelbold; padding: 15px; border-bottom: 2px solid #ccc; color: #555; }
+.a_answer1{
+	background: #fff;
+	display: table !important;
+	width: 100%;
+}
+.question-title { font-family: Intelbold; font-size: 14px;  }
+.grafic, .option { display: table-cell; vertical-align: middle; }
+.grafic {
+	position: relative;
+	text-align: center;
+	width: 40%;
+}
+.grafic .knob {
+	font-size: 13px !important;
+}
+.option { width: 60%; color: #666; font-size: 12px; font-family: IntelRegular; }
+
+.row.answer {
+	height: 90%;
+	overflow-y: auto;
+	padding-bottom: 10px;
+}
+.box_answer {
+	padding: 15px;
+	background: #fff;
+	border-bottom:2px solid #ccc;
+	width: 100%;
+}
+.box_answer .option p {
+	color: #999;
+}
+.box_answer .option p.selected {
+	font-weight: bold;
+}
+.box_answer .a_answer1.selected {
+	background-image: url("../img/check.jpeg");
+    background-position: 6px center;
+    background-repeat: no-repeat;
+    background-size: 5%;
+}
+
+/*===== Scavenger =====*/
+.principal_container.scavenger .container{
+	padding: 0;
+}
+#scavenger, .scavenger {
+	height: 100%;
+}
+.scavenger #act_nav {
+	background: rgb(19,114,194);
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.header_scavenger{
+	background:rgb(6,68,126);
+	color: #fff;
+	border:none;
+}
+.header_scavenger div{
+	display: inline-block;
+	padding:10px 0px 10px 0px;
+}
+.scavenger_points{
+	font-family: IntelBold;
+	width: 100px;
+	background:rgb(129,211,245);
+}
+.points_sca{
+	width: 100%;
+	margin-top: -2px;
+	border: none;
+	height: 20px;
+}
+.points_sca img {
+	vertical-align: top !important;
+}
+#scavenger .cont_sca {
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 90%;
+	overflow: auto;
+}
+.cont_sca > div{
+	display: block;
+	margin: 0px auto;
+}
+
+.box_text_sca {
+	background: rgb(218,218,218);
+	width: 75%;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.box_text_sca h3 {
+	padding: 15px 15px 0px;
+	margin: 0px;
+}
+.box_text_sca p {
+	margin: 0px auto;
+	width: 90%;
+	padding: 15px 0px;
+	text-align: center;
+	font-size: 100%;
+}
+.cont2_sca{
+	background:rgb(129,211,245);
+	height: 55%;
+	width: 100%;
+	left: 0;
+}
+.camera{
+	width: 125px;
+	height: auto;
+}
+.button_3 div{
+	text-decoration: none;
+	color:#fff;
+	margin:0px auto;
+	background: rgb(159,209,89);
+	width: 85%;
+	padding:10px;
+	border-radius:3px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	apparence:none;
+}
+.bk_tg{
+	background: url(../img/bk_tl.png);
+	background-repeat: repeat-x;
+}
+.textarea_sca {
+	padding: 5px;
+	width: 100%;
+	height: 50%;
+	margin-top:10px;
+	font-family: Intel;
+	font-size: 12pt;
+}
+.send3 {
+	border: none;
+	margin-top: 15px!important;
+	margin-bottom: 15px!important;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+/*===== Poll =====*/
+.question_poll{
+	background-image: url("../img/wood_q.jpg");
+	border-top:3px solid #fff;
+	width: 100%;
+	box-sizing: border-box;
+}
+.question_poll p{
+	color:#fff;
+	padding: 10px;
+}
+.a_poll p{
+	color:#fff;
+	padding: 20px 10px 20px 10px;
+	font-weight: bold;
+}
+
+.poll_input {
+	opacity:0.1;
+}
+
+.a_poll {
+	border-top:3px solid #fff;
+	padding: 13px;
+	font-size: 13pt;
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	font-family: Intel;
+	font-weight: normal;
+	box-sizing: border-box;
+	color: #fff;
+}
+.question_poll h3{
+	color: #fff;
+	width: 80%;
+	margin: 0px auto;
+}
+.question_poll p{
+	color: #fff;
+	font-family: IntelBold;
+	font-weight: 14pt;
+}
+
+/*===== Spin Blank =====*/
+.cont_blank{
+	padding-top: 10px;
+	padding-bottom: 15px;
+	background:rgb(129,211,245);
+	height: 100%;
+	width: 100%;
+	left: 0;
+}
+.cont_box_font{
+
+	margin: 0px auto;
+	width: 90%;
+}
+.cont_box_font div{
+	margin-top: 5px;
+	display: inline-block;
+}
+.box_font{
+	width: 30px;
+	height: 30px;
+	border-radius: 3px;
+	background:#fff;
+}
+.box_font p{
+	line-height: 30px;
+	font-family: IntelBold;
+}
+
+.box_menu_blank{
+	height:40px;
+	width: 100%;
+	box-sizing: border-box;
+	background: url(../img/bg_blank.png);
+	background-repeat: repeat-x;
+}
+.box_menu_blank a{
+	display: inline-block;
+}
+.box_menu_blank a img{
+	width: 40px;
+	height: auto;
+}
+.cont_blank2{
+	padding-top: 10px;
+	padding-bottom: 15px;
+	background:rgb(6,68,126);
+	height: 100%;
+	width: 100%;
+	left: 0;
+}
+.box_font2{
+	width: 35px;
+	height: 35px;
+	border-radius: 3px;
+	background:#fff;
+	cursor: pointer;
+}
+.box_font2 p{
+	line-height: 35px;
+	font-family: IntelBold;
+}
+.box_font2 p:active{
+	width: 35px;
+	height: 35px;
+	border-radius: 3px;
+	background:rgb(0,173,238);
+	color:#fff;
+}
+/*-----------------WAGER------------*/
+h1.title-header{
+	font-size: 25px;
+	font-weight: bold;
+	background: #064481;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	height: 10%;
+	padding: 3%;
+	border: 5px solid #fff;
+}
+.content h2 {
+ color: #FFFFFF;
+ font-weight: bold;
+}
+#content_question {
+padding: 3%;
+height: 38%;
+background-color: #0070c4;
+margin-bottom: 2%;
+
+}
+
+/*.content form{ height: 60%;}*/
+#question {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-family: IntelBold;
+	font-weight: bold;
+}
+.content form input[type="button"]{
+	 background: #0070c4;
+	 border: 0px;
+	 font-size: 3em;
+	 font-weight: bold;
+	 margin-bottom: 9px;
+	 width: 49%;
+	 height: 44%;
+	 color: #f5dc30;
+}
+.content form input[type="button"]:active{
+	 background: #064481;
+	 border: 5px solid #FFF;
+	 /*padding: .7em;*/
+}
+
+/*-----------spinquiz 2 -------*/
+#header_score {
+
+}
+
+#id_poll_submit, 
+#id_shuffle_submit,
+#id_acronym_submit {	
+	display: none;
+	position: relative;
+	height: 12%; 	
+	margin: 0 auto;
+	width: 100%;	
+	top: 0;
+	left: 0;
+	padding: 0px 15px;
+}
+
+#id_acronym_submit {
+	display: block;
+}
+
+#id_poll_submit {
+    display: inline-block;
+}
+
+#id_poll_submit:before, 
+#id_shuffle_submit:before,
+#id_acronym_submit:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+/*--- Buttons ---*/
+.btn-submit {
+	position: relative;
+	display: inline-block;
+    background: #a6ce39 !important;	
+	text-decoration: none;
+	text-align: center;
+	font-size: 100%;
+	font-weight: bold;
+	color: #FFFFFF;	
+	vertical-align: middle;
+	transition: 0.3s all;
+	border-radius: 5px;	
+	width: 98.5%;
+	height: auto;
+	padding-top: 0.65em;
+	padding-bottom: 0.65em;
+	margin: 0 auto;
+}
+
+/*--- Global ---*/
+/*
+	.principal_container:not(.shuffle):not(.spinquiz):not(.scan) {
+    background-color: #FFFFFF;
+}
+*/
+.principal_container.activity-bg {
+    background-color: #FFFFFF;
+}
+
+/* --- TLA activity ---*/
+.s_acronym .acronym_input {
+    background-color: #1072c2;
+    color: #FFFFFF;
+}
+.s_acronym .acronym_input:focus {
+    background-color: #FFFFFF;
+    color: #004280;
+}
+.s_acronym #acronym_title,
+.s_acronym h3.acronym {
+    color: #004280;
+}
+
+/* --- Poll activity ---*/
+.poll #poll_title {
+    color: #004280;
+}
+
+.poll .submit-button-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height:75px;  
+    padding-top: 10px;
+    margin: 0;
+}
+.poll .shuffle_ob {
+    background: transparent;
+}
+.poll .submit-button-box a {
+    display: block;
+    text-align:center; 
+    text-decoration:none; 
+    color:#fff; 
+    font-size:16px; 
+    line-height: 4.2;
+    width:100%; 
+    height:100%; 
+}
+
+/* --- Scavenger activity ---*/
+.scavenger .box_text_sca {
+    width: 100%;
+}
+.scavenger .cont2_sca {
+    background: transparent;
+}
+.scavenger .textarea_sca {
+    border: 15px solid #06447e;
+}
+
+/** Poll Style **/
+.n_question_alt {
+	float: left;
+	border: 0px solid red;
+	display: block;
+	width: 100%;
+}
+
+.principal_container.poll li label {
+	background: #06447E !important;
+	margin-bottom: 0;
+}
+
+.principal_container.poll li.selected,
+.principal_container.poll li.selected label {
+	background-color: #0071c5 !important;
+}
+
+.poll #quiz {
+	height: 100%;
+}
+
+.content_poll .question_shuffle_container {
+	position: relative;
+	height: 100%;
+	overflow: auto;
+	z-index: 1000;
+}
+
+.content_poll .question_shuffle {
+	background-image:none;
+}
+
+.content_poll input.mine{
+	visibility: hidden;
+	position: absolute;
+}
+.content_shuffle.content_poll.row {
+	white-space: normal;
+	word-wrap: break-word;
+	display: inline-block;
+	height: 100%;
+}
+
+.content_poll div.question_shuffle {}
+.content_poll div.question_shuffle > p {
+	font-size:18px;
+}
+.content_poll label.a_poll {
+	font-size: 100%;
+	word-wrap: break-word;
+	white-space: normal;
+	text-align: center;
+}
+/** end Poll Style **/
+
+/*-----------------------------------------------------------------------------------------
+  Here is the real @media queries for smartphones, tablets, desktops, and large-desktops 
+  If u don't know how media queries work then 
+  learn it from responsive frameworks (e.g. http://getbootstrap.com).
+  ---------------------------------------------------------------------------------------*/
+
+/*===== small devices(e.g. smartphones) =====*/
+@media (max-width: 767px) {
+    .select_sh {
+		right: 10%;
+		top: 20%;
+	}
+	
+	.select_sh img, .shuffle_ob img {
+		width: 25px;
+		height: 100%;
+		margin-left: 5px;
+	}
+}
+/*===== small devices(e.g. tablets) =====*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #photo_op_icon {
+        height: 43%;
+        padding-bottom: 7%;
+        padding-top: 7%;
+    }
+}
+/*===== medium devices(e.g. desktops) =====*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #photo_op_icon {
+        height: 50%;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+}
+/*===== large devices(e.g. large-desktops) =====*/
+@media (min-width: 1200px) {
+    #photo_op_icon {
+        height: 50%;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+/**
+@media only screen 
+and (min-width : 321px) {
+	.question_shuffle p {
+		font-size: 20px;
+	}
+	
+	.shuffle_label {
+		padding: 1.5%;
+		font-size: 16px;
+	}
+} **/

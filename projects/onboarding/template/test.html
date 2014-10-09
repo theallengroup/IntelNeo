@@ -1,0 +1,25 @@
+
+<style>
+	.a {
+		border:1px;
+		width:100px;
+		height:100px;
+		background-color:red;
+		transition: all 2s ease;
+	}
+	.a:hover {
+		background-color:blue;
+
+	}
+</style>
+<script>
+	function a(obj){
+		var n = Math.round(Math.random()*10000);
+		obj.style.backgroundColor="blue";
+		//obj.style.width="180px";
+		obj.style.transform="rotate("+n+"deg)";
+
+	}
+</script>
+<div class=a onclick='a(this)'>
+</div>

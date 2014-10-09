@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+font-family: "Intel";
+    src: url(./fonts/IntelClear_Lt.ttf) format("truetype");
+}
+
+body{
+    margin: 0px;
+}
+.slider_tutorial{
+    margin: 0px auto;
+    text-align: center;
+    background: rgb(0,112,197);
+}
+.m-carousel{
+    width: 100%;
+    background: rgb(0,112,197);
+    position:  relative;
+    overflow:  hidden;
+}
+/*===== Button Radio =====*/
+.m-carousel-controls {
+    background: rgb(0,112,197);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+.m-carousel-bulleted a {
+    line-height: 0;
+    text-decoration: none;
+    overflow: hidden;
+    display: inline-block;
+    padding: 6px;
+    margin: 0 3px;
+    background-color: rgba(255,255,255,0.3);
+    transition: background-color 0.1s ease-in;
+    border-radius: 6px;
+}
+.m-carousel-bulleted a:hover, .m-carousel-bulleted a:focus {
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.6);
+}
+.m-carousel-bulleted a.m-active {
+    background-color: rgba(255,255,255,1);
+    -webkit-box-shadow: rgba(0,0,0,0.25) 0 1px 2px;
+    -moz-box-shadow: rgba(0,0,0,0.25) 0 1px 2px;
+    box-shadow: rgba(0,0,0,0.25) 0 1px 2px;
+}
+/* captions */
+.m-caption {
+    margin: 0;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+}
+/*===== Pagitation =====*/
+.m-carousel.m-fluid  >  .m-carousel-inner  >  *  {
+    width:  100%;
+}
+.m-carousel-inner  {
+    position:  relative;
+    white-space:  nowrap;
+    text-align:  left;
+    /*  Configure  animations  */
+    -webkit-transition-property:  -webkit-transform;
+    -moz-transition-property:  -moz-transform;
+    -ms-transition-property:  -ms-transform;
+    -o-transition-property:  -o-transform;
+    transition-property:  transform;
+    /*  iOS  like  slide  timings  */
+    -webkit-transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+    -moz-transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+    -ms-transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+    -o-transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+    transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+    -webkit-transition-duration:  0.5s;
+    -moz-transition-duration:  0.5s;
+    -ms-transition-duration:  0.5s;
+    -o-transition-duration:  0.5s;
+    transition-duration:  0.5s;
+}
+.m-carousel-inner  >  *  {
+    display:  inline-block;
+    vertical-align:  top;
+    white-space:  normal;
+}
+
+/*===== Content =====*/
+.m-card-dark {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgb(0,112,197);
+    color: #FFF;
+}
+.content_st{
+    margin: 0px auto;
+    text-align: center;
+    font-family: Intel, Tahoma, sans-serif;
+}
+.content_st h3{
+    font-size: 30pt;
+}

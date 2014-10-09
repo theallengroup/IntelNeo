@@ -1,0 +1,38 @@
+<style>
+.circle_trophy{background-color:white;}
+.circle_trophy > img {height: 6.3em;position: relative;top: -6px;}
+</style>
+<div class="principal_container trophies">
+	<div class="content container">
+
+		<div id="content-trophies">
+			<p class="title_congrats">[#all_correct]</p>
+			<div class="score_box">
+				<img src="./media/img/star_16.png">
+				<span class="current_score">[#score]</span>
+				<img src="./media/img/star_16.png">
+			</div>
+
+			<div class="circle_trophy">
+				<img src="./media/img/trophy_new_rank.png">
+			</div>
+
+			<div class="message_congrats">[#current_rank_image_name]</div>
+
+			<div class="progress_bar_score">
+				<div class="box_score">
+					<div class="score_percent" style='width:[#score_percentage]%'>
+						<p class="progress_level">[#score]/[#score_end]</p>
+					</div>
+				</div>
+
+			</div>
+
+			<ul id="buttons-trophies" class="list-inline">
+				<li id="btn_leader"><a href="?mod=usr2session&ac=r_leader_board" class="leaderboard_btn">LEADERBOARD</a></li>
+				<li id="btn_main"><a href="?mod=usr2session&ac=r_home" class="main_btn">MAIN MENU</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>

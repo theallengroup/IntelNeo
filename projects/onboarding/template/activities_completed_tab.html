@@ -1,0 +1,18 @@
+ <!--CONTENT_START-->
+ <style>a:focus i, a:hover i ,a i{color: #2a6496;position: relative;top: -1.5em;left: 6em;padding: 2px;}</style>
+ <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+            <div id="tab1" class="tab_content">
+            <!--LOOP_START-->
+            <a href='?mod=usr2session&ac=r_run_activity&activity_id=[#id]&status=[#status]' class="a_activities">
+              <div class="activity_container activity_row_[#status]">
+                <ul>
+                  <li class="act_icon"><img src="./media/img/h_[#activity_type_id].png" alt="#[#activity_type_id]"></li>
+                  <li class="act_name"><p class="act_title">[#name]</p><p class="act_type">[#cnomb]</p><p class="share">[#share]</p></li>
+                  <li class="act_score"><div class="star"><img src="./media/img/act_star_icon.jpg"></div><p>[#activity_value]</p></li>
+                </ul>
+              </div>
+            </a>
+            <!--LOOP_END-->
+            </div>
+
+ <!--CONTENT_END-->

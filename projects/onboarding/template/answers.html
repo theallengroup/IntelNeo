@@ -1,0 +1,33 @@
+<!--CONTENT_START-->
+<div class="principal_container answers">
+		<div class="main answers">
+			<section class="buttonset">
+		        <button type="button" id="showLeftPush" class=""><img src="./media/img/nav-btn.png"></button>
+		    </section>
+		    <section class="title">
+		        <h3>My Answers</h3>
+		    </section>     
+		    <section class="img_header">
+        		<a href="?mod=usr2session&amp;ac=r_leader_board"><img src="./media/img/rank_header.png" alt="" class="h_img" style="margin-right:8px;"></a>
+		     </section>
+			[#notification]
+		</div>
+		
+		<div class="content container topbar">
+			<section class="article row">
+				<!--LOOP_START-->
+				<a href="?mod=usr2session&ac=r_answers&activity_id=[#activity_id]">
+					<article class="activity-info">
+						<div class="name-date">
+							<h3>[#name]</h3>
+							<p>Results: [#correct] / [#total] Correct</p>
+							<!-- <p>[#activity_date]</p> -->
+						</div>
+						<div class="select_answer">&#62</div>
+					</article>
+				</a>
+				<!--LOOP_END-->
+			</section>
+		</div>
+</div>
+<!--CONTENT_END-->

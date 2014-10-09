@@ -1,0 +1,118 @@
+  <!--CONTENT_START-->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">   
+<link href="./media/css/share.css" rel="stylesheet"> 
+<script src='./media/js/jquery-1.11.1.min.js'></script>
+
+<style type="text/css">
+    #droppedimage img {
+		width: 100%; 
+		height: auto; 
+		position: absolute;
+		top: 4px;
+		left: 0;
+	}
+    #botonFotosend.waiting-off,
+	#botonFotosend.waiting-off:focus {
+		border:1px solid red;
+	}
+    .icon_retake > i {
+		top: -35px; 
+		left:36%; 
+		color: white; 
+		z-index:99999; 
+		position:relative;
+	}
+    #botonFotosend.active,
+	#botonFotosend:active,
+	#botonFotosend:focus, 
+	#botonFotosend:hover {
+		border: 1px solid green!important;
+	}
+</style>
+
+<div class="principal_container photo-op activity-bg">
+
+   <div class="main photo_op">
+      <section class="buttonset">
+          <button type="button" id="showLeftPush"><img src="./media/img/nav-btn.png"></button>
+      </section>
+      <section class="title">
+          <h3>Photo Op</h3>
+      </section>
+      <section class="img_header">
+          <!--<a href=""><img src="./media/img/comment_header.png" alt="" class="h_img"></a>-->
+          <a href="?mod=usr2session&ac=r_leader_board"><img src="./media/img/rank_header.png" alt="" class="h_img" style="margin-right:8px;"></a>
+      </section>
+      [#notification]
+  </div>
+
+  <div class="content container topbar">
+    <div class="take_photo row">
+  	<!--<input id="image-picker" type="file" accept="image/*" />-->
+
+
+      <!-- Drop media element. -->
+      <div class="media-drop" style="width:100%; height:90%; position:relative; top: 10%;">
+
+          <!-- Image placeholder. -->
+          <div id="droppedimage" style="width:100%; height:100%;"></div>
+		  <i class="fa fa-refresh fa-spin" style="display: none;"></i>
+          <div class='hideshare-wrap'>
+            <ul class="hideshare-list" style="display: none;">
+                <li><a class="hideshare-facebook" href="#"><i class="fa fa-facebook-square fa-4x"></i><span>Facebook</span></a></li>
+                <li><a class="hideshare-twitter" href="#"><i class="fa fa-twitter-square fa-4x"></i><span>Twitter</span></a></li>
+                <li><a class="hideshare-pinterest" href="#" data-pin-do="buttonPin" data-pin-config="above"><i class="fa fa-pinterest-square fa-4x"></i><span>Pinterest</span></a></li>
+                <li><a class="hideshare-google-plus" href="#"><i class="fa fa-google-plus-square fa-4x"></i><span>Google Plus</span></a></li>
+                <li><a class="hideshare-linkedin" href="#"><i class="fa fa-linkedin-square fa-4x"></i><span>Linked In</span></a></li>
+            </ul>
+          </div>
+          
+          <div id="dropbox" class="media-drop-placeholder">
+
+              <div class="media-drop-placeholder-uploadbutton">
+                  <div id="MenuOptions" class="submit-button-box">
+                    <div class="icon_take">
+                      <label class="btn-submit" for="fileUpload">
+                      		Take a Photo
+					  </label>
+                      <input class="btn-submit b_photo"  name="media-drop-placeholder-file" type="file" id='fileUpload' accept="image/*"> 
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+         
+    </div> 
+  </div>
+         
+</div>
+
+ <!--CONTENT_END-->
+<script src="./media/js/jquery.html5uploader-1.1.js"></script>
+<script src="./media/js/exif.js"></script>
+<script src="./media/js/main.js"></script>
+
+<script type="text/javascript">
+   $(document).ready(function(){
+        Share.init();
+        
+        $(document).on('haveShareLink',function(){
+            $('.fa.fa-spin').hide();
+            $('.waiting-off').prop('disabled', false);
+            $('.waiting-off').removeClass('waiting-off');
+        });
+        
+         var loc = window.location.href;
+      if(loc.indexOf('post_id') > -1) {
+        window.close();
+      }
+        /* if(window.location.search.indexOf('post_id')==1) 
+         console.log(window.location.search.indexOf)*/
+   });
+   function Retake(){
+    window.location.href='?mod=usr2session&ac=r_take_photo_choose';
+  };
+</script>
+<script src="./media/js/share.js"></script>
+
+

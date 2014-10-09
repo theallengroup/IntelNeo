@@ -1,0 +1,41 @@
+<!--CONTENT_START-->
+   <!--LOOP_START--> <!--LOOP_END-->
+
+<script type="text/javascript" src="./media/js/llqrcode.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="./media/js/webqr.js"></script>
+
+<div class="principal_container scan">
+    <div class="container">
+        <header id="header" class="header_p">
+            <div class="dark">
+              <a href="?mod=usr2session&ac=r_">
+                <img src="./media/img/logo.png" id="logo">
+              </a>
+            </div>
+            <div class="black_metal">
+              <h3>New Employee <span>Orientation</span></h3>
+            </div>
+        </header>
+
+        <div id="code_img" class="center-block">
+        <canvas id="qr-canvas" width="800px" height="600px" style="display: none;"></canvas>
+        	<div id="outdiv" class="center-block">
+        		<img src="./media/img/scan_code.png" >
+        	</div>
+        	<div class="row">
+            <p  id="result" class="center-block">QR RESULT HERE</p>
+        </div>
+        </div>
+        <div class="row">
+            <h2>Scan QR code</h2>
+            <p class="center-block">When you have your badge<br/>scan the QR code</p>
+        </div>
+            <button class="btn-submit" type='button' onclick='setimg()'>Use QR camScan</button>
+           
+     </div>
+
+	<script type="text/javascript">load();</script>
+</div>
+
+<!--CONTENT_END-->

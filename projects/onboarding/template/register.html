@@ -1,0 +1,43 @@
+	<div class="background1">
+        	<div class="content container">
+            	<div class="header_p">
+					<div><a href="?mod=usr2session&ac=r_"><img src="./media/img/logo.png" id="logo"></a></div>
+					<div class="text_title_header">
+						<div><h3>New Employee</h3></div>
+						<div><p>Orientation</p></div>
+					</div>
+				</div>
+				<img src="./media/img/register_img.png" alt="img_login" class="img_register">
+                <form class="form_" method=POST>
+                    <input type=hidden name=mod value=usr2session>
+                    <input type=hidden name=ac value=r_register2>
+                    
+                    <h3 id="reg_title">Register</h3>
+                    <div id="select_sesion" class="form_input_section">
+					<select name="session_id" class="session_class">
+                    [#sessions]
+                    </select>
+					</div>
+                    <div class="form_input">
+						<div class="input_icon"><img src="./media/img/user_icon.png" alt="user_icon"></div>
+						<div class="input_field"><input type="text" name="name" placeholder="First Name / Last Name"></div>
+					</div>
+                    <div class="form_input">
+						<div class="input_icon"><img src="./media/img/email_icon.png" alt="email_icon"></div>
+						<div class="input_field"><input type="email" name="email" placeholder="E-Mail Address"></div>
+					</div>
+                    <div class="form_input">
+						<div class="input_icon"><img src="./media/img/pass_icon.png" alt="pass_icon"></div>
+						<div class="input_field"><input type="password" name="pass" placeholder="Password"></div>
+					</div>
+                    <div class="form_input">
+						<div class="input_icon"><img src="./media/img/pass_icon.png" alt="pass_icon"></div>
+						<div class="input_field"><input type="password" name="pass2" placeholder="Confirm Password"></div>
+					</div>
+                    <input type="submit" class="send" value="Register" />
+                </form>
+            </div>
+            
+			<div class="pull-right peel"><img src="./media/img/bottom_pell.png" alt="bottom_pell"></div>
+			
+        </div>

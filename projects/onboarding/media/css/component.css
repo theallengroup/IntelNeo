@@ -1,0 +1,96 @@
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #fff;
+	position: fixed;
+	overflow:auto;
+}
+.menu_central{
+	text-align:center;
+	color:#929292;
+	padding: 10px;
+	background: #ececec;
+	font-size:14px;
+}
+.menu_central h4{
+	color:#585858;
+	padding-top: 5px;
+	text-align:center;
+}
+.number_rank{
+	text-align:center;
+	float:left;
+	margin-top: 1.2em;
+}
+.number_score{
+	float:right;
+	margin-left:20px;
+	margin-top: 1.2em;
+}
+.position_  div{
+	display:inline-table;
+}
+.cbp-spmenu a {
+	display: block;
+	color: #939393;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+.cbp-spmenu a  div{
+	display:inline-block;
+}
+.name_icon{
+	font-size:13px;
+	margin-left:5px;
+	margin-top:10px;
+	position:absolute;
+}
+.cbp-spmenu a:hover {
+	color: #000;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 225px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+.cbp-spmenu-vertical a {
+	font-size:12px;
+	padding: 5px 10px 5px 10px;
+}
+
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-left {
+	left: -225px;
+}.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+/* Push classes applied to the body */
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.cbp-spmenu-push-toright {
+	left: 225px;
+}
+.cbp-spmenu-push-toleft {
+	left: -225px;
+}
+
+/* Transitions
+ * http://cubic-bezier.com/#.5,-0.5,.5,1.5
+ * http://www.sitepoint.com/css3-transitions-cubic-bezier-timing-function/
+ * http://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp
+ * */
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s cubic-bezier(.5,-0.5,.5,1.5);
+	-moz-transition: all 0.3s cubic-bezier(.5,-0.5,.5,1.5);
+	transition: all 0.3s cubic-bezier(.5,-0.5,.5,1.5);
+}

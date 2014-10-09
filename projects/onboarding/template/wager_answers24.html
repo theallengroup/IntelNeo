@@ -1,0 +1,60 @@
+<!--CONTENT_START-->
+<script src="./media/js/poll.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	question_count = parseInt('[#activity_count]');
+</script>
+
+<style>
+	.n_question_alt {
+		float: left;
+		border: 0px solid red;
+		display: block;
+		width: 100%;
+	}
+</style>
+
+<div class="principal_container wager activity-bg">
+	<div class="content container">
+		[#navigation]
+
+		<form method=GET  action="?" id='wager' class="activity_count_[#activity_count]">
+			<input type=hidden name=ac value=r_run_activity />
+			<input type=hidden name=pf value='1' />
+			<input type=hidden name=team_id value='[#team_id]' />
+			<input type=hidden name=activity_id value='[#activity_id]' />
+			<input type=hidden name=mod value=usr2session />
+			<input type="hidden" id="score_data" value="" data-maxscore="[#activity_value]" data-countquestions="5">
+			<input type="hidden" name="wager_total" value="" />
+
+			<!--LOOP_START-->
+			<div class="content_wager row activity_count_[#activity_count]"  id='section_[#current]' style='display:[#display]'>
+				<div id="title">
+					<p>[#name] <br/> </p>
+				</div>
+				[#options]
+			</div>
+			<!--LOOP_END-->
+		</form>
+	</div>
+</div>
+<script>
+	$(document).ready(function(){
+		var score = getUrlParameter('value');
+		$('input#score_data').attr('data-maxscore',score);
+		$('#nav_score').html('0');
+	})
+function getUrlParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++){
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam){
+            return sParameterName[1];
+        }
+    }
+    return false;
+}
+</script>
+<!--CONTENT_END-->

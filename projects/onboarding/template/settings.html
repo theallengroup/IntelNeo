@@ -1,0 +1,67 @@
+ <!--CONTENT_START-->
+   <style>.s_sound.row{position:relative;top:2em;}</style>
+  <div class="principal_container">
+
+            <div class="main settings">
+                <section class="buttonset">
+                    <button type="button" id="showLeftPush"><img src="./media/img/nav-btn.png"></button>
+                </section>
+                <section class="title">
+                    <h3>Settings</h3>
+                </section>
+                <section class="img_header">
+                    <a href="?mod=usr2session&ac=r_leader_board"><img src="./media/img/rank_header.png" alt="" class="h_img" style="margin-right:8px;"></a>
+                </section>
+                [#notification]
+            </div>
+
+            <div class="content container topbar">
+                <div class="s_sound row">
+                    <div class="t_sounds col-xs-6"><p>Sound</p></div>
+
+                    <div class="checkbox-2 pull-right">
+                        <input type="checkbox" id="sound" value="1" name="" />
+                        <label for="sound"></label>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center-block"> <h3 class="c_title">Change Username/Pass</h3></div>
+                </div>
+
+			<form method="POST" action='?mod=usr2session&ac=r_write_setting' class="message_cq form_2">
+                    <div class="form_input border_">
+                        <div class="input_icon"><img src="./media/img/user_icon.png" alt="email_icon"></div>
+                        <div class="input_field"><input type="email" name="email" placeholder="<!--LOOP_START-->[#email]<!--LOOP_END-->"></div>
+                    </div>
+                    <div class="form_input border_">
+                        <div class="input_icon"><img src="./media/img/pass_icon.png" alt="pass_icon"></div>
+                        <div class="input_field"><input type="password" name="pass" placeholder="New Password"></div>
+                    </div>
+                    <div class="form_input border_">
+                        <div class="input_icon"><img src="./media/img/pass_icon.png" alt="pass_icon"></div>
+                        <div class="input_field"><input type="password" name="pass2" placeholder="Confirm New Password"></div>
+                    </div>
+
+					<input name="submit" type="submit" class="send2" value="RESET">
+
+                </form>
+            </div>
+        </div>
+<script>
+    $(":checkbox").change(function(){
+        var muted = ($(this).is(":checked")) ? '1' : '0';
+        console.log(muted);
+        $.ajax({
+              type: "GET",
+              dataType: 'json',
+              url: "./?mod=usr2session&ac=r_settings&is_muted="+muted,
+              success:function(data){
+                console.log(data);
+              }
+           });
+    })
+</script>
+<style>body{background:rgb(236,236,236);}</style>
+
+ <!--CONTENT_END-->

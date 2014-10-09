@@ -1,0 +1,218 @@
+digraph G { [rankdir=LR]  
+ subgraph "cluster_Local Modules" { 
+			label="Local Modules";
+			color=red;
+			
+activity[shape=none,label=<<TABLE port="activity" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">activity </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+<TR><TD port="activity_type_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">activity_type_id </FONT></TD><TD port="activity_type_id_from"></TD></TR>
+<TR><TD port="activity_status_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">activity_status_id </FONT></TD><TD port="activity_status_id_from"></TD></TR>
+<TR><TD port="is_team_activity_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">is_team_activity </FONT></TD><TD port="is_team_activity_from"></TD></TR>
+<TR><TD port="timer_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">timer </FONT></TD><TD port="timer_from"></TD></TR>
+</TABLE>>];
+
+
+
+activity_status[shape=none,label=<<TABLE port="activity_status" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">activity_status </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+</TABLE>>];
+
+
+
+activity_type[shape=none,label=<<TABLE port="activity_type" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">activity_type </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+<TR><TD port="description_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">description </FONT></TD><TD port="description_from"></TD></TR>
+<TR><TD port="activity_value_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">activity_value </FONT></TD><TD port="activity_value_from"></TD></TR>
+</TABLE>>];
+
+
+
+answer[shape=none,label=<<TABLE port="answer" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">answer </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="question_option_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">question_option_id </FONT></TD><TD port="question_option_id_from"></TD></TR>
+<TR><TD port="question_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">question_id </FONT></TD><TD port="question_id_from"></TD></TR>
+<TR><TD port="usr_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">usr_id </FONT></TD><TD port="usr_id_from"></TD></TR>
+<TR><TD port="score_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">score </FONT></TD><TD port="score_from"></TD></TR>
+<TR><TD port="answer_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">answer </FONT></TD><TD port="answer_from"></TD></TR>
+</TABLE>>];
+
+
+
+category[shape=none,label=<<TABLE port="category" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">category </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+</TABLE>>];
+
+
+
+completed_activity[shape=none,label=<<TABLE port="completed_activity" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">completed_activity </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="activity_date_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">activity_date </FONT></TD><TD port="activity_date_from"></TD></TR>
+<TR><TD port="usr_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">usr_id </FONT></TD><TD port="usr_id_from"></TD></TR>
+<TR><TD port="activity_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">activity_id </FONT></TD><TD port="activity_id_from"></TD></TR>
+</TABLE>>];
+
+
+
+content[shape=none,label=<<TABLE port="content" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">content </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+<TR><TD port="body_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">body </FONT></TD><TD port="body_from"></TD></TR>
+<TR><TD port="url_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">url </FONT></TD><TD port="url_from"></TD></TR>
+<TR><TD port="session_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">session_id </FONT></TD><TD port="session_id_from"></TD></TR>
+<TR><TD port="content_type_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">content_type_id </FONT></TD><TD port="content_type_id_from"></TD></TR>
+</TABLE>>];
+
+
+
+content_type[shape=none,label=<<TABLE port="content_type" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">content_type </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+</TABLE>>];
+
+
+log
+
+message[shape=none,label=<<TABLE port="message" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">message </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="source_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">source </FONT></TD><TD port="source_from"></TD></TR>
+<TR><TD port="destination_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">destination </FONT></TD><TD port="destination_from"></TD></TR>
+<TR><TD port="body_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">body </FONT></TD><TD port="body_from"></TD></TR>
+<TR><TD port="view_date_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">view_date </FONT></TD><TD port="view_date_from"></TD></TR>
+<TR><TD port="creation_date_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">creation_date </FONT></TD><TD port="creation_date_from"></TD></TR>
+</TABLE>>];
+
+
+privilege
+
+question[shape=none,label=<<TABLE port="question" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">question </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+<TR><TD port="description_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">description </FONT></TD><TD port="description_from"></TD></TR>
+<TR><TD port="activity_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">activity_id </FONT></TD><TD port="activity_id_from"></TD></TR>
+<TR><TD port="category_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">category_id </FONT></TD><TD port="category_id_from"></TD></TR>
+</TABLE>>];
+
+
+
+question_option[shape=none,label=<<TABLE port="question_option" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">question_option </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+<TR><TD port="question_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">question_id </FONT></TD><TD port="question_id_from"></TD></TR>
+<TR><TD port="is_correct_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">is_correct </FONT></TD><TD port="is_correct_from"></TD></TR>
+</TABLE>>];
+
+
+
+rank[shape=none,label=<<TABLE port="rank" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">rank </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+<TR><TD port="rank_value_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">rank_value </FONT></TD><TD port="rank_value_from"></TD></TR>
+<TR><TD port="score_start_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">score_start </FONT></TD><TD port="score_start_from"></TD></TR>
+<TR><TD port="score_end_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">score_end </FONT></TD><TD port="score_end_from"></TD></TR>
+</TABLE>>];
+
+
+role
+role2priv
+
+session[shape=none,label=<<TABLE port="session" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">session </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+</TABLE>>];
+
+
+
+team[shape=none,label=<<TABLE port="team" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">team </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+</TABLE>>];
+
+
+usr
+usr2role
+
+usr_status[shape=none,label=<<TABLE port="usr_status" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">usr_status </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="usr_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">usr_id </FONT></TD><TD port="usr_id_from"></TD></TR>
+<TR><TD port="score_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">score </FONT></TD><TD port="score_from"></TD></TR>
+<TR><TD port="rank_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">rank_id </FONT></TD><TD port="rank_id_from"></TD></TR>
+</TABLE>>];
+
+ 
+activity:id_from->question:activity_id_to;
+activity:id_from->completed_activity:activity_id_to;
+activity:id_from->session:id_to[label=activity2session,labelfontname=verdana,labelfontsize=8pt];
+activity_status:id_from->activity:activity_status_id_to;
+activity_type:id_from->activity:activity_type_id_to;
+category:id_from->question:category_id_to;
+content_type:id_from->content:content_type_id_to;
+question:id_from->question_option:question_id_to;
+question:id_from->answer:question_id_to;
+question_option:id_from->answer:question_option_id_to;
+rank:id_from->usr_status:rank_id_to;
+session:id_from->content:session_id_to;
+session:id_from->usr:id_to[label=usr2session,labelfontname=verdana,labelfontsize=8pt];
+ }
+
+ subgraph "cluster_Shared Modules" { 
+			label="Shared Modules";
+			color=blue;
+			activity
+activity2session
+activity_status
+activity_type
+answer
+category
+completed_activity
+content
+content_type
+
+log[shape=none,label=<<TABLE port="log" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">log </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="usr_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">usr_id </FONT></TD><TD port="usr_id_from"></TD></TR>
+<TR><TD port="table_name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">table_name </FONT></TD><TD port="table_name_from"></TD></TR>
+<TR><TD port="record_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">record </FONT></TD><TD port="record_from"></TD></TR>
+<TR><TD port="info_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">info </FONT></TD><TD port="info_from"></TD></TR>
+<TR><TD port="log_date_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">log_date </FONT></TD><TD port="log_date_from"></TD></TR>
+<TR><TD port="log_level_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">log_level </FONT></TD><TD port="log_level_from"></TD></TR>
+</TABLE>>];
+
+
+message
+
+privilege[shape=none,label=<<TABLE port="privilege" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">privilege </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+<TR><TD port="action_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">action </FONT></TD><TD port="action_from"></TD></TR>
+</TABLE>>];
+
+
+question
+question_option
+rank
+
+role[shape=none,label=<<TABLE port="role" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">role </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+</TABLE>>];
+
+
+
+role2priv[shape=none,label=<<TABLE port="role2priv" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">role2priv </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="role_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">role_id </FONT></TD><TD port="role_id_from"></TD></TR>
+<TR><TD port="privilege_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">privilege_id </FONT></TD><TD port="privilege_id_from"></TD></TR>
+</TABLE>>];
+
+
+session
+team
+
+usr[shape=none,label=<<TABLE port="usr" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">usr </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="name_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">name </FONT></TD><TD port="name_from"></TD></TR>
+<TR><TD port="email_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">email </FONT></TD><TD port="email_from"></TD></TR>
+<TR><TD port="password_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">password </FONT></TD><TD port="password_from"></TD></TR>
+<TR><TD port="login_count_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">login_count </FONT></TD><TD port="login_count_from"></TD></TR>
+<TR><TD port="last_login_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">last_login </FONT></TD><TD port="last_login_from"></TD></TR>
+<TR><TD port="created_date_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">created_date </FONT></TD><TD port="created_date_from"></TD></TR>
+<TR><TD port="last_ip_to" ></TD><TD  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">last_ip </FONT></TD><TD port="last_ip_from"></TD></TR>
+</TABLE>>];
+
+
+
+usr2role[shape=none,label=<<TABLE port="usr2role" BORDER="0" CELLSPACING="0" CELLPADDING="2"><TR><td></td><TD BORDER="1" BGCOLOR="#d0d0d0" ><FONT FACE="verdana" POINT-SIZE="12pt">usr2role </FONT></TD><td></td></TR><TR><TD port="id_to" ></TD><TD  BGCOLOR="#f0f0f0"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">id </FONT></TD><TD port="id_from"></TD></TR>
+<TR><TD port="usr_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">usr_id </FONT></TD><TD port="usr_id_from"></TD></TR>
+<TR><TD port="role_id_to" ></TD><TD  BGCOLOR="beige"  BORDER="1" ALIGN="LEFT" width="90%"><FONT FACE="tahoma" POINT-SIZE="10pt">role_id </FONT></TD><TD port="role_id_from"></TD></TR>
+</TABLE>>];
+
+
+usr2session
+usr_status 
+usr:id_from->log:usr_id_to;
+ }
+ }

@@ -1,0 +1,30 @@
+<!--CONTENT_START-->
+<div class="background1">
+	<div class="content container">
+		<form method=GET action='?'>
+			<input type=hidden name=ac value=r_run_activity />
+			<input type=hidden name=activity_id value='[#activity_id]' />
+			<input type=hidden name=mod value=usr2session />
+			<input type=hidden name=status value=READY />
+
+			<div class="game_intro">
+				<h4 class="title_principal_gi">Select a Team</h4>
+				<h4 class="title_g">TEAM</h4>
+				<div class="team_select">
+					<p id="team_select" onclick='document.getElementById("select_team").focus()'>1</p>
+				</div>
+				<div class="select_t">
+					<select name=team_id id="select_team" class="select_team" onchange='document.getElementById("team_select").innerHTML = this.value'>
+						<!--LOOP_START-->
+						<option value="[#id]">[#name]</option>
+						<!--LOOP_END-->					
+					</select>
+				</div>
+				<div class="game_intro_menu">
+					<input class="btn-submit send" type=submit value='JOIN TEAM'>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<!--CONTENT_END-->

@@ -1,0 +1,250 @@
+/*menu*/
+.cbp-spmenu a:hover {
+color: #777777;
+font-family: IntelRegular;
+}
+nav a[href='?mod=usr2session&ac=r_home']{padding-top:20px}
+#user_name p {
+	font-size: 1.2em;
+	color: #585858;
+	padding-top: 10px;
+	text-align: center;
+	font-family: IntelBold;
+	text-transform: capitalize;
+	clear: left;
+}
+.menu_central {
+	text-align: center;
+	color: #929292;
+	padding: 10px;
+	background: #ececec;
+	font-size: 14px;
+	padding-bottom: 30px;
+}
+.menu_central img {
+	padding-top: 20px;
+}
+
+.cbp-spmenu-vertical a, .cbp-spmenu a {
+	font-size: inherit;
+}
+
+.cbp-spmenu-vertical a img, .cbp-spmenu a img {
+	width: 2.3em;
+}
+
+.name_icon {
+	font-size: 0.8em;
+}
+/*nuevo*/
+h3.acronym {
+	text-transform: uppercase;
+	font-size: 1.8em;
+	font-family: IntelRegular;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align:center;
+}
+/*--------------*/
+.position_ div {
+	display: inline-table;
+	font-size: 1.3em;
+	font-weight:400;
+	margin-left: 0px;
+	width: 25%;
+}
+.position_ div.number_rank ,.position_ div.number_score{
+	background-repeat:no-repeat;
+	height: 32px;
+	padding-top: 0.5em;
+}
+.number_rank {
+	width:16px;
+	/*background-image:url('../img/rank_menu.png');*/
+	float: left;
+	padding-left:20px;
+	background-position:22px top;
+}
+.number_score {
+	/*background-image:url('../img/points_menu.png');*/
+	padding-right:20px;
+	background-position:0px 0px;
+}
+
+.avatar_img {
+width: 75px;
+margin-right: 5px;
+}
+section.question24{
+	background-color:#0071c5;
+	height:100%;
+}
+.s_acronym {
+	background-color: #0071c5;
+}
+.s_acronym section.question {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+section.question article { height: 100%; }
+.cbp-spmenu-push-toright {
+left: 245px;
+}
+.cbp-spmenu-left {
+left: -245px;
+}
+.cbp-spmenu-vertical {
+width: 245px;
+height: 100%;
+top: 0;
+z-index: 1000;
+}
+
+
+/*nuevo*/
+.acronym_options {
+	height: 45%;
+	/*border: 15px solid #06447e;*/
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/*--------*/
+.acronym_options.otro24 #answer {
+	overflow: hidden;
+}
+.acronym_options #answer {
+	width: 100%;
+	height: 100%;
+}
+.acronym_options:active {
+	/*border: 15px solid white;*/
+	/*margin-bottom: 31pt;*/
+}
+form#acronym {
+	height: 100%;
+}
+/*nuevo*/
+#tla_btn {
+	border: 0px;
+}
+
+#acronym_title { text-align: center; font-size: 1.1em; font-family: IntelRegular; padding-top: 10px; }
+/*--------*/
+
+
+.q_label.acronym_input::-webkit-input-placeholder {
+	color: white;
+	font-weight :bold;
+	opacity: 0.5;
+  	filter:  alpha(opacity=50);
+}
+.q_label.acronym_input:-moz-placeholder {
+	color: white;
+	font-weight: bold;
+	opacity: 0.5;
+  	filter:  alpha(opacity=50);
+
+}
+.q_label.acronym_input::-moz-placeholder {
+	color: red;
+	font-weight: bold;
+	opacity: 0.5;
+  	filter:  alpha(opacity=50);
+
+}
+.q_label.acronym_input:-ms-input-placeholder {
+	color: white;
+	font-weight: bold;
+	opacity: 0.5;
+  	filter:  alpha(opacity=50);
+
+}
+
+
+.acronym_input {
+	font-size: 2.1em;
+	border: 15px solid #06447e;
+	padding: 0;
+	text-align: center;
+	font-family: GloriaHallelujah;
+}
+
+.main.acronym_main {
+	background: #06447f;
+	text-align: center;
+}
+/*navigation arrow*/
+.navigation_arrow {
+	/*background-color: #06447e;*/
+	display: inline-block;
+	padding: 16px;
+	border-radius: 8px;
+	font-size: 17pt;
+	height: 31px;
+	padding-top: 8px;
+	padding-bottom: 2px;
+}
+.acronym_input:focus, .acronym_input:hover{
+	outline:none;
+}
+
+.navigation_table {
+	background-color:#0A70C5;
+}
+
+
+/*comments and questions*/
+.box_gray_sent{
+	display: table;
+	overflow: hidden;
+	width: 100%;
+	background-color:#b4b4b4;
+	text-align:center;
+	height:50%;
+	width:100%;
+	margin:0 0 25%;
+	padding:0;
+}
+.box_text_sent {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 50px 15px 20px;
+	margin: 0px auto;
+	width: 100%;
+}
+.box_text_sent p {
+	text-align:center;
+}
+.box_text_sent p {
+	font-family: Intel;
+	font-weight: 100;
+	color: white;
+	font-size: 28pt;
+}
+
+.modal {
+	height: 415px;
+	position: absolute;
+	width: 10000px;
+	left: 0px;
+	top: 0px;
+/*	overflow-y: hidden;
+	overflow-x: scroll;*/
+}
+.tutorial_images{
+	width:480px;
+}
+img.tutorial_screen {
+	width:480px;
+	height:700px;
+	border:1px solid red:
+}
+.tutorial_container {
+	border:1px solid blue:
+	-webkit-transition:0.3s all;
+	-moz-transition:0.3s all;
+	transition:ease 0.3s all;
+}

@@ -1,0 +1,52 @@
+ <!--CONTENT_START-->
+ <div class="principal_container activities">
+      <div id="bg_image"><img src="./media/img/cityscape.jpg"></div>
+    <div class="main">
+      <section class="buttonset">
+        <button type="button" id="showLeftPush" class=""><img src="./media/img/nav-btn.png"></button>
+      </section>
+      <section class="title">
+        <h3>Intel NEO</h3>
+      </section>     
+      <section class="img_header">
+        <a href="?mod=usr2session&amp;ac=r_leader_board"><img src="./media/img/rank_header.png" alt="" class="h_img" style="margin-right:8px;"></a>
+      </section>
+      [#notification]
+    </div>
+    <!-- end header-->
+
+    <div class="content container topbar">
+
+      <div id="current-activity" class= "row">
+          <div class="col-xs-12 col-md-6 center-block"><img src="./media/img/activities.png"></div>
+      </div>
+
+      <div class= "row">
+        <div id="welcome_msg" class="col-xs-8 col-md-6 center-block">
+            <p>Welcome!</p>
+        </div>
+      </div>
+
+    </div>
+    <!--end .container-->
+
+
+        <div id="tabs" class="col-xs-12 col-md-8 center-block">
+
+          <input id="more-tab" type="radio" name="tab-group" checked="checked">
+          <label id="label1" for="more-tab">active</label>
+          <input id="completed-tab" type="radio" name="tab-group">
+          <label id="label2" for="completed-tab">completed</label>
+
+          <div id="tabs_container">
+            [#completed]
+            [#incomplete]
+          </div>
+          <!--end #tabs_container-->
+        </div>
+        <!--end #tabs-->
+
+  </div>
+  <!--end-principal_container-->
+
+ <!--CONTENT_END-->

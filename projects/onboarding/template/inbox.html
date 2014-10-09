@@ -1,0 +1,49 @@
+<!--CONTENT_START-->
+<script type="text/javascript">
+    window.totalMessages = [#activity_count];
+</script>
+<style type="text/css">.inbox.row{margin-top:3.15em;}</style>
+<div class="principal_container comments">
+	<div class="main comments">
+		<section class="buttonset">
+			<button type="button" id="showLeftPush"><img src="./media/img/nav-btn.png"></button>
+		</section>
+		<section class="title">
+			<h3>Comments &amp; Questions</h3>
+		</section>
+		<section class="img_header">
+			<a href="?mod=usr2session&ac=r_leader_board"><img src="./media/img/rank_header.png" alt="" class="h_img" style="margin-right:4px;"></a>
+		</section>
+		[#notification]
+	</div>
+	<div class="content container topbar">
+		<div id="[#activity_count]" class="inbox row">
+			<div class="inbox_menu">
+				<a href="?mod=usr2session&ac=r_questions_and_comments" class="menu_i">INBOX</a>
+				<a href="?mod=usr2session&ac=r_write"><img src="./media/img/img_inbox.png" alt="" class="img_inbox"></a>
+			</div>
+			<div class="clear"></div>
+            
+            <div class="messages-container">
+			    <!--LOOP_START-->
+			    <div class="[#class_name]">
+				    <a href="?mod=usr2session&ac=r_view_message&message_id=[#id]">
+					    <article class="article_cq">
+						    <div class="new_m"><div class="s_new"></div></div>
+						    <div>
+							    <h3 class="title_person">[#source]</h3>
+						    </div>
+						    <div class="hour">
+							    [#creation_time]
+						    </div>
+					    </article>
+				    </a>
+			    </div>
+			    <!--LOOP_END-->
+            </div>
+            <div class="alert-no-messages alert alert-info" role="alert">
+                <p>0 messages in your inbox</p>
+            </div>
+		</div>
+	</div>
+	<!--CONTENT_END-->
