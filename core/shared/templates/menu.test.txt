@@ -1,0 +1,223 @@
+<?php
+$template = array(7) {
+  [""]=>
+  array(1) {
+    [0]=>
+    string(54) "<span class=standard_text>Usuario:Administrator</span>"
+  }
+  ["Administrator"]=>
+  array(31) {
+    [0]=>
+    string(80) "<a class='standard_link make_link menu_link' href='?mod=usr&ac=all'>Usuarios</a>"
+    [1]=>
+    string(78) "<a class='standard_link make_link menu_link' href='?mod=role&ac=all'>Roles</a>"
+    [2]=>
+    string(89) "<a class='standard_link make_link menu_link' href='?mod=privilege&ac=all'>Privilegios</a>"
+    [3]=>
+    string(94) "<a class='standard_link make_link menu_link' href='?mod=usr2role&ac=all'>Roles por Usuario</a>"
+    [4]=>
+    string(96) "<a class='standard_link make_link menu_link' href='?mod=role2priv&ac=all'>Privilegos por Rol</a>"
+    [5]=>
+    string(73) "<a class='standard_link make_link menu_link' href='?mod=edit'>Cadenas</a>"
+    [6]=>
+    string(92) "<a class='standard_link make_link menu_link' href='?mod=edit&ac=cf'>Configuraci&oacute;n</a>"
+    [7]=>
+    string(92) "<a class='standard_link make_link menu_link' href='?mod=edit&ac=add_field'>Agregar Campo</a>"
+    [8]=>
+    string(92) "<a class='standard_link make_link menu_link' href='?mod=util&ac=sql_console'>Consola SQL</a>"
+    [9]=>
+    string(85) "<a class='standard_link make_link menu_link' href='?mod=log&ac=read_only'>Eventos</a>"
+    [10]=>
+    string(86) "<a class='standard_link make_link menu_link' href='?mod=view&ac=add'>Agregar Vista</a>"
+    [11]=>
+    string(86) "<a class='standard_link make_link menu_link' href='?mod=view&ac=copy'>Copiar Vista</a>"
+    [12]=>
+    string(92) "<a class='standard_link make_link menu_link' href='?mod=doc&ac=doc'>Documentaci&oacute;n</a>"
+    [13]=>
+    string(84) "<a class='standard_link make_link menu_link' href='?mod=nav&ac=tables'>Navegador</a>"
+    [14]=>
+    string(88) "<a class='standard_link make_link menu_link' href='?mod=util&ac=diagnose'>Integridad</a>"
+    [15]=>
+    string(79) "<a class='standard_link make_link menu_link' href='?mod=help&ac=help'>Ayuda</a>"
+    [16]=>
+    string(94) "<a class='standard_link make_link menu_link' href='?mod=usr&ac=edit_profile'>Editar Perfil</a>"
+    [17]=>
+    string(95) "<a class='standard_link make_link menu_link' href='?mod=edit&ac=drop_field'>edit/drop_field</a>"
+    [18]=>
+    string(92) "<a class='standard_link make_link menu_link' href='?mod=util&ac=install_manager'>manager</a>"
+    [19]=>
+    string(99) "<a class='standard_link make_link menu_link' href='?mod=doc&ac=data_dictionary'>data_dictionary</a>"
+    [20]=>
+    string(87) "<a class='standard_link make_link menu_link' href='?mod=doc&ac=data_dict'>data_dict</a>"
+    [21]=>
+    string(94) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=agregar'>orden de trabajo</a>"
+    [22]=>
+    string(96) "<a class='standard_link make_link menu_link' href='?mod=util&ac=broken_fields'>broken_fields</a>"
+    [23]=>
+    string(119) "<a class='standard_link make_link menu_link' href='?mod=parcela&ac=interface_editor'>Editor de Interfases Contables</a>"
+    [24]=>
+    string(105) "<a class='standard_link make_link menu_link' href='?mod=afectacion&ac=feed_me'>alimentar afectaciones</a>"
+    [25]=>
+    string(104) "<a class='standard_link make_link menu_link' href='?mod=item_orden&ac=random'>Crear Datos Aleatorios</a>"
+    [26]=>
+    string(89) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=random'>order.random</a>"
+    [27]=>
+    string(102) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=denormalize'>denormalizar ordenes</a>"
+    [28]=>
+    string(90) "<a class='standard_link make_link menu_link' href='?mod=tarea&ac=random'>tareas.random</a>"
+    [29]=>
+    string(93) "<a class='standard_link make_link menu_link' href='?mod=item_orden&ac=reporte1'>reporte 1</a>"
+    [30]=>
+    string(90) "<a class='standard_link make_link menu_link' href='?mod=parcela&ac=reporte2'>reporte 2</a>"
+  }
+  ["sif74_admin"]=>
+  array(37) {
+    [0]=>
+    string(89) "<a class='standard_link make_link menu_link' href='?mod=actividad&ac=all'>Actividades</a>"
+    [1]=>
+    string(81) "<a class='standard_link make_link menu_link' href='?mod=arbol&ac=all'>Arboles</a>"
+    [2]=>
+    string(99) "<a class='standard_link make_link menu_link' href='?mod=buena_practica&ac=all'>Buenas Practicas</a>"
+    [3]=>
+    string(104) "<a class='standard_link make_link menu_link' href='?mod=calidad_de_sitio&ac=all'>Calidades de sitios</a>"
+    [4]=>
+    string(115) "<a class='standard_link make_link menu_link' href='?mod=e_historial_del_terreno&ac=all'>Historiales del terreno</a>"
+    [5]=>
+    string(92) "<a class='standard_link make_link menu_link' href='?mod=e_inventario&ac=all'>Inventarios</a>"
+    [6]=>
+    string(88) "<a class='standard_link make_link menu_link' href='?mod=e_plantula&ac=all'>Plantulas</a>"
+    [7]=>
+    string(84) "<a class='standard_link make_link menu_link' href='?mod=especie&ac=all'>Especies</a>"
+    [8]=>
+    string(102) "<a class='standard_link make_link menu_link' href='?mod=estado_orden&ac=all'>Estados de la Ordenes</a>"
+    [9]=>
+    string(89) "<a class='standard_link make_link menu_link' href='?mod=geo_rodal&ac=all'>Geo Rodales</a>"
+    [10]=>
+    string(84) "<a class='standard_link make_link menu_link' href='?mod=geo_via&ac=all'>Geo Vias</a>"
+    [11]=>
+    string(82) "<a class='standard_link make_link menu_link' href='?mod=predio&ac=all'>Predios</a>"
+    [12]=>
+    string(98) "<a class='standard_link make_link menu_link' href='?mod=item_orden&ac=all'>Items de la ordenes</a>"
+    [13]=>
+    string(102) "<a class='standard_link make_link menu_link' href='?mod=nucleo_forestal&ac=all'>Nucleos Forestales</a>"
+    [14]=>
+    string(81) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=all'>Ordenes</a>"
+    [15]=>
+    string(83) "<a class='standard_link make_link menu_link' href='?mod=origen&ac=all'>Origenes</a>"
+    [16]=>
+    string(84) "<a class='standard_link make_link menu_link' href='?mod=parcela&ac=all'>Parcelas</a>"
+    [17]=>
+    string(108) "<a class='standard_link make_link menu_link' href='?mod=preparacion_terreno&ac=all'>Preparacion terrenos</a>"
+    [18]=>
+    string(89) "<a class='standard_link make_link menu_link' href='?mod=proveedor&ac=all'>Proveedores</a>"
+    [19]=>
+    string(114) "<a class='standard_link make_link menu_link' href='?mod=razon_incumplimiento&ac=all'>Razones de Incumplimiento</a>"
+    [20]=>
+    string(81) "<a class='standard_link make_link menu_link' href='?mod=rodal&ac=all'>Rodales</a>"
+    [21]=>
+    string(80) "<a class='standard_link make_link menu_link' href='?mod=tarea&ac=all'>Tareas</a>"
+    [22]=>
+    string(82) "<a class='standard_link make_link menu_link' href='?mod=tarifa&ac=all'>Tarifas</a>"
+    [23]=>
+    string(103) "<a class='standard_link make_link menu_link' href='?mod=tipo_de_plantula&ac=all'>Tipos de plantulas</a>"
+    [24]=>
+    string(96) "<a class='standard_link make_link menu_link' href='?mod=tipo_de_punto&ac=all'>Tipos de punto</a>"
+    [25]=>
+    string(96) "<a class='standard_link make_link menu_link' href='?mod=tipo_de_suelo&ac=all'>Tipos de suelo</a>"
+    [26]=>
+    string(100) "<a class='standard_link make_link menu_link' href='?mod=tipo_de_terreno&ac=all'>Tipo de terrenos</a>"
+    [27]=>
+    string(92) "<a class='standard_link make_link menu_link' href='?mod=tipo_de_via&ac=all'>Tipo de vias</a>"
+    [28]=>
+    string(96) "<a class='standard_link make_link menu_link' href='?mod=tipo_muestreo&ac=all'>Tipos muestreo</a>"
+    [29]=>
+    string(100) "<a class='standard_link make_link menu_link' href='?mod=unidad_medida&ac=all'>Unidades de Medida</a>"
+    [30]=>
+    string(100) "<a class='standard_link make_link menu_link' href='?mod=uso_del_terreno&ac=all'>Usos del terreno</a>"
+    [31]=>
+    string(76) "<a class='standard_link make_link menu_link' href='?mod=via&ac=all'>Vias</a>"
+    [32]=>
+    string(103) "<a class='standard_link make_link menu_link' href='?mod=clase_proveedor&ac=all'>Clases de Proveedor</a>"
+    [33]=>
+    string(119) "<a class='standard_link make_link menu_link' href='?mod=parcela&ac=interface_editor'>Editor de Interfases Contables</a>"
+    [34]=>
+    string(91) "<a class='standard_link make_link menu_link' href='?mod=afectacion&ac=all'>Afectaciones</a>"
+    [35]=>
+    string(102) "<a class='standard_link make_link menu_link' href='?mod=tipo_afectacion&ac=all'>Tipo de Afectación</a>"
+    [36]=>
+    string(90) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=pendiente'>Pendientes</a>"
+  }
+  ["Usuario"]=>
+  array(9) {
+    [0]=>
+    string(99) "<a class='standard_link make_link menu_link' href='?mod=parcela&ac=load_csv'>Cargar Archivo CSV</a>"
+    [1]=>
+    string(95) "<a class='standard_link make_link menu_link' href='?mod=rodal&ac=load_csv'>importar rodales</a>"
+    [2]=>
+    string(92) "<a class='standard_link make_link menu_link' href='?mod=nucleo_forestal&ac=tree'>Nucleos</a>"
+    [3]=>
+    string(94) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=agregar'>orden de trabajo</a>"
+    [4]=>
+    string(88) "<a class='standard_link make_link menu_link' href='?mod=parcela_map&ac=svg_out'>Mapa</a>"
+    [5]=>
+    string(119) "<a class='standard_link make_link menu_link' href='?mod=parcela&ac=interface_editor'>Editor de Interfases Contables</a>"
+    [6]=>
+    string(91) "<a class='standard_link make_link menu_link' href='?mod=afectacion&ac=all'>Afectaciones</a>"
+    [7]=>
+    string(90) "<a class='standard_link make_link menu_link' href='?mod=parcela&ac=reporte2'>reporte 2</a>"
+    [8]=>
+    string(93) "<a class='standard_link make_link menu_link' href='?mod=item_orden&ac=reporte1'>reporte 1</a>"
+  }
+  ["Forestal"]=>
+  array(18) {
+    [0]=>
+    string(90) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=pendiente'>Pendientes</a>"
+    [1]=>
+    string(90) "<a class='standard_link make_link menu_link' href='?mod=parcela&ac=reporte2'>reporte 2</a>"
+    [2]=>
+    string(93) "<a class='standard_link make_link menu_link' href='?mod=item_orden&ac=reporte1'>reporte 1</a>"
+    [3]=>
+    string(103) "<a class='standard_link make_link menu_link' href='?mod=clase_proveedor&ac=all'>Clases de Proveedor</a>"
+    [4]=>
+    string(92) "<a class='standard_link make_link menu_link' href='?mod=nucleo_forestal&ac=tree'>Nucleos</a>"
+    [5]=>
+    string(94) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=agregar'>orden de trabajo</a>"
+    [6]=>
+    string(100) "<a class='standard_link make_link menu_link' href='?mod=unidad_medida&ac=all'>Unidades de Medida</a>"
+    [7]=>
+    string(82) "<a class='standard_link make_link menu_link' href='?mod=tarifa&ac=all'>Tarifas</a>"
+    [8]=>
+    string(80) "<a class='standard_link make_link menu_link' href='?mod=tarea&ac=all'>Tareas</a>"
+    [9]=>
+    string(81) "<a class='standard_link make_link menu_link' href='?mod=rodal&ac=all'>Rodales</a>"
+    [10]=>
+    string(114) "<a class='standard_link make_link menu_link' href='?mod=razon_incumplimiento&ac=all'>Razones de Incumplimiento</a>"
+    [11]=>
+    string(89) "<a class='standard_link make_link menu_link' href='?mod=proveedor&ac=all'>Proveedores</a>"
+    [12]=>
+    string(84) "<a class='standard_link make_link menu_link' href='?mod=parcela&ac=all'>Parcelas</a>"
+    [13]=>
+    string(102) "<a class='standard_link make_link menu_link' href='?mod=nucleo_forestal&ac=all'>Nucleos Forestales</a>"
+    [14]=>
+    string(82) "<a class='standard_link make_link menu_link' href='?mod=predio&ac=all'>Predios</a>"
+    [15]=>
+    string(102) "<a class='standard_link make_link menu_link' href='?mod=estado_orden&ac=all'>Estados de la Ordenes</a>"
+    [16]=>
+    string(84) "<a class='standard_link make_link menu_link' href='?mod=especie&ac=all'>Especies</a>"
+    [17]=>
+    string(86) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=cerrado'>Cerradas</a>"
+  }
+  ["Ordenes de Trabajo"]=>
+  array(2) {
+    [0]=>
+    string(90) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=pendiente'>Pendientes</a>"
+    [1]=>
+    string(86) "<a class='standard_link make_link menu_link' href='?mod=orden&ac=cerrado'>Cerradas</a>"
+  }
+  ["<!---->"]=>
+  array(1) {
+    [0]=>
+    string(84) "<a class='standard_link make_link  logout_link menu_link' href='?logout=1'>Salir</a>"
+  }
+}
+?>

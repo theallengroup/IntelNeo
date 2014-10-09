@@ -1,0 +1,54 @@
+t@b free license
+
+version 3, november 26, 2005
+
+copyright (c) 2005, t@b software systems, all 
+rights reserved. 
+
+the name "t@b" always refers to us: tab software
+systems, the makers of the software products which
+are subject to this license. we reserve the right
+to extend custom license terms, based on request.
+
+the word "package" in this document refers to the
+single computer file in which the software 
+product was originally obtained from the t@b 
+website/homepage.
+
+
+1. WARRANTIES:
+
+there are no warranties, neither expressed nor 
+implied, for this package, its merchantability or 
+fitness for any particular purpose. you may use this 
+package at your own risk. t@b will not be held 
+liable for any damage incurred through proper or 
+improper use of this software package.
+
+
+2. MODIFYING THIS PACKAGE:
+
+you may not modify any part of the package 
+distribution file. you may not disassemble any 
+programs within this software package (distribution 
+file). you may not rename any component file of this 
+package.
+
+
+3. TERMS AND CONDITIONS FOR USING THIS PACKAGE:
+
+this software is free for any kind of use.
+
+
+4. TERMS AND CONDITIONS FOR DISTRIBUTING THIS PACKAGE:
+
+you may by any means, re-distribute this software
+package, if you a) distribute the un-altered package
+file as it was originally obtained from the t@b 
+website and b) you only charge the recipient for
+the service of distributing this package and c)
+this package is not distributed as component of
+a product which is itself subject to a license fee
+or a purchase price.
+
+

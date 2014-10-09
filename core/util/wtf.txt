@@ -1,0 +1,15 @@
+TODO.txt:include/std.php:		\todo security? wtf is this about?
+doc/todo.grep.txt:TODO.txt:include/std.php:		\todo security? wtf is this about?
+func/get_ed.func.php:	//wtf is this?
+i18n/EN.include.php:			'form_ed1'=>		'Edit2',//wtf???
+i18n/EN.include.php:			'form_help'=>'Help',//wtf again?
+include/std.php:		#wtf!
+include/std.php:				///\todo 255 wtf is going on here: this is bad?
+include/std_view.php:	\todo 1106  security? wtf is this about?
+include/std_view.php:			#AH? wtf is this? what do i mean? 
+shared/components/tree.js:			alert(all[i].id+":wtf???");
+shared/components/tree.js:			alert(all1[i].id+":wtf???");		
+shared/controller/usr.controller.php:				//wtf? FIX
+shared/i18n/EN/usr.i18n.php:			'rtitle'=>'Change Password',//wtf
+shared/i18n/EN/usr.i18n.php:			'form_help_login2'=>'Click 2 Login',//wtf?
+shared/i18n/EN/usr.i18n.php:			'table_gender'=>'M',//wtf

@@ -1,0 +1,638 @@
+page STD SYSTEM Documentation and Reference Manual 
+hbm update incomplete 
+
+fix logic @ get_kids.func
+
+
+233 allow form redisplay, with invalid input 
+
+234 make some proofs of concepts.
+
+
+
+
+1126 event onInstall if(no sites that match ($_SERVER[http_host])){ 1. create new config from default 2. edit config }
+
+
+include form.php ? only when actually USED ??its almost always used... 
+
+allow detection, and user setting. standard language stuff.
+
+
+put more. styles
+
+
+allow show/hide debug info 
+
+on delete r u sure you'll delete: xxx with gender 
+
+page STD SYSTEM Documentation and Reference Manual 
+001 sort seems to be injectable!, must validate within valid fields, and then put ID if the field provided isn't valid 
+
+page STD SYSTEM Documentation and Reference Manual 
+boolean datatype: list y/n
+
+
+page STD SYSTEM Documentation and Reference Manual 
+[important]: action.register_privileges: for a given action: usr/edit_user -> the following privileges must be enabled: catch: this might or might not be enabled. if the user is autentified, and is redirected, but has no permitio, we can assume its iour fault (removed him from XYZ/edit item/5) therefore, we should provide (a) a blank screen indicating, that the user is gone for too long, but is not "not autorized" but autorized! (and has to go trough the whole process again.)
+
+
+page STD SYSTEM Documentation and Reference Manual 
+fix adv option system 
+
+page STD SYSTEM Documentation and Reference Manual 
+1126 event onGenerate 
+
+page STD SYSTEM Documentation and Reference Manual 
+001 help in checklist for EACH item. 
+
+page STD SYSTEM Documentation and Reference Manual 
+on delete r u sure you'll delete: xxx with gender belongs to the allows posibilities in box:style :: iframe,shadow,round: 
+
+page STD SYSTEM Documentation and Reference Manual 
+allow template.headerinfo, so we can see the names of the fields, in the field AND in the template.
+
+
+page STD SYSTEM Documentation and Reference Manual 
+make a list of error codes, and equivalents. 
+
+Member common::common () 
+help count instances that derive from me. 
+
+Member common::error ($description, $code='') 
+LOGGING.
+
+
+add to db, file whatever 
+
+allow error_ class namespace to be customizable 
+
+Member common::error ($description, $code='') 
+errorlevel, send email, error LOG 
+
+Member common::get_i_msg ($message, $message_stuff=array()) 
+find and destroy 
+
+Member common::group_table ($op=array()) 
+group_table takes an array, options.data, and creates a nice Table. 
+
+Member common::jsc ($component) 
+254 css component, seeks in local, then shared media folder.
+
+
+Member common::make_link ($options, $text, $class='link', $title='') 
+title, tooltip, etc. 
+
+use this EVERYWHERE. 
+
+samples 
+
+Member common::table ($data, $headers='none', $options=array()) 
+allow ful expandion, not just 2. 
+
+Member edit_model::ac_add_field () 
+drop fields alter table aviso drop die;
+
+
+Member edit_model::ac_add_field () 
+6001 allow add foreign fields 
+
+Member edit_model::ac_csql () 
+6100 allow fields to set size, allow fields to have maxlength 
+
+Member edit_model::ac_drop_field () 
+implement 
+
+Class form 
+fieldset+legend, label for field 
+
+BLOCKs (field.block?) 
+
+block show/hide 
+
+Member form::add_submit_button ($button) 
+button's help 
+
+Member form::bare_fields () 
+1112 use this in lots of places, like out(), and re_out() //templated_output returns array(visible_fields, labels,hidden_fields,head,foot,buttons,title)
+
+
+Member form::bare_fields () 
+1111 allow this to test: footer,header AND separators.
+
+
+Member form::bare_fields () 
+TODO 1110 selected item $f["value"] 
+
+Member form::bare_fields () 
+allow multiple forms! 
+
+Member form::out () 
+allow multiple formats (JSON?,XML?) 
+
+save to file, form cacheing. 
+
+allow groups 
+
+reuse Xform framework. ???
+
+
+Member form::out () 
+add checklist events so that they are run before/after my evts
+
+
+Member privilege_manager::ap_login () 
+1201 Login? => i18n 
+
+Member privilege_manager::rebuild_privileges () 
+how to not get bitten by perfornamce? if one of the module's string file is broken, you'll notice inmediatelly. 
+
+Class privilege_model 
+automagically add this.has_many to ALL vh_record views. (that's what it's for!) 
+
+Class report 
+268 excel like partitioning: take a group of data and part it equally in X parts, display the results in different colors. this is an excelent module. 
+
+270 calculated fields? 
+
+275 calculated fields in VIEWS in general? 
+
+Member report::display_report () 
+269 if exists: alias, etc 
+
+
+Member report::display_report () 
+271 prepend total, sum count, etc 
+
+Member report::display_report () 
+274 if actions are available, then get fid=1, and make links! 
+
+Member role2priv_model::ac_new2 () 
+on update, and on delete
+
+
+Member std::filter_highlight_search_terms ($number, $record) 
+filter_highlight_search_terms() 1121 those that are only searched on ONE place, must be highlited in only ONE place (a unique field) so I need to pass field information along with the words... 
+
+Member std::filter_link ($number, $record) 
+this goes in the ME section? 
+
+other filters, in the View section?
+
+
+fix view:edit_all 
+
+Member std::filter_link ($number, $record) 
+filter_link 241 how do we disable this?
+
+
+Member std::filter_link ($number, $record) 
+filter_link 1122 link class? 
+
+Member std::add_to_view ($view_name, $field) 
+239 poc view FIELD.name: 1+1 :
+
+
+Member std::b2l_link () 
+237 viewport ids, and viewport identification 
+
+Member std::child_array ($id) 
+add hbm 
+
+Member std::gc ($fn, $args=array()) 
+280 if not exist, trow runtime exception,and be done with it this is like a DLL! 
+
+Member std::get_permissions_list ($module='__all') 
+instead of all, .* (regexp) (slower, but cooler) 
+
+where can I sue that? submods / * ??
+
+
+, WE KNOW WERE YOU COME FROM, go aback to list is possible!!! 
+
+Member std::get_permissions_list ($module='__all') 
+if not loaded 
+
+Member std::get_views () 
+243 how are specifid views inside files handled? 
+
+Member std::grid ($fields, $data, $options=array()) 
+autodetect?
+
+
+Member std::grid ($fields, $data, $options=array()) 
+add nobr 
+
+Member std::id2mod ($field_name) 
+232 _id3 removes _id from a string. 
+
+Member std::is_foreign_id ($field) 
+232 searches for _id at the end of a a string 
+
+Member std::is_id ($field) 
+232 _id2, _id3 searches for _id at the end of a a string 
+
+Member std::load ($base_module) 
+load input 
+
+better error msg
+
+
+Member std::load_current_module () 
+3001 try to find a way not to load modules twice, when so requested, and reuse the already loaded ones.??? 
+
+3002 remove odd characters like pipe, .. etc from mod name. This runs always as : std_base, no table context or current module is available at this point yet. this might toss error std003
+
+
+Member std::load_file ($mod, $mode='full') 
+257 change / to # ? 
+
+Member std::load_module_views ($mod, $dir='.') 
+255 wtf is going on here: this is bad? 
+
+Member std::parse_model_info ($field_array) 
+262 allow user to set more add_key?() 
+
+Member std::restore_value ($input_name) 
+2 242 remove dependencies with foreign_select 
+
+Member std::save_value ($input_name, $value) 
+258 implement 
+
+Member std::std ($c=1) 
+129372 allow override 
+
+190283 make this unnecesarry on load_file ) 
+
+Member std::testme () 
+245 document, and explain how to add stuff to the std class. alias for testme sample usage 
+
+Member std::validate ($data, $field) 
+302 countless validation schemes., telephone, ac, etc 
+
+303 validate data within range, make sense feb31 
+
+304 send an error message.
+
+
+Member std::validate ($data, $field) 
+1120 validate data within range, make sense feb31 
+
+Member std::validate ($data, $field) 
+1120 validate data within range, make sense feb31 
+
+Member std::view_expand ($fields) 
+238 can we extend this concept, into stuff like: ac* -> ac_a ac_b ac_c, or variable fieldes, etc? 
+
+Class std_record 
+put ed here 
+
+Class tab 
+horizontal, vertical. to call this, include this file like this: require_once(INCLUDE_DIR.'std_tab.php'); 
+
+Member tab::add_tab ($title, $content) 
+allow multiple instances 
+
+allow multiple instances, with equal tab names to work. 
+
+Member usr_model::ac_edit_profile () 
+3100 show also roles available 
+
+Member usr_model::ac_login () 
+SET: This is the Login Screen!
+
+
+Member usr_model::ac_new_user2 () 
+validate role is valid role id. IS THIS DONE??? 
+
+Class util_model 
+mod_del 
+
+mod edit 
+
+mod_stats 
+
+Class view 
+300 consider moving get_i18n_text to common, consider table problems, if any a view object 
+
+301 explain what the caller must implement: [WHICH]/all std functions
+
+
+Member view::get_advanced_search_form ($fields) 
+turn dates into date-ranges: [ymd] becomes [ymd to ymd] 
+
+add option [exact match/contains/starts with/ends with] 
+
+define what you want: custom fields on a view: field can Appear like this: on view on search thingie on view_fields mini-form. is default display.
+
+
+Member view::get_presets_form ($available_fields, $view_name='default') 
+if nothing is selected, create the selection 
+
+Member view::get_presets_form ($available_fields, $view_name='default') 
+validate. 
+
+Member view::get_simple_search_form () 
+a combo box with all previous searches. 
+
+Member view::ml () 
+4003 logo means main->menu()! to run a view use: run_view() 
+
+4002 view functions
+
+
+1102 search 
+
+1103 send to template 
+
+1104 allow customization, @ app level OK , mod level OK , & view level NO (kindof, using view.type: view handlers) 
+
+1105 checkbox for selecting multiple items 
+
+1106 security? wtf is this about? 
+
+1107 multiple filters, separated by ,
+
+
+allow serialization: get_ml() 
+
+add help here:link. 
+
+make_link instead of A
+
+
+Member view::ml () 
+1101 ALLOW SESSION DATE TO BE FIRST OVER the other data. 
+
+Member view::ml () 
+9876 
+
+Member view::ml () 
+if @ last page, and there are previous pages, and there are no records, then go back one page
+
+
+Member view::ml () 
+if not aliased check, s THIS ERROR IS DEPRECATED UNTIL WE FIND A WAY OF DETERMINING IF THE FIELD AINT THERE; NOT EVEN W/ ALIAS. 
+
+Member view::ml () 
+3010 sadly, i must replicate functionality described @ foreign_select, fix that (somehow...) 
+
+Member view::ml () 
+3020 MUST SOMEHOW GET THE HEADERS DATA FROM FOREGN_SELECT 
+
+Member view::ml () 
+allow customization of list in link, so you can have different views right there. 
+
+Member view::ml () 
+allow multiple filters, separated by , or if filter is array, etc 
+
+Member view::ml () 
+ADD hidden inputs for state, like sort field, sort ac, and search term. to t6 
+
+Member view::ml () 
+1005 allow CHECKBOX in templates (for now it's only in table()) 
+
+Member view::ml () 
+1004 own style, LIST 
+
+Member view::pagination_scheme ($options) 
+10928 multiple pagination schemes. 
+
+10289 what if im beyond, or below the limit? 
+
+Member view::set_presets ($ar, $udf_view='default') 
+multiple views get saved. field select 
+
+Member view::set_search_words ($words) 
+disable search term highlighting (and searching)
+
+
+Member view::set_search_words ($words) 
+improve this, use class
+
+
+Member view::valid_page () 
+302 log minor hack attempt? 
+
+Member view::valid_sort_direction ($sd) 
+301 _GET soft direction must be changes, to allow multiple MLs in a form. Which Sort Direction: GET, default VIEW, or simply ID, in that order.
+
+
+Member view::$help 
+allow user settings to override $i18n_std['list'] 
+
+Class view_model 
+translate: 
+
+set visibility: some actions to be insisible (from certain view_types) (result actions, like edit2, delete2 new2, etc (FROM view)) item order!
+
+
+Member view_model::ac_copy () 
+7100 unsafe 
+
+Member view_model::ac_copy () 
+7100 unsafe 
+
+Member view_model::ac_copy () 
+7100 unsafe 
+
+Member view_model::ac_copy () 
+7100 unsafe 
+
+Member view_model::ac_copy () 
+7101 delete role2priv, add stuff 
+
+Member view_model::i18n_add_file_key ($module_name, $key, $value) 
+move code to array2file 
+
+move this to i18n mod array module 
+
+Member $data 
+better system: do not display 
+
+Member check_all 
+masc/fem selects all checkbox elements from a checklist input 
+
+fix bug at generator 
+
+Member $i18n 
+:remove old exports 
+
+export just what you just saw, people might not have permission to see it all, but just some records. also, redirect using header:location. 
+
+Member std_tree_add 
+instead of this, we could use a small form, to appear next to the mouse?
+
+
+Member $i18n 
+:remove old exports 
+
+export just what you just saw, people might not have permission to see it all, but just some records. also, redirect using header:location. 
+
+Member common::get_shadow_start ($shadow_folder='shadow', $align='left', $width='') 
+1130 p10 add support for iframe fix borders. 
+
+1131 p10 fix width handling 
+
+Member form::input_checklist ($f) 
+1001 gender check_all 
+
+1002 custom text check_all values is a list of valid options, that will be checked TRUE. f has: options, and values.
+
+
+Member form::input_combobox ($f) 
+1115 allow multpple cocurrences on a form 
+
+1116 allow multiple forms. 
+
+1117 remove ", '
+and any weird char that JS might find extraneous 
+
+1118 disable input.enter 
+
+Member form::input_date ($field_data) 
+1113 showdate ymd 
+
+1114 a small calendar in JS
+
+
+294 ,\"'.$field_data['form_name'].'\" 
+
+Member form::input_date ($field_data) 
+294 form_name!!!! 
+
+Member form::input_label ($f) 
+put a small icon, for help here, when help data is found whenever a MASK attribute is available replacing % with the actual data will be attempted:
+
+
+Member form::input_list ($field_data) 
+optgroup 
+
+Member form::tree2json ($tree, $path, $level=0) 
+293 tree2json: make this [optionally] bandwidth-friendly! a{b:c,d:{g:h}}; 
+
+Member std::dsl ($fields='all', $restrict='1=1 ', $exclude_fields=array(), $title='table_plural', $filter='none') 
+1302 privilege. on VIEW: check if view exists.
+
+
+Member std::dsl ($fields='all', $restrict='1=1 ', $exclude_fields=array(), $title='table_plural', $filter='none') 
+1129 allow eclude_fields and allcombination to be used in other places, as a replacement for field repetition! and fields_exclude() 
+
+Member std::e_dsl ($fields='all', $restrict='1=1 ', $exclude_fields=array(), $title='table_plural', $filter='none') 
+1301 remove 1=1 where possible 
+
+Member std::form_from_fields ($ac, $fields, $options) 
+1125 this function is very limited, and not very configurable, making it useless, improve it.
+
+
+Member std::form_from_fields ($ac, $fields, $options) 
+261 make this a func 
+
+Member std::mkl ($options, $text) 
+3002 make function get view:this or this 
+
+Member std::find ($field, $value) 
+1124 implement find 
+
+Member std::i18n_std ($key) 
+retrieves keys from the i18n_std array (please stop using global $i18nstd) 
+
+Member std::parse_view ($view, $current_record_id) 
+291 this is a WEAK method, must a find a better one! 
+
+Member std::log ($txt, $lvl='NONE') 
+add error level filters on VIEW 
+
+Group Privilege 
+make an object to handle all this stuff?
+
+
+Member std::flush_privileges () 
+1128 make this work in priv add, etc 
+
+Member std::menu () 
+do something when is_guest ==1 (like a guest menu?9
+
+
+Member std::menu () 
+do something about it. (user being Guest) 
+
+Member std::aliased_fields ($which_fields) 
+236 IMPLEMENT THIS FUNCTION:which field are aliased aliased_fields()??? 
+
+Member std::explain_foreign_field ($field_name) 
+265 if all info is goven, do we *need* to load the mod?, what if it doesn't exists? what if we don't want it? @ 
+
+Member std::field_deport ($field) 
+235 some projects have not defined an $ifield, since they are lod syntax, must check for those. 
+
+263 how to support multiple DB interoperation? 
+
+Member std::hbm_fields ($record_id, $mode='create') 
+document 
+
+Member std::vh_feed ($view) 
+1200 must fix: get_view_contents() 
+
+Member std::vh_grid ($view) 
+finish 
+
+Member std::vh_record ($view) 
+save register, in Session, then check if the information is the same, before insert, if different, warn about changes. 
+
+on view myself, there must be a , that send you to edit2own, so you cant tamper that either. listown / editmyself, that checks that you dont edit other's people stuff
+
+
+Member std::vh_record ($view) 
+allow foreign with ranges. WARNING: this function used to warn about new fields, it no longer does, please keep that in mind. 
+
+Member std::vh_report ($view) 
+1200 must fix: get_view_contents() 
+
+Member std::get_valid_modules ($dir='.', $mode='controller') 
+244 make that possible [config?] $mode: controller, or i18n, or whatever 
+
+Group actions 
+249 grid, calendar, etc 
+
+Member view::get_field_info ($fields) 
+allow per/app another template file
+
+
+Member view::get_info ($i18n_key, $view_fields) 
+wtf?
+
+
+Group presets 
+views have fields that show ONLY on list, not by default.
+
+
+Member view::get_presets ($udf_view='default') 
+901 validate $_GET 
+
+902 validate fields in range (in available) 
+
+903 save that to .rc.php file ME READONLY 
+
+Page 
+1119 example required
+
+
+Page Field Structure 
+required 
+
+range 
+
+
+
+Page Filter 
+1123 example code!
+
+
+Page load_file 
+1127 further docs, examples
+
+
+Page load_file 
+256 check if class was created
+

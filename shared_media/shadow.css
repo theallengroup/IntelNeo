@@ -1,0 +1,21 @@
+.wrap1, .wrap2, .wrap3 {
+  display:inline-table;
+  /* \*/display:block;/**/
+}
+.wrap1 {
+  float: left;
+  background:url(./shadow2/shadow.gif) right bottom no-repeat;
+}
+.wrap2 {
+  background:url(./shadow2/corner_bl.gif) -4px 100% no-repeat;
+}
+.wrap3 {
+  padding:0 16px 16px 0;
+  background:url(./shadow2/corner_tr.gif) 100% -4px no-repeat;
+}
+.wrap3 img {
+  display:block;
+  border:1px solid #ccc;
+  border-color:#efefef #ccc #ccc #efefef;
+}
+

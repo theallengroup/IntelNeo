@@ -1,0 +1,18 @@
+class.
+
+	log
+	events
+	kid scheme
+		1. count, links to items
+		2. show items below
+		3. 
+		
+		
+		
+		ID:
+		_id1
+		_id2
+		_id(\d*)
+		
+		
+		std_create_usr

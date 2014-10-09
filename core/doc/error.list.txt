@@ -1,0 +1,89 @@
+/**
+\page error Error List
+
+\section std003 std003
+	module load faluire
+
+@section cannot_load_base cannot_load_base 
+	Imposible cargar m&oacute;dulo base: [base_module]',
+
+@section unable_to_continue unable_to_continue 
+	Imposible Continuar.',
+
+@section no_fields_error no_fields_error 
+	Error Grave: no hay Campos en el M&oacute;dulo.',
+
+@section no_such_view no_such_view 
+	No existe la Vista:<u>[#view]</u>',
+
+@section no_role no_role 
+	ERROR: no existe el ROL.',
+
+@section no_auth_ac no_auth_ac 
+	El Usuario actual no posee los privilegios suficientes para realizar esta acci&oacute;n:<br/><br/><u>[#ac]</u><br/><br/> Por favor, contacte al administrador del sistema, si cree que necesita privilegios, para realizar esta acci&oacute;n',
+
+@section no_auth_mod no_auth_mod 
+	El Usuario actual no posee los privilegios suficientes para realizar esta acci&oacute;n.<br/>Este error puede deberse a varias causas: <ul><li>el usuario intentó nuna operación no permitida para su perfil<li>La sesión estuvo inactiva durante mucho tiempo</ul><br/>para resolver este problema, intente: <a href="?">Ingresar de nuevo al sistema</a>',
+
+@section unable_to_fetch_privileges unable_to_fetch_privileges 
+	Imposible obtener privilegios',
+
+@section submitted_action_not_found submitted_action_not_found 
+	No se encuentra la acci&oacute;n.',
+
+@section no_view_handler no_view_handler 
+	No existe Manejador de Vista.',
+
+@section no_views_file no_views_file 
+	El archivo de Vistas no Existe',
+
+@section no_views no_views 
+	El modulo no posee Vistas.',
+
+@section no_strings_file no_strings_file 
+	Error: El archivo de Idioma no existe: [#file]",
+
+@section no_rel_file no_rel_file 
+	Error: El archivo de Conecci&oacute;nes no existe: [#file]",
+
+@section no_foreign_field_found no_foreign_field_found 
+	Error: no hay campo foráneo de conneción en la tabla: [#mod]",
+
+@section no_db_connection no_db_connection 
+	Imposible conectarse a la base de datos:',
+
+@section delete delete 
+	Imposible Borrar, el registro no existe.',
+
+@section no_such_action no_such_action 
+	Error, no existe la Acci&oacute;n:[#ac] en el m&oacute;dulo:[#mod].',
+
+@section no_such_record no_such_record 
+	El registro no existe/fue borrado',
+
+@section application_corrupt application_corrupt 
+	Error: es necesario re-generar, contacte al administrador.<br/>Campo desconocido:',/*TODO when does this happen?*/
+
+@section application_corrupt2 application_corrupt2 
+	La aplicación usa campos que no existen en la base de datos, es necesario re-generar, contacte al administrador.<br/><br/>Campo desconocido:',
+
+@section header header 
+	Error de la Aplicación',
+
+@section header_code header_code 
+	Error de la Aplicación <br/>Codigo:',
+
+@section no_such_module no_such_module 
+	Error: el módulo no existe / no se encuentra el Archivo, por favor contacte al administrador.<br/><br/>Módulo:[#mod]',
+
+@section no_fields no_fields 
+	Error, no hay cadenas en el formulario.',
+
+@section nohelp4input nohelp4input 
+	Error, no hay texto de ayuda para el siguiente campo:<br/>Nombre:[#name]<br/>LLave:[#key]",
+
+
+*/
+
+%s/\(.*\)'=>\('\|"\)\(.*\)/@section \1 \1 \r\t\3\r/
+

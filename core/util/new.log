@@ -1,0 +1,38 @@
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:15: Warning: Unsupported xml/html tag <u> found
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:15: Warning: explicit link request to 'view' could not be resolved
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:15: Warning: Unsupported xml/html tag </u> found
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:21: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:21: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:21: Warning: Unsupported xml/html tag <u> found
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:21: Warning: explicit link request to 'ac' could not be resolved
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:21: Warning: Unsupported xml/html tag </u> found
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:21: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:21: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:24: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:24: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:42: Warning: explicit link request to 'file' could not be resolved
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:45: Warning: explicit link request to 'file' could not be resolved
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:48: Warning: explicit link request to 'mod' could not be resolved
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:57: Warning: explicit link request to 'ac' could not be resolved
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:57: Warning: explicit link request to 'mod' could not be resolved
+c:/AppServ/www/project0.2.7.0/core/doc/error.list.txt:63: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+c:/AppServ/www/project0.2.7.0/core/include/std.php:996: Warning: unable to resolve reference to `config' for \ref command
+c:/AppServ/www/project0.2.7.0/core/include/common.php:417: Warning: The following parameters of common::get_shadow_start($shadow_folder,$align,$width) are not documented:
+  parameter shadow_folder
+  parameter align
+c:/AppServ/www/project0.2.7.0/core/include/common.php:83: Warning: The following parameters of common::cut($txt,$len) are not documented:
+  parameter len
+<unknown>:-1: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+c:/AppServ/www/project0.2.7.0/core/include/common.php:582: Warning: Unsupported xml/html tag <style> found
+c:/AppServ/www/project0.2.7.0/core/include/common.php:583: Warning: Unsupported xml/html tag <style> found
+c:/AppServ/www/project0.2.7.0/core/include/common.php:584: Warning: Unsupported xml/html tag <style> found
+c:/AppServ/www/project0.2.7.0/core/include/common.php:585: Warning: Unsupported xml/html tag <style> found
+c:/AppServ/www/project0.2.7.0/core/include/common.php:586: Warning: Unsupported xml/html tag <style> found
+c:/AppServ/www/project0.2.7.0/core/include/common.php:587: Warning: Unsupported xml/html tag <style> found
+c:/AppServ/www/project0.2.7.0/core/include/form.php:879: Warning: explicit link request to '___blockX' could not be resolved
+c:/AppServ/www/project0.2.7.0/core/include/form.php:744: Warning: Unsupported xml/html tag <form> found
+c:/AppServ/www/project0.2.7.0/core/include/std.php:1594: Warning: Found unknown command `\dsr'
+c:/AppServ/www/project0.2.7.0/core/include/std.php:1612: Warning: Found unknown command `\filter_trough'
+c:/AppServ/www/project0.2.7.0/core/include/std.php:1601: Warning: The following parameters of std::dsr($fields='all',$restrict='1=1 ',$exclude_fields=array(),$title='table_plural',$filter='none') are not documented:
+  parameter title
+c:/AppServ/www/project0.2.7.0/core/include/std.php:1594: Warning: Found unknown command `\dsr'

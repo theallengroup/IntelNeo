@@ -1,0 +1,58 @@
+This is the default table structure
+
+privilege
++--------+--------------+------+-----+---------+----------------+
+| Field  | Type         | Null | Key | Default | Extra          |
++--------+--------------+------+-----+---------+----------------+
+| id     | int(10)      |      | PRI | NULL    | auto_increment |
+| name   | varchar(50)  | YES  |     | NULL    |                |
+| action | varchar(200) | YES  |     | NULL    |                |
++--------+--------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+role
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| id    | int(10)     |      | PRI | NULL    | auto_increment |
+| name  | varchar(50) | YES  |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+2 rows in set (0.03 sec)
+
+role2priv
++--------------+---------+------+-----+---------+----------------+
+| Field        | Type    | Null | Key | Default | Extra          |
++--------------+---------+------+-----+---------+----------------+
+| id           | int(10) |      | PRI | NULL    | auto_increment |
+| role_id      | int(10) | YES  |     | NULL    |                |
+| privilege_id | int(10) | YES  |     | NULL    |                |
++--------------+---------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+usr
++--------------+--------------+------+-----+---------+----------------+
+| Field        | Type         | Null | Key | Default | Extra          |
++--------------+--------------+------+-----+---------+----------------+
+| id           | int(10)      |      | PRI | NULL    | auto_increment |
+| name         | varchar(50)  | YES  |     | NULL    |                |
+| email        | varchar(80)  | YES  |     | NULL    |                |
+| password     | varchar(100) | YES  |     | NULL    |                |
+| login_count  | int(10)      | YES  |     | NULL    |                |
+| last_login   | datetime     | YES  |     | NULL    |                |
+| created_date | datetime     | YES  |     | NULL    |                |
+| last_ip      | varchar(20)  | YES  |     | NULL    |                |
++--------------+--------------+------+-----+---------+----------------+
+8 rows in set (0.00 sec)
+
+usr2role
++---------+---------+------+-----+---------+----------------+
+| Field   | Type    | Null | Key | Default | Extra          |
++---------+---------+------+-----+---------+----------------+
+| id      | int(10) |      | PRI | NULL    | auto_increment |
+| usr_id  | int(10) | YES  |     | NULL    |                |
+| role_id | int(10) | YES  |     | NULL    |                |
++---------+---------+------+-----+---------+----------------+
+3 rows in set (0.01 sec)
+
+
+

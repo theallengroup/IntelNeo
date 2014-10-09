@@ -1,0 +1,51 @@
+
+
+s/type'=>'[^']*'/type'=>'label'/
+
+normal		escape
+insersion	insert
+comandos	:
+
+		:q	quit
+		:q!	salir sin guardar
+		:w	write
+		:sp	dividir la ventana
+		:e 	edit 		abrir un archivo
+		:tabnew
+		:tabe
+		ctrl+pgup / pgdn	moverse entre pestañas
+		
+		/ regexp
+		n siguiente match
+		N anterior	
+
+		normal:
+		* buscar la siguiente ocurrencia de la palabra bajo el cursor
+		# buscar la ocurrencia anterior de la la palabra bajo el cursor
+
+visual
+hdhdhdh
+asd
+asd
+as
+d
+as
+das
+d
+asd
+a
+sd
+
+
+
+
+
+
+
+
+
+ashdasgd
+
+
+
+

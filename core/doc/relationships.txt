@@ -1,0 +1,34 @@
+here is a sample relationship file:
+
+<?php
+
+	global $std_rel;
+	$std_rel['estado']=array(
+		'has'=>array(
+			'por_hacer'=>'por_hacer',
+			)	
+		
+	);
+
+		
+?>
+
+a simple HBM (Has many and Belongs to Many) file
+
+key: the name of the target table, 
+value: connecting table.	
+
+<?php
+
+	global $std_rel;
+	$std_rel['person']=array(
+		
+		'hbm'=>array (
+			'team' => 'person_in_team',
+		),
+
+	);
+
+		
+?>
+

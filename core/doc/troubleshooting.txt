@@ -1,0 +1,36 @@
+Warning: load_file(.././._base.php): failed to open stream: No such file or directory in c:\appserv\www\project0.2.7.1\core\include\std.php on line 3109
+means you are doing load_file('path') instead of load_file('dir/mod')
+be careful
+
+
+no fields can be called mod.
+
+
+if you get this SQL just after generating:
+
+SELECT 
+	novedad.id AS novedad_id,
+	novedad.lote_id AS novedad_lote_id,
+	lote.@none AS lote_@none,
+	novedad.codigo_concepto AS novedad_codigo_concepto,
+	novedad.codigo_empleado AS novedad_codigo_empleado,
+	novedad.nombre_empleado AS novedad_nombre_empleado,
+	novedad.valor1 AS novedad_valor1,
+	novedad.ajuste AS novedad_ajuste,
+	novedad.fecha_creacion AS novedad_fecha_creacion
+ FROM 
+	novedad,
+	lote
+ WHERE 
+	( 1 = 1 AND
+	lote.id = novedad.lote_id ) AND (1=1)
+ ORDER BY novedad.id ASC
+ LIMIT 10 OFFSET 0 
+
+
+notice this:
+
+@none
+
+invalid sql!
+modify the controller accordingly, .gen was unable to figure out a name field.

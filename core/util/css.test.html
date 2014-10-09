@@ -1,0 +1,70 @@
+<head>
+<style id=a>
+
+a,td {
+color:red;
+}
+#a {
+color:blue
+}
+.a:hover , .b:focus td.c{
+color:red
+}
+.a{
+color:red;
+}
+
+.d{
+color:blue
+}
+.damn 
+{
+color:yellow;
+}
+
+</style>
+<script>
+/* Css parser
+ * f3l
+ * auditor400+crap@gmail.com
+ */
+
+var css=document.getElementById("a").innerHTML;
+var x=0;
+var lc=0;
+var status='out';
+var classes=new Array();
+var ids=new Array();
+var tags=new Array();
+/*
+while(x<css.length){
+	
+	//comemnts
+	
+
+	//find a class
+	//find an ID
+
+
+	if(status=='out'){
+		if(css[x]=='{'){
+			status='in';
+
+		}	
+	}else if(css[x]=='}')
+
+
+	x++;
+}
+*/
+function onload1(){
+	var head = document.getElementsByTagName("head")[0]; 
+	script = document.createElement('script'); 
+	script.id = 'uploadScript'; 
+	script.type = 'text/javascript'; 
+	script.src = "testentry.js"; 
+	head.appendChild(script)
+}
+</script>
+</head><body onload = "onload1()">
+</body></html>

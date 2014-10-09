@@ -1,0 +1,44 @@
+
+
+
+extends
+fields
+if_not_exists = create
+kids = model
+type
+title
+actions
+side_actions
+down_actions
+restrict
+sort_field
+sort_direction
+template = por_hacer/edit_por_hacer',
+filter
+shortcuts	an array of ("search_expression" =>i18n_key)
+column_style
+current_action
+no_menu=1
+show_shadow => none
+help=list_all2_help
+
+
+for reports:
+		'report_level'=>'detail',
+			field.group_level
+
+
+//does this work?
+		'include'=>array(
+			#view 1
+			array(
+				'view'=>'query_log/logs_per_query',
+				'override'=>array(
+					'restrict'=>'@mine',
+				),
+			),
+
+		),
+
+
+

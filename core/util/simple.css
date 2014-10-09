@@ -1,0 +1,59 @@
+label {
+	display:block;
+}
+.shadow-center {
+	padding:20px;
+}
+.shadow-out {
+}
+.shadow-top {
+	background-image:url(../../shared_media/borders/round/top.gif);
+	width:100%;
+	background-position:top;
+	background-repeat:repeat-x;
+}
+.shadow-left {
+	background-image:url(../../shared_media/borders/round/left.gif);
+	width:100%;
+	background-position:left;
+	background-repeat:repeat-y;
+}
+.shadow-right {
+	background-image:url(../../shared_media/borders/round/right.gif);
+	width:100%;
+	background-position:right;
+	background-repeat:repeat-y;
+}
+.shadow-top-left {
+	background-image:url(../../shared_media/borders/round/topLeft.gif);
+	width:100%;
+	background-position:top left;
+	background-repeat:no-repeat;
+}
+.shadow-top-right {
+	background-image:url(../../shared_media/borders/round/topRight.gif);
+	width:100%;
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+
+.shadow-bottom {
+	background-image:url(../../shared_media/borders/round/bottom.gif);
+	width:100%;
+	background-position:bottom;
+	background-repeat:repeat-x;
+}
+.shadow-bottom-left {
+	background-image:url(../../shared_media/borders/round/bottomLeft.gif);
+	width:100%;
+	background-position:bottom left;
+	background-repeat:no-repeat;
+}
+.shadow-bottom-right {
+	background-image:url(../../shared_media/borders/round/bottomRight.gif);
+	width:100%;
+	background-position:bottom right;
+	background-repeat:no-repeat;
+}
+

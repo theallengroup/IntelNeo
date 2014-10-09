@@ -1,0 +1,14 @@
+The book "Bitter EJB" sort of turned me away from it.
+
+Format your harddisk and install Linux. You will hate it for 3 months, after 
+6 months you'll be at least as productive as you are now and soon after 
+you'll hope you never have to go back to MS. Its just so much easier to 
+automate stuff, to link events to processes, to move files and data around.
+
+
+The locking mechanism 
+should be implemented in the database itself. To grant access to a user, 
+just set a ownership column in the table to the user id. To release a 
+resource, set the column to null.
+
+

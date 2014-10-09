@@ -1,0 +1,13 @@
+digraph g{
+index->base[label="using_std_load()"]
+
+base->app_init
+
+app_init->head
+app_init->load_current_module
+app_init->head
+
+load_current_module
+
+
+}

@@ -1,0 +1,1 @@
+remove empty field in model.xml

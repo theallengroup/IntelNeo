@@ -1,0 +1,873 @@
+2007.txt:TODO/TODO.html:2. email a todos @valerie + @josue
+2007.txt:TODO/TODO.html:todown
+2007.txt:TODO/TODO.html:todown
+2007.txt:config/cf.php:	/** \todo 3030 allow multiple languages, a lang per user */
+2007.txt:doc/std.changelog.txt:todo: add help/help & edit/add_field to install.sql
+2007.txt:doc/std.changelog.txt:todo: set install.sql edit/ed not edit/
+2007.txt:doc/std.changelog.txt:todo: view.new.[#now] is broken
+2007.txt:doc/std.changelog.txt:todo: warn on user same as password @ user.new2
+2007.txt:doc/std.changelog.txt:todo: problem with search: categoría padre:compra
+2007.txt:doc/std.changelog.txt:todo: search operators, le, ge etc
+2007.txt:doc/std.changelog.txt:todo: allow that inconfig!
+2007.txt:doc/std.changelog.txt:todo allow generator to create users.install.sql
+2007.txt:doc/std.changelog.txt:todo: dsl,dsr, etc go to std_simple
+2007.txt:doc/todo.editor.txt:todo 
+2007.txt:doc/todo.grep.txt:TODO.txt:include/common.php:	 * \todo add support for iframe fix borders.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/common.php:	 * \todo fix width handling
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		* \todo put a small icon, for help here, when help data is found
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		 * \todo optgroup
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		 * @todo make this bandwidth-friendly!
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		 * \todo showdate ymd
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		 * \todo a small calendar in JS
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		\todo allow multiple formats (JSON?,XML?)
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		\todo save to file, form cacheing.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		\todo allow groups
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		\todo reuse Xform framework. ???
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:			\todo add checklist events so that they are run before/after my evts
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		\todo button's help
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		 \todo required
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		 \todo range
+2007.txt:doc/todo.grep.txt:TODO.txt:include/form.php:		 \todo 
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo 001 help in checklist for EACH item.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo include form.php ? only when actually USED ??its almost always used...
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo allow detection, and user setting. standard language stuff.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo allow show/hide debug info
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo on delete r u sure you'll delete: xxx with gender
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo put more. styles
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo allow template.headerinfo, so we can see the names of the fields, in the field AND in the template.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo make a list of error codes, and equivalents.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo allow show/hide debug info
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo on delete r u sure you'll delete: xxx with gender
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo multiple vies get saved.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 *\todo this goes at RIGHT
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			///\todo if nothing is selected, create the selection
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo add error level filters on VIEW*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo do something when is_guest ==1 (like a guest menu?9
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:				/** \todo do something about it. (user being Guest) */
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo i18n
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo try to find a way not to load modules twice, 
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo remove odd characters like pipe, .. etc from mod name.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo 923 check for existance of such function.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:				/*WHAT IS THIS??? todo remove html */
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo allow multiple ac
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo views have fields that show ONLY on list, not by default.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo 901 validate $_GET
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo 902 validate fields in range (in available)
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo 903 save that to .rc.php file
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo load input
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo countless validation schemes., telephone, ac, etc 
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo validate data within range, make sense feb31
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:				/** \todo validate data within range, make sense feb31*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo allow restrictions on foreign fields, restrict. (a lot of editown goes here, right?)
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo title, tooltip, etc.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo use this EVERYWHERE.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:					/** \todo if not in list, warn user about changed database, send email admin*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:						 * \todo add foreign stuff here
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo finish 
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 *	\todo save register,  in Session, then check if the information is the same, before insert, if different, warn about changes.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo on view myself, there must be a , that send you to edit2own, so you cant tamper that either. listown / editmyself, that checks that you dont edit other's people stuff
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo allow foreign with ranges.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo grid, calendar, etc
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo click on "id" to "check all", 
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo confirm page
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:								/** \todo handle GUEST case.*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:				/** \todo look for allows lists, show that one.*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo :remove old exports
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo add 'back2list'
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:				/** \todo check if not in array warn, program malformation.*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo data validations according to Type
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:				if($field['type']=='password'){	/** \todo more validation schemes, a validation function, validate dates within ranges, validate stuff within ranges, validate within lists, etc, remove errors like feb 31, etc.*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:						$failed_field_value=$_GET[$field['name']];/**\todo  i18n*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		* \todo better system: do not display
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		 \todo autodetect?
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo add nobr
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo ALLOW SESSION DATE TO BE FIRST OVER the other data.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo search
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo send to template
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo allow customization, @ app level OK , mod level OK , & view level NO (kindof, using view.type: view handlers)
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo checkbox for selecting multiple items
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo security? wtf is this about?
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo multiple filters, separated by ,
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo on foreign collumn: click to view item.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			 * \todo if @ last page, and there are previous pages, and there are no records, 
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			 * \todo if not aliased check, s
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			/**\todo sadly, i must replicate functionality described @ foreign_select, fix that (somehow...)*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			/**\todo MUST SOMEHOW GET THE HEADERS DATA FROM FOREGN_SELECT*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:				\todo allow customization of list in link, so you can have different views right there.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:				\todo add help here:link.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:				\todo make_link instead of A
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			/** \todo ADD hidden inputs for state, like sort field, sort ac, and search term. to t6
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			 * \todo allow user settings to override $i18n_std['list']
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			///\todo ALLOW THIS PROCCESS TO BE SIMPLER!.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:				/** \todo allow CHECKBOX in templates (for now it's only in table())*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:						'style'=>'list',			/** \todo own style, LIST*/
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo multiple pagination schemes.
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo make this a range: 1 ... x-5 , x-4 ... x , x+1,x+2, ... x+5, last
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo what if im beyond, or below the limit?
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo check if class was created
+2007.txt:doc/todo.grep.txt:TODO.txt:include/std.php:			\todo 9876  add prefix
+2007.txt:doc/todo.grep.txt:TODO.txt:projects/shared/controller/view.controller.php: * todo translate: 
+2007.txt:doc/todo.grep.txt:TODO.txt:projects/shared/controller/view.controller.php: * todo set visibility: some actions to be insisible (from certain view_types)
+2007.txt:doc/todo.grep.txt:TODO.txt:projects/gen/gen_base.php:#todo link to application on step5
+2007.txt:doc/todo.grep.txt:TODO.txt:projects/gen/controller/gen.controller.php:			#todo save field length.?
+2007.txt:doc/todo.grep.txt:TODO.txt:projects/gen/controller/gen.controller.php:			$f->add_field(array('type'=>'text','name'=>"appfolder",'value'=>"app001"));/*todo auto numeric*/
+2007.txt:doc/todo.grep.txt:TODO.txt:tags:failed_field_value	include/std.php	/^						$failed_field_value=$_GET[$field['name']];\/**\\todo  i18n*\/$/;"	v
+2007.txt:doc/todo.grep.txt:TODO.txt:util/doxigen_log.txt:Adding todo/test/bug list items...
+2007.txt:doc/todo.grep.txt:TODO.txt:util/doxigen_log.txt:Generating docs for page todo...
+2007.txt:doc/todo.grep.txt:TODO.txt:util/gen.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+2007.txt:doc/todo.grep.txt:TODO.txt:util/instructions.txt:todo.
+2007.txt:doc/todo.grep.txt:TODO.txt:util/1gen.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+2007.txt:doc/tricks.txt:	\todo
+2007.txt:doc/tricks.txt:	@todo
+2007.txt:excel_files/Campa%F1as2007_01_16__17_36_16979abf804694ac211cb9c2904a3517cd.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+2007.txt:excel_files/Campanas2007_01_16__17_32_51050e8261ed4f00a22fb0415b850b6e1d.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+2007.txt:excel_files/Campañas2007_01_16__17_30_46b2e95777867b7ae01b236d5841f51635.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+2007.txt:excel_files/Campañas2007_01_16__17_31_384fb4bd9cf69b0d15103c9c3d5f783876.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+2007.txt:excel_files/Campañas2007_01_16__17_34_08ac856f31a5117c9620ae9e3cabaa1037.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+2007.txt:excel_files/Campañas2007_01_16__17_34_2854b74e2818bebd5682e6ccd89aaf9e11.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+2007.txt:excel_files/Campañas2007_01_16__17_35_0246d45746702809b514b163e4a27fc04e.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+2007.txt:excel_files/instance1_campaign2007_01_16__17_37_35f895ba4316e54aa41f0e32189a55f6aa.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+2007.txt:func/get_ed.func.php: *	 \todo 240 poorly documented
+2007.txt:func/get_ed.func.php:			/** \todo if not in list, warn user about changed database, send email admin*/
+2007.txt:func/get_ed.func.php:				 * \todo add foreign stuff here
+2007.txt:func/get_ed.func.php:						/// \todo 264 WHY is this repeated from foreign_select() ?????
+2007.txt:func/get_ed.func.php:	///\todo a better way \TODO ALLOW THIS ON OTHER CONTEXTS (WHICH ONES?)
+2007.txt:func/get_ed.func.php:	 * \todo 252 some way of disabling this!
+2007.txt:func/get_ed.func.php:		\todo 253 which fields?
+2007.txt:func/get_ed.func.php:			//TODO \todo a better not so hacky way of doing this! (needs load_file (reflection))
+2007.txt:func/get_kids.func.php:				//\todo 259 expose thie functionality (AR proxy?)
+2007.txt:func/get_kids.func.php:				//\todo 260 MUST NOT USE THIS ON INSERT VIEWS
+2007.txt:func/get_kids.func.php:							#todo fix edit_all: must be configurable
+2007.txt:func/get_kids.func.php:		///\todo allow user to set HBM on view level
+2007.txt:func/get_kids.func.php:					"i18n_help"=>"something...",/// \todo 004 here
+2007.txt:func/get_kids.func.php:					/// \todo 002 must be able to determine WTF are the fields!
+2007.txt:func/get_kids.func.php:					"value"=>$me->rel["hbm"],/// \todo allow user to set THIS to: something else.
+2007.txt:func/get_view.func.php:							/** \todo handle GUEST case.*/
+2007.txt:func/parse_search_string.func.php:	 * \todo find a way to load this OPTIONALLY
+2007.txt:func/parse_search_string.func.php:	 * \todo 258 this goes in ml()
+2007.txt:func/parse_search_string.func.php:	//\todo
+2007.txt:i18n/EN.include.js.php: * \todo 295 TODO allow this to be first PHP then js, so we can edit it too.
+2007.txt:i18n/EN.include.php:				/// @todo 1131 add descriptive parameters to all error codes.
+2007.txt:i18n/EN.include.php:				/** @todo 1132 when does this happen?*/
+2007.txt:i18n/ES.include.js.php: * \todo 295 TODO allow this to be first PHP then js, so we can edit it too.
+2007.txt:i18n/ES.include.php:			'help___search_term'=>'Este término será buscado en todos los campos del mismo tipo. si el término es numérico, se buscarán solamente en los campos numéricos, si el término es alfanumérico se buscará en los campos alfanuméricos, etc.',
+2007.txt:i18n/ES.include.php:			'help_plural'=>'La forma plurar se usa en la funcion de mostrar todos los registros (view:list_all ) ',
+2007.txt:i18n/ES.include.php:				/// @todo 1131 add descriptive parameters to all error codes.
+2007.txt:include/actions/create.php:	* \todo better system: do not display
+2007.txt:include/actions/delete2.php:	 * \todo 250 use i_error
+2007.txt:include/actions/delete_selected.php:	 * \todo click on "id" to "check all", 
+2007.txt:include/actions/delete_selected.php:	 * \todo confirm page
+2007.txt:include/actions/edit2.php:	 * \todo add 'back2list'
+2007.txt:include/actions/edit2.php:			/** \todo check if not in array warn, program malformation.*/
+2007.txt:include/actions/gstat.php:				#todo:what do you want here5555555
+2007.txt:include/actions/new2.php:			/** \todo 10001 more validation schemes, a validation function, 
+2007.txt:include/actions/new2.php:			 * \todo 10001 validate dates within ranges, 
+2007.txt:include/actions/new2.php:			 * \todo 10001 validate stuff within ranges, 
+2007.txt:include/actions/new2.php:			 * \todo 10001 validate within lists, etc, 
+2007.txt:include/actions/new2.php:			 * \todo 10001 remove errors like feb 31, etc.
+2007.txt:include/actions/new2.php:			///@todo fix vulnerability: check for __hbm
+2007.txt:include/actions/new2.php:						//todo WHICH IS MY FIELD?
+2007.txt:include/actions/new2.php:						//todo error __file__ info...
+2007.txt:include/actions/xls.php:	 * \todo :remove old exports
+2007.txt:include/actions/xls.php:	 * \todo export just what you just saw, people might not have permission to see it all, but just some records.
+2007.txt:include/common.php:		\todo title, tooltip, etc.
+2007.txt:include/common.php:		\todo use this EVERYWHERE.
+2007.txt:include/common.php:		\todo samples
+2007.txt:include/common.php:	 * \todo LOGGING.
+2007.txt:include/common.php:	 \todo errorlevel, send email, error LOG
+2007.txt:include/common.php:	 \todo add to db, file whatever
+2007.txt:include/common.php:	 \todo allow error_ class namespace to be customizable
+2007.txt:include/common.php:	 * \todo help count instances that derive from me. 
+2007.txt:include/common.php:		//old system \todo find and destroy
+2007.txt:include/common.php:	 *		//old system \todo find and destroy
+2007.txt:include/common.php:	 * \todo 1130 p10 add support for iframe fix borders.
+2007.txt:include/common.php:	 * \todo 1131 p10 fix width handling
+2007.txt:include/common.php:		\todo group_table
+2007.txt:include/common.php:				///\todo alow ful expandion, not just 2.
+2007.txt:include/form.php: * \todo fieldset+legend, label for field
+2007.txt:include/form.php: * \todo BLOCKs (field.block?)
+2007.txt:include/form.php: * \todo block show/hide
+2007.txt:include/form.php:		 * \todo put a small icon, for help here, when help data is found
+2007.txt:include/form.php:		 * \todo 1001 gender check_all
+2007.txt:include/form.php:		 * \todo 1002 custom text check_all
+2007.txt:include/form.php:		 * \todo 1115 allow multpple cocurrences on a form
+2007.txt:include/form.php:		 * \todo 1116 allow multiple forms.
+2007.txt:include/form.php:		 * \todo 1117 remove ", '\n and any weird char that JS might find extraneous
+2007.txt:include/form.php:		 * \todo 1118 disable input.enter
+2007.txt:include/form.php:		 * \todo 1113 showdate ymd
+2007.txt:include/form.php:		 * \todo 1114 a small calendar in JS
+2007.txt:include/form.php:		 * \todo 294 form_name!!!!
+2007.txt:include/form.php:		 * \todo 294 ,\"'.$field_data['form_name'].'\"
+2007.txt:include/form.php:		 * \todo optgroup
+2007.txt:include/form.php:		 * \todo 293 tree2json: make this [optionally] bandwidth-friendly!
+2007.txt:include/form.php:		 * \todo 1119 example required
+2007.txt:include/form.php:		 * \todo 1112 use this in lots of places, like out(), and re_out() //templated_output
+2007.txt:include/form.php:		 * \todo 1111 allow this to test: footer,header AND separators.
+2007.txt:include/form.php:			//		\todo 292 js validation
+2007.txt:include/form.php:			//		\todo 291 super-duper input blocks submission on enter press, but when you leave, it goes back to normal!
+2007.txt:include/form.php:					#todo fix
+2007.txt:include/form.php:				//! \todo TODO 1110 selected item $f["value"]
+2007.txt:include/form.php:			///\todo allow multiple forms!
+2007.txt:include/form.php:		\todo allow multiple formats (JSON?,XML?)
+2007.txt:include/form.php:		\todo save to file, form cacheing.
+2007.txt:include/form.php:		\todo allow groups
+2007.txt:include/form.php:		\todo reuse Xform framework. ???
+2007.txt:include/form.php:			\todo add checklist events so that they are run before/after my evts
+2007.txt:include/form.php:		\todo button's help
+2007.txt:include/form.php:		 \todo required
+2007.txt:include/form.php:		 \todo range
+2007.txt:include/form.php:		 \todo 
+2007.txt:include/js.js:	\todo masc/fem
+2007.txt:include/js.js:	\todo fix bug at generator
+2007.txt:include/report.php: * \todo 268 excel like partitioning:
+2007.txt:include/report.php: * \todo 270 calculated fields?
+2007.txt:include/report.php: * \todo 275 calculated fields in VIEWS in general?
+2007.txt:include/report.php:		$resume_joins=array('1=1');//\todo restrict
+2007.txt:include/report.php:						///\todo 269 if exists: alias, etc
+2007.txt:include/report.php:					//\todo 273 use just one $resume_option, make multiple
+2007.txt:include/report.php:						///\todo 271 prepend total, sum count, etc
+2007.txt:include/report.php:		///\todo 274 if actions  are available, then get fid=1, and make links!
+2007.txt:include/report.php:		///\todo
+2007.txt:include/std.php: \subsection todo [Important] Stuff that Isn't done yet
+2007.txt:include/std.php: \todo  hbm update incomplete 
+2007.txt:include/std.php: \todo  fix logic @ get_kids.fucn
+2007.txt:include/std.php:	\todo 001 sort seems to be injectable!, must validate within valid fields, and then put ID if the field provided isn't valid
+2007.txt:include/std.php:	 \todo 233 allow form redisplay, with invalid input
+2007.txt:include/std.php:       \todo 234 make some proofs of concepts.
+2007.txt:include/std.php: * \todo boolean datatype: list y/n
+2007.txt:include/std.php: * \todo [important]: action.register_privileges:
+2007.txt:include/std.php:	 * todo2: save the whole GET, not just mod and ac, because we loose impotrant data like record number ID, search
+2007.txt:include/std.php:	 * \todo fix adv option system
+2007.txt:include/std.php:	 * \todo
+2007.txt:include/std.php:	 * \todo 1126 event onGenerate
+2007.txt:include/std.php:	 * \todo 1126 event onInstall
+2007.txt:include/std.php:	 * \todo 001 help in checklist for EACH item.
+2007.txt:include/std.php:	 * \todo include form.php ? only when actually USED ??its almost always used...
+2007.txt:include/std.php:	 * \todo allow detection, and user setting. standard language stuff.
+2007.txt:include/std.php:	 * \todo on delete r u sure you'll delete: xxx with gender
+2007.txt:include/std.php:	 * \todo put more. styles
+2007.txt:include/std.php:	 * \todo allow template.headerinfo, so we can see the names of the fields, in the field AND in the template.
+2007.txt:include/std.php:	 * \todo make a list of error codes, and equivalents.
+2007.txt:include/std.php:	 * \todo allow show/hide debug info
+2007.txt:include/std.php:	 * \todo on delete r u sure you'll delete: xxx with gender
+2007.txt:include/std.php:	var $silent=0;					///<whether or not to display messages on new2, et al, \\todo et al
+2007.txt:include/std.php:	 * \todo 1125 this function is very limited, and not very vonfigurable, making it useless, improve it.
+2007.txt:include/std.php:			///\todo 261 make this a func 
+2007.txt:include/std.php:	 * @todo 3002 make function get view:this or this
+2007.txt:include/std.php:	 * \todo 1302 privilege. on VIEW: check if view exists.
+2007.txt:include/std.php:		///@todo 1129 allow eclude_fields and allcombination to be used in other places, as a replacement for field repetition!
+2007.txt:include/std.php:	 * \todo 1301 remove 1=1 where possible
+2007.txt:include/std.php:	 * \todo 291 this is a WEAK method, must a find a better one!
+2007.txt:include/std.php:	/** \todo 1124 implement find*/
+2007.txt:include/std.php:	/**\todo 258 implement
+2007.txt:include/std.php:	 * \todo allow override
+2007.txt:include/std.php:	 * \todo add error level filters on VIEW*/
+2007.txt:include/std.php:			//@todo 8000 multiple action to different modules
+2007.txt:include/std.php:	 * @todo make an object to handle all this stuff?
+2007.txt:include/std.php:			//todo 4000 send fix to func
+2007.txt:include/std.php:	 * \todo 1201 Login? => i18n
+2007.txt:include/std.php:	 * \todo 1128 make this work in priv add, etc
+2007.txt:include/std.php:	 * \todo do something when is_guest ==1 (like a guest menu?9
+2007.txt:include/std.php:			/** \todo do something about it. (user being Guest) */
+2007.txt:include/std.php:	 * \todo 232 _id2, _id3
+2007.txt:include/std.php:	 * \todo 232
+2007.txt:include/std.php:		\todo 3001 try to find a way not to load modules twice, 
+2007.txt:include/std.php:		\todo 3002 remove odd characters like pipe, .. etc from mod name.
+2007.txt:include/std.php:	 * \todo instead of all, .* (regexp) (slower, but cooler)
+2007.txt:include/std.php:	 * \todo where can I sue that? submods / * ??
+2007.txt:include/std.php:					///\todo if not loaded
+2007.txt:include/std.php:					///\todo, WE KNOW WERE YOU COME FROM, go aback to list is possible!!!
+2007.txt:include/std.php:	 * \todo 280 if not exist, trow runtime exception,and be done with it
+2007.txt:include/std.php:	 * \todo 245 document, and explain how to add stuff to the std class.
+2007.txt:include/std.php:	 * \todo load input
+2007.txt:include/std.php:	 * \todo better error msg
+2007.txt:include/std.php:	 * \todo 232 _id3
+2007.txt:include/std.php:	 * \todo 302 countless validation schemes., telephone, ac, etc 
+2007.txt:include/std.php:	 * \todo 303 validate data within range, make sense feb31
+2007.txt:include/std.php:	 * \todo 304 send an error message.
+2007.txt:include/std.php:	 * \todo 1120 validate data within range, make sense feb31
+2007.txt:include/std.php:			/** \todo 1120 validate data within range, make sense feb31*/
+2007.txt:include/std.php:	 * \todo 235 some projects have not defined an $ifield, since they are lod syntax, must check for those.
+2007.txt:include/std.php:	 * \todo 263 how to support multiple DB interoperation?
+2007.txt:include/std.php:	 * \todo 265 if all info is goven, do we *need* to load the mod?,
+2007.txt:include/std.php:	 * \todo 236 IMPLEMENT THIS FUNCTION:which field are aliased aliased_fields()???
+2007.txt:include/std.php:	 * \todo 272 foreign_select() explain this better
+2007.txt:include/std.php:		\todo 267 allow restrictions on foreign fields, restrict. (a lot of editown goes here, right?)
+2007.txt:include/std.php:		$join=array('1 = 1');/// \todo 1101 do I need this?
+2007.txt:include/std.php:			/// \todo 236 memorize/cache function output,fcache()?
+2007.txt:include/std.php:	 * 	\todo 237 viewport ids, and viewport identification
+2007.txt:include/std.php:	 * \todo 238 can we extend this concept, 
+2007.txt:include/std.php:	 * \todo 239 poc view FIELD.name: 1+1 :
+2007.txt:include/std.php:		////todo function have_relations()
+2007.txt:include/std.php:					"is_late_addition"=>1,///@todo document
+2007.txt:include/std.php:					//todo configurability?
+2007.txt:include/std.php:	 * \todo 1123 example code!
+2007.txt:include/std.php:	 * \todo this goes in the ME section?
+2007.txt:include/std.php:	 * \todo other filters, in the View section?
+2007.txt:include/std.php:	 * \todo filter_link 241 how do we disable this?
+2007.txt:include/std.php:	 * \todo filter_link 1122 link class?
+2007.txt:include/std.php:				//todo6
+2007.txt:include/std.php:	 * \todo filter_highlight_search_terms() 1121 those that are only searched on ONE place, must be highlited in only ONE place (a unique field) so I need to pass field information along with the words...
+2007.txt:include/std.php:	 * \todo 2 242 remove dependencies with foreign_select
+2007.txt:include/std.php:	 * @todo 1200 must fix: get_view_contents()
+2007.txt:include/std.php:	 * \todo finish 
+2007.txt:include/std.php:	 *	\todo save register,  in Session, then check if the information is the same, before insert, if different, warn about changes.
+2007.txt:include/std.php:		\todo on view myself, there must be a , that send you to edit2own, so you cant tamper that either. listown / editmyself, that checks that you dont edit other's people stuff
+2007.txt:include/std.php:		\todo allow foreign with ranges.
+2007.txt:include/std.php:				//todo what bhappens otherwise, user entered input?
+2007.txt:include/std.php:	/** \todo 243 how are specifid views inside files handled? */
+2007.txt:include/std.php:	 * \todo 244 make that possible [config?]
+2007.txt:include/std.php:	 * \todo 245
+2007.txt:include/std.php:	 * \todo 249 grid, calendar, etc
+2007.txt:include/std.php:	 * \todo 254 css component, seeks in local, then shared media folder.
+2007.txt:include/std.php:	 \todo autodetect?
+2007.txt:include/std.php:	\todo add nobr
+2007.txt:include/std.php:				///\todo 255 wtf is going on here: this is bad?
+2007.txt:include/std.php:	 * \todo 1127 further docs, examples
+2007.txt:include/std.php:		\todo 256 check if class was created
+2007.txt:include/std.php:		\todo 9876  add prefix
+2007.txt:include/std.php:		///\todo 257 change / to # ?
+2007.txt:include/std.php:	 * \todo 262 allow user to set more add_key?()
+2007.txt:include/std.php: * @todo 1130 samples required widget
+2007.txt:include/std_record.php: * \todo put ed here*/
+2007.txt:include/std_tab.php:	 * \todo horizontal, vertical.
+2007.txt:include/std_tab.php:	 * \todo allow multiple instances
+2007.txt:include/std_tab.php:	 * \todo allow multiple instances, with equal tab names to work.
+2007.txt:include/std_view.php: * \todo 300 consider moving get_i18n_text to common, consider table problems, if any
+2007.txt:include/std_view.php: * \todo 301 explain what the caller must implement: [WHICH]/all std functions
+2007.txt:include/std_view.php:	 * \todo allow user settings to override $i18n_std['list']	
+2007.txt:include/std_view.php:	 * \todo 301 _GET soft direction must be changes, to allow multiple MLs in a form.
+2007.txt:include/std_view.php:		/** \todo 302 log minor hack attempt? */
+2007.txt:include/std_view.php:	 * \todo allow per/app another template file
+2007.txt:include/std_view.php:	 * the .....@todo wtf?
+2007.txt:include/std_view.php:		@todo 4003 logo means main->menu()!
+2007.txt:include/std_view.php:		@todo 4002 view functions
+2007.txt:include/std_view.php:	\todo 1101 ALLOW SESSION DATE TO BE FIRST OVER the other data.
+2007.txt:include/std_view.php:	\todo 1102  search
+2007.txt:include/std_view.php:	\todo 1103  send to template
+2007.txt:include/std_view.php:	\todo 1104  allow customization, @ app level OK , mod level OK , & view level NO (kindof, using view.type: view handlers)
+2007.txt:include/std_view.php:	\todo 1105  checkbox for selecting multiple items
+2007.txt:include/std_view.php:	\todo 1106  security? wtf is this about?
+2007.txt:include/std_view.php:	\todo 1107  multiple filters, separated by ,
+2007.txt:include/std_view.php:	\todo 9876
+2007.txt:include/std_view.php:	\todo allow serialization: get_ml()
+2007.txt:include/std_view.php:		 * \todo if @ last page, and there are previous pages, and there are no records, 
+2007.txt:include/std_view.php:		 * \todo if not aliased check, s
+2007.txt:include/std_view.php:		 * @todo 3010 sadly, i must replicate functionality described @ foreign_select, fix that (somehow...)
+2007.txt:include/std_view.php:		 * @todo 3020 MUST SOMEHOW GET THE HEADERS DATA FROM FOREGN_SELECT
+2007.txt:include/std_view.php:			//\todo2 must be in options: current view
+2007.txt:include/std_view.php:			\todo allow customization of list in link, so you can have different views right there.
+2007.txt:include/std_view.php:			\todo add help here:link.
+2007.txt:include/std_view.php:			\todo make_link instead of A
+2007.txt:include/std_view.php:		//\todo
+2007.txt:include/std_view.php:		///\todo allow multiple filters, separated by , or if filter is array, etc
+2007.txt:include/std_view.php:		//\todo when link filter enabled 9876
+2007.txt:include/std_view.php:		//\todo TEST 
+2007.txt:include/std_view.php:				//\todo makelink here
+2007.txt:include/std_view.php:		 * \todo ADD hidden inputs for state, like sort field, sort ac, and search term. to t6
+2007.txt:include/std_view.php:			/** \todo 1005 allow CHECKBOX in templates (for now it's only in table())*/
+2007.txt:include/std_view.php:					'style'=>'list',	/** \todo 1004 own style, LIST*/
+2007.txt:include/std_view.php:			//	///\todo allow JUST certain fields to be "searchable", to be define on the FORM.
+2007.txt:include/std_view.php:		\todo 10928 multiple pagination schemes.
+2007.txt:include/std_view.php:		\todo 10289 what if im beyond, or below the limit?
+2007.txt:include/std_view.php:	 * \todo disable search term highlighting (and searching)
+2007.txt:include/std_view.php:	 * \todo improve this, use class
+2007.txt:include/std_view.php:		///\todo a combo box with all previous searches.
+2007.txt:include/std_view.php:	 * \todo multiple views get saved.
+2007.txt:include/std_view.php:		///\todo if nothing is selected, create the selection
+2007.txt:include/std_view.php:		///\todo validate.
+2007.txt:include/std_view.php:			//\todo 6.2 except those that are marked as NOT in view by default, on the view marker
+2007.txt:include/std_view.php:	 * \todo views have fields that show ONLY on list, not by default.
+2007.txt:include/std_view.php:	 * \todo 901 validate $_GET
+2007.txt:include/std_view.php:	 * \todo 902 validate fields in range (in available)
+2007.txt:include/std_view.php:	 * \todo 903 save that to .rc.php file
+2007.txt:include/std_view.php:	 * \todo turn dates into date-ranges: [ymd] becomes [ymd to ymd]
+2007.txt:include/std_view.php:	 * \todo add option [exact match/contains/starts with/ends with]
+2007.txt:include/std_view.php:	 * \todo define what you want: custom fields
+2007.txt:include/std_view.php:			//\WARNING todo2 bug fix fuck!!!!THIS get_ed might go somewherelse!
+2007.txt:shared/components/tree.js://todo
+2007.txt:shared/components/tree.js:* \todo instead of this, we could use a small form, to appear next to the mouse?
+2007.txt:shared/controller/edit.controller.php:	 * @todo drop fields alter table aviso drop die;
+2007.txt:shared/controller/edit.controller.php:	 * @todo 6001 allow add foreign fields
+2007.txt:shared/controller/edit.controller.php:	 * @todo 6100 allow fields to set size, allow fields to have maxlength
+2007.txt:shared/controller/edit.controller.php:			##@todo WARNING: THIS IS OBSCENELY UNSAFE; PLEASE MAKE SURE YOU HAVE THE RIGHT SECURITY SYSTEM ENABLED!			
+2007.txt:shared/controller/edit.controller.php:			//@todo escape!
+2007.txt:shared/controller/privilege.controller.php:	\todo automagically add this.has_many to ALL vh_record views. (that's what it's for!)
+2007.txt:shared/controller/role2priv.controller.php:		 * \todo on update, and on delete
+2007.txt:shared/controller/usr.controller.php:	 * \todo 3100 show also roles available
+2007.txt:shared/controller/usr.controller.php:	 * \todo 3101 save IP, and login attempts, somewhere, if an IP tries 100+ times to hack in, disable access, 
+2007.txt:shared/controller/usr.controller.php:	 *\todo SET: 
+2007.txt:shared/controller/usr.controller.php:	 * \todo validate role is valid role id.
+2007.txt:shared/controller/view.controller.php: * @todo translate: 
+2007.txt:shared/controller/view.controller.php: * @todo set visibility: some actions to be insisible (from certain view_types)
+2007.txt:shared/controller/view.controller.php:	 * @todo move code to array2file
+2007.txt:shared/controller/view.controller.php:	 * @todo move this to i18n mod
+2007.txt:shared/controller/view.controller.php:			$m=$this->load_file($mod);///@todo 7100 unsafe
+2007.txt:shared/controller/view.controller.php:			$v=$m->load_view($m->program_name(),$view);///@todo 7100 unsafe
+2007.txt:shared/controller/view.controller.php:			$m=$this->load_file($mod);///@todo 7100 unsafe
+2007.txt:shared/controller/view.controller.php:			$v=$m->load_view($m->program_name(),$view);///@todo 7100 unsafe
+2007.txt:shared/controller/view.controller.php:				///@todo 7101 delete role2priv, add stuff
+2007.txt:util/deprecated.php:					//\todo 259 expose thie functionality (AR proxy?)
+2007.txt:util/deprecated.php:					//\todo 260 MUST NOT USE THIS ON INSERT VIEWS
+2007.txt:util/deprecated.php:								#todo fix edit_all: must be configurable
+2007.txt:util/deprecated.php:			//\todo allow user to set HBM on view level
+2007.txt:util/deprecated.php:						"i18n_help"=>"something...",//todo here
+2007.txt:util/deprecated.php:						"value"=>$this->rel["hbm"],//todo allow user to set this to: something else.
+2007.txt:util/doclogs.txt:todo:354: Warning: explicit link request to 'This' could not be resolved
+2007.txt:util/doclogs.txt:todo:458: Warning: Found unknown command `\send2ml'
+2007.txt:util/doclogs.txt:todo:493: Warning: Found unknown command `\TODO'
+2007.txt:util/gen.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+2007.txt:util/gen.cfg~:# disable (NO) the todo list. This list is created by putting \todo 
+2007.txt:util/latex1.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+2007.txt:util/minimal.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+2007.txt:util/minimal.cfg~:# disable (NO) the todo list. This list is created by putting \todo 
+2007.txt:util/minimal_doclogs.txt:todo:354: Warning: explicit link request to 'This' could not be resolved
+2007.txt:util/minimal_doclogs.txt:todo:458: Warning: Found unknown command `\send2ml'
+2007.txt:util/minimal_doclogs.txt:todo:493: Warning: Found unknown command `\TODO'
+2007.txt:util/php.test3.php:			//todo log loaded modules
+2007.txt:util/see_toto.bat:\grep  \todo * >doc\todo.grep.txt
+2007.txt:util/wtf.txt:TODO.txt:include/std.php:		\todo security? wtf is this about?
+2007.txt:util/wtf.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo security? wtf is this about?
+2007.txt:util/wtf.txt:include/std.php:				///\todo 255 wtf is going on here: this is bad?
+2007.txt:util/wtf.txt:include/std_view.php:	\todo 1106  security? wtf is this about?
+TODO/TODO.html:2. email a todos @valerie + @josue
+TODO/TODO.html:todown
+TODO/TODO.html:todown
+config/autoconf.php:	/** \todo 3030 allow multiple languages, a lang per user */
+config/cf.php:	/** \todo 3030 allow multiple languages, a lang per user */
+doc/std.changelog.txt:todo: add help/help & edit/add_field to install.sql
+doc/std.changelog.txt:todo: set install.sql edit/ed not edit/
+doc/std.changelog.txt:todo: view.new.[#now] is broken
+doc/std.changelog.txt:todo: warn on user same as password @ user.new2
+doc/std.changelog.txt:todo: problem with search: categoría padre:compra
+doc/std.changelog.txt:todo: search operators, le, ge etc
+doc/std.changelog.txt:todo: allow that inconfig!
+doc/std.changelog.txt:todo allow generator to create users.install.sql
+doc/std.changelog.txt:todo: dsl,dsr, etc go to std_simple
+doc/todo.editor.txt:todo 
+doc/todo.grep.txt:TODO.txt:include/common.php:	 * \todo add support for iframe fix borders.
+doc/todo.grep.txt:TODO.txt:include/common.php:	 * \todo fix width handling
+doc/todo.grep.txt:TODO.txt:include/form.php:		* \todo put a small icon, for help here, when help data is found
+doc/todo.grep.txt:TODO.txt:include/form.php:		 * \todo optgroup
+doc/todo.grep.txt:TODO.txt:include/form.php:		 * @todo make this bandwidth-friendly!
+doc/todo.grep.txt:TODO.txt:include/form.php:		 * \todo showdate ymd
+doc/todo.grep.txt:TODO.txt:include/form.php:		 * \todo a small calendar in JS
+doc/todo.grep.txt:TODO.txt:include/form.php:		\todo allow multiple formats (JSON?,XML?)
+doc/todo.grep.txt:TODO.txt:include/form.php:		\todo save to file, form cacheing.
+doc/todo.grep.txt:TODO.txt:include/form.php:		\todo allow groups
+doc/todo.grep.txt:TODO.txt:include/form.php:		\todo reuse Xform framework. ???
+doc/todo.grep.txt:TODO.txt:include/form.php:			\todo add checklist events so that they are run before/after my evts
+doc/todo.grep.txt:TODO.txt:include/form.php:		\todo button's help
+doc/todo.grep.txt:TODO.txt:include/form.php:		 \todo required
+doc/todo.grep.txt:TODO.txt:include/form.php:		 \todo range
+doc/todo.grep.txt:TODO.txt:include/form.php:		 \todo 
+doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo 001 help in checklist for EACH item.
+doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo include form.php ? only when actually USED ??its almost always used...
+doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo allow detection, and user setting. standard language stuff.
+doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo allow show/hide debug info
+doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo on delete r u sure you'll delete: xxx with gender
+doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo put more. styles
+doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo allow template.headerinfo, so we can see the names of the fields, in the field AND in the template.
+doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo make a list of error codes, and equivalents.
+doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo allow show/hide debug info
+doc/todo.grep.txt:TODO.txt:include/std.php:	 * \todo on delete r u sure you'll delete: xxx with gender
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo multiple vies get saved.
+doc/todo.grep.txt:TODO.txt:include/std.php:		 *\todo this goes at RIGHT
+doc/todo.grep.txt:TODO.txt:include/std.php:			///\todo if nothing is selected, create the selection
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo add error level filters on VIEW*/
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo do something when is_guest ==1 (like a guest menu?9
+doc/todo.grep.txt:TODO.txt:include/std.php:				/** \todo do something about it. (user being Guest) */
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo i18n
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo try to find a way not to load modules twice, 
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo remove odd characters like pipe, .. etc from mod name.
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo 923 check for existance of such function.
+doc/todo.grep.txt:TODO.txt:include/std.php:				/*WHAT IS THIS??? todo remove html */
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo allow multiple ac
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo views have fields that show ONLY on list, not by default.
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo 901 validate $_GET
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo 902 validate fields in range (in available)
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo 903 save that to .rc.php file
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo load input
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo countless validation schemes., telephone, ac, etc 
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo validate data within range, make sense feb31
+doc/todo.grep.txt:TODO.txt:include/std.php:				/** \todo validate data within range, make sense feb31*/
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo allow restrictions on foreign fields, restrict. (a lot of editown goes here, right?)
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo title, tooltip, etc.
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo use this EVERYWHERE.
+doc/todo.grep.txt:TODO.txt:include/std.php:					/** \todo if not in list, warn user about changed database, send email admin*/
+doc/todo.grep.txt:TODO.txt:include/std.php:						 * \todo add foreign stuff here
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo finish 
+doc/todo.grep.txt:TODO.txt:include/std.php:		 *	\todo save register,  in Session, then check if the information is the same, before insert, if different, warn about changes.
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo on view myself, there must be a , that send you to edit2own, so you cant tamper that either. listown / editmyself, that checks that you dont edit other's people stuff
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo allow foreign with ranges.
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo grid, calendar, etc
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo click on "id" to "check all", 
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo confirm page
+doc/todo.grep.txt:TODO.txt:include/std.php:								/** \todo handle GUEST case.*/
+doc/todo.grep.txt:TODO.txt:include/std.php:				/** \todo look for allows lists, show that one.*/
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo :remove old exports
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo add 'back2list'
+doc/todo.grep.txt:TODO.txt:include/std.php:				/** \todo check if not in array warn, program malformation.*/
+doc/todo.grep.txt:TODO.txt:include/std.php:		 * \todo data validations according to Type
+doc/todo.grep.txt:TODO.txt:include/std.php:				if($field['type']=='password'){	/** \todo more validation schemes, a validation function, validate dates within ranges, validate stuff within ranges, validate within lists, etc, remove errors like feb 31, etc.*/
+doc/todo.grep.txt:TODO.txt:include/std.php:						$failed_field_value=$_GET[$field['name']];/**\todo  i18n*/
+doc/todo.grep.txt:TODO.txt:include/std.php:		* \todo better system: do not display
+doc/todo.grep.txt:TODO.txt:include/std.php:		 \todo autodetect?
+doc/todo.grep.txt:TODO.txt:include/std.php:		\todo add nobr
+doc/todo.grep.txt:TODO.txt:include/std.php:		\todo ALLOW SESSION DATE TO BE FIRST OVER the other data.
+doc/todo.grep.txt:TODO.txt:include/std.php:		\todo search
+doc/todo.grep.txt:TODO.txt:include/std.php:		\todo send to template
+doc/todo.grep.txt:TODO.txt:include/std.php:		\todo allow customization, @ app level OK , mod level OK , & view level NO (kindof, using view.type: view handlers)
+doc/todo.grep.txt:TODO.txt:include/std.php:		\todo checkbox for selecting multiple items
+doc/todo.grep.txt:TODO.txt:include/std.php:		\todo security? wtf is this about?
+doc/todo.grep.txt:TODO.txt:include/std.php:		\todo multiple filters, separated by ,
+doc/todo.grep.txt:TODO.txt:include/std.php:		\todo on foreign collumn: click to view item.
+doc/todo.grep.txt:TODO.txt:include/std.php:			 * \todo if @ last page, and there are previous pages, and there are no records, 
+doc/todo.grep.txt:TODO.txt:include/std.php:			 * \todo if not aliased check, s
+doc/todo.grep.txt:TODO.txt:include/std.php:			/**\todo sadly, i must replicate functionality described @ foreign_select, fix that (somehow...)*/
+doc/todo.grep.txt:TODO.txt:include/std.php:			/**\todo MUST SOMEHOW GET THE HEADERS DATA FROM FOREGN_SELECT*/
+doc/todo.grep.txt:TODO.txt:include/std.php:				\todo allow customization of list in link, so you can have different views right there.
+doc/todo.grep.txt:TODO.txt:include/std.php:				\todo add help here:link.
+doc/todo.grep.txt:TODO.txt:include/std.php:				\todo make_link instead of A
+doc/todo.grep.txt:TODO.txt:include/std.php:			/** \todo ADD hidden inputs for state, like sort field, sort ac, and search term. to t6
+doc/todo.grep.txt:TODO.txt:include/std.php:			 * \todo allow user settings to override $i18n_std['list']
+doc/todo.grep.txt:TODO.txt:include/std.php:			///\todo ALLOW THIS PROCCESS TO BE SIMPLER!.
+doc/todo.grep.txt:TODO.txt:include/std.php:				/** \todo allow CHECKBOX in templates (for now it's only in table())*/
+doc/todo.grep.txt:TODO.txt:include/std.php:						'style'=>'list',			/** \todo own style, LIST*/
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo multiple pagination schemes.
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo make this a range: 1 ... x-5 , x-4 ... x , x+1,x+2, ... x+5, last
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo what if im beyond, or below the limit?
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo check if class was created
+doc/todo.grep.txt:TODO.txt:include/std.php:			\todo 9876  add prefix
+doc/todo.grep.txt:TODO.txt:projects/shared/controller/view.controller.php: * todo translate: 
+doc/todo.grep.txt:TODO.txt:projects/shared/controller/view.controller.php: * todo set visibility: some actions to be insisible (from certain view_types)
+doc/todo.grep.txt:TODO.txt:projects/gen/gen_base.php:#todo link to application on step5
+doc/todo.grep.txt:TODO.txt:projects/gen/controller/gen.controller.php:			#todo save field length.?
+doc/todo.grep.txt:TODO.txt:projects/gen/controller/gen.controller.php:			$f->add_field(array('type'=>'text','name'=>"appfolder",'value'=>"app001"));/*todo auto numeric*/
+doc/todo.grep.txt:TODO.txt:tags:failed_field_value	include/std.php	/^						$failed_field_value=$_GET[$field['name']];\/**\\todo  i18n*\/$/;"	v
+doc/todo.grep.txt:TODO.txt:util/doxigen_log.txt:Adding todo/test/bug list items...
+doc/todo.grep.txt:TODO.txt:util/doxigen_log.txt:Generating docs for page todo...
+doc/todo.grep.txt:TODO.txt:util/gen.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+doc/todo.grep.txt:TODO.txt:util/instructions.txt:todo.
+doc/todo.grep.txt:TODO.txt:util/1gen.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+doc/tricks.txt:	\todo
+doc/tricks.txt:	@todo
+excel_files/Campa%F1as2007_01_16__17_36_16979abf804694ac211cb9c2904a3517cd.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+excel_files/Campanas2007_01_16__17_32_51050e8261ed4f00a22fb0415b850b6e1d.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+excel_files/Campañas2007_01_16__17_30_46b2e95777867b7ae01b236d5841f51635.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+excel_files/Campañas2007_01_16__17_31_384fb4bd9cf69b0d15103c9c3d5f783876.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+excel_files/Campañas2007_01_16__17_34_08ac856f31a5117c9620ae9e3cabaa1037.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+excel_files/Campañas2007_01_16__17_34_2854b74e2818bebd5682e6ccd89aaf9e11.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+excel_files/Campañas2007_01_16__17_35_0246d45746702809b514b163e4a27fc04e.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+excel_files/instance1_campaign2007_01_16__17_37_35f895ba4316e54aa41f0e32189a55f6aa.xls:	<td  class="_cell _collumn_3">hola a todos, esto es un prueba</td>
+func/get_ed.func.php: *	 \todo 240 poorly documented
+func/get_ed.func.php:			/** \todo if not in list, warn user about changed database, send email admin*/
+func/get_ed.func.php:				 * \todo add foreign stuff here
+func/get_ed.func.php:						/// \todo 264 WHY is this repeated from foreign_select() ?????
+func/get_ed.func.php:	///\todo a better way \TODO ALLOW THIS ON OTHER CONTEXTS (WHICH ONES?)
+func/get_ed.func.php:	 * \todo 252 some way of disabling this!
+func/get_ed.func.php:		\todo 253 which fields?
+func/get_ed.func.php:			//TODO \todo a better not so hacky way of doing this! (needs load_file (reflection))
+func/get_kids.func.php:				//\todo 259 expose thie functionality (AR proxy?)
+func/get_kids.func.php:				//\todo 260 MUST NOT USE THIS ON INSERT VIEWS
+func/get_kids.func.php:							#todo fix edit_all: must be configurable
+func/get_kids.func.php:		///\todo allow user to set HBM on view level
+func/get_kids.func.php:					"i18n_help"=>"something...",/// \todo 004 here
+func/get_kids.func.php:					/// \todo 002 must be able to determine WTF are the fields!
+func/get_kids.func.php:					"value"=>$me->rel["hbm"],/// \todo allow user to set THIS to: something else.
+func/get_view.func.php:							/** \todo handle GUEST case.*/
+func/parse_search_string.func.php:	 * \todo find a way to load this OPTIONALLY
+func/parse_search_string.func.php:	 * \todo 258 this goes in ml()
+func/parse_search_string.func.php:	//\todo
+i18n/EN.include.php:				/// @todo 1131 add descriptive parameters to all error codes.
+i18n/EN.include.php:				/** @todo 1132 when does this happen?*/
+i18n/ES.include.php:			'help___search_term'=>'Este término será buscado en todos los campos del mismo tipo. si el término es numérico, se buscarán solamente en los campos numéricos, si el término es alfanumérico se buscará en los campos alfanuméricos, etc.',
+i18n/ES.include.php:			'help_plural'=>'La forma plurar se usa en la funcion de mostrar todos los registros (view:list_all ) ',
+i18n/ES.include.php:				/// @todo 1131 add descriptive parameters to all error codes.
+include/actions/create.php:	* \todo better system: do not display
+include/actions/delete2.php:	 * \todo 250 use i_error
+include/actions/delete_selected.php:	 * \todo click on "id" to "check all", 
+include/actions/delete_selected.php:	 * \todo confirm page
+include/actions/edit2.php:	 * \todo add 'back2list'
+include/actions/edit2.php:			/** \todo check if not in array warn, program malformation.*/
+include/actions/gstat.php:				#todo:what do you want here5555555
+include/actions/new2.php:			/** \todo 10001 more validation schemes, a validation function, 
+include/actions/new2.php:			 * \todo 10001 validate dates within ranges, 
+include/actions/new2.php:			 * \todo 10001 validate stuff within ranges, 
+include/actions/new2.php:			 * \todo 10001 validate within lists, etc, 
+include/actions/new2.php:			 * \todo 10001 remove errors like feb 31, etc.
+include/actions/new2.php:			///@todo fix vulnerability: check for __hbm
+include/actions/new2.php:						//todo WHICH IS MY FIELD?
+include/actions/new2.php:						//todo error __file__ info...
+include/actions/rss.php:	 * \todo :remove old exports
+include/actions/rss.php:	 * \todo export just what you just saw, people might not have permission to see it all, but just some records.
+include/actions/xls.php:	 * \todo :remove old exports
+include/actions/xls.php:	 * \todo export just what you just saw, people might not have permission to see it all, but just some records.
+include/common.php:	 * \todo 254 css component, seeks in local, then shared media folder.
+include/common.php:		\todo title, tooltip, etc.
+include/common.php:		\todo use this EVERYWHERE.
+include/common.php:		\todo samples
+include/common.php:	 * \todo LOGGING.
+include/common.php:	 \todo errorlevel, send email, error LOG
+include/common.php:	 \todo add to db, file whatever
+include/common.php:	 \todo allow error_ class namespace to be customizable
+include/common.php:	 * \todo help count instances that derive from me. 
+include/common.php:		//old system \todo find and destroy
+include/common.php:	 *		//old system \todo find and destroy
+include/common.php:	 * \todo 1130 p10 add support for iframe fix borders.
+include/common.php:	 * \todo 1131 p10 fix width handling
+include/common.php:		\todo group_table
+include/common.php:				///\todo alow ful expandion, not just 2.
+include/form.php: * \todo fieldset+legend, label for field
+include/form.php: * \todo BLOCKs (field.block?)
+include/form.php: * \todo block show/hide
+include/form.php:		 * \todo put a small icon, for help here, when help data is found
+include/form.php:		 * \todo 1001 gender check_all
+include/form.php:		 * \todo 1002 custom text check_all
+include/form.php:		 * \todo 1115 allow multpple cocurrences on a form
+include/form.php:		 * \todo 1116 allow multiple forms.
+include/form.php:		 * \todo 1117 remove ", '\n and any weird char that JS might find extraneous
+include/form.php:		 * \todo 1118 disable input.enter
+include/form.php:		 * \todo 1113 showdate ymd
+include/form.php:		 * \todo 1114 a small calendar in JS
+include/form.php:		 * \todo 294 form_name!!!!
+include/form.php:		 * \todo 294 ,\"'.$field_data['form_name'].'\"
+include/form.php:		 * \todo optgroup
+include/form.php:		 * \todo 293 tree2json: make this [optionally] bandwidth-friendly!
+include/form.php:		 * \todo 1119 example required
+include/form.php:		 * \todo 1112 use this in lots of places, like out(), and re_out() //templated_output
+include/form.php:		 * \todo 1111 allow this to test: footer,header AND separators.
+include/form.php:			//		\todo 292 js validation
+include/form.php:			//		\todo 291 super-duper input blocks submission on enter press, but when you leave, it goes back to normal!
+include/form.php:					#todo fix
+include/form.php:				//! \todo TODO 1110 selected item $f["value"]
+include/form.php:			///\todo allow multiple forms!
+include/form.php:		\todo allow multiple formats (JSON?,XML?)
+include/form.php:		\todo save to file, form cacheing.
+include/form.php:		\todo allow groups
+include/form.php:		\todo reuse Xform framework. ???
+include/form.php:			\todo add checklist events so that they are run before/after my evts
+include/form.php:		\todo button's help
+include/form.php:		 \todo required
+include/form.php:		 \todo range
+include/form.php:		 \todo 
+include/privileges.php:	 * \todo 1201 Login? => i18n
+include/privileges.php:	 * @todo how to not get bitten by perfornamce?  
+include/report.php: * \todo 268 excel like partitioning:
+include/report.php: * \todo 270 calculated fields?
+include/report.php: * \todo 275 calculated fields in VIEWS in general?
+include/report.php:		$resume_joins=array('1=1');//\todo restrict
+include/report.php:						///\todo 269 if exists: alias, etc
+include/report.php:					//\todo 273 use just one $resume_option, make multiple
+include/report.php:						///\todo 271 prepend total, sum count, etc
+include/report.php:		///\todo 274 if actions  are available, then get fid=1, and make links!
+include/report.php:		///\todo
+include/std.php: \subsection todo [Important] Stuff that Isn't done yet
+include/std.php: \todo  hbm update incomplete 
+include/std.php: \todo  fix logic @ get_kids.fucn
+include/std.php:	\todo 001 sort seems to be injectable!, must validate within valid fields, and then put ID if the field provided isn't valid
+include/std.php:	 \todo 233 allow form redisplay, with invalid input
+include/std.php:       \todo 234 make some proofs of concepts.
+include/std.php: * \todo boolean datatype: list y/n
+include/std.php: * \todo [important]: action.register_privileges:
+include/std.php:	 * todo2: save the whole GET, not just mod and ac, because we loose impotrant data like record number ID, search
+include/std.php:	 * \todo fix adv option system
+include/std.php:	 * \todo
+include/std.php:	 * \todo 1126 event onGenerate
+include/std.php:	 * \todo 1126 event onInstall
+include/std.php:	 * \todo 001 help in checklist for EACH item.
+include/std.php:	 * \todo include form.php ? only when actually USED ??its almost always used...
+include/std.php:	 * \todo allow detection, and user setting. standard language stuff.
+include/std.php:	 * \todo on delete r u sure you'll delete: xxx with gender
+include/std.php:	 * \todo put more. styles
+include/std.php:	 * \todo allow template.headerinfo, so we can see the names of the fields, in the field AND in the template.
+include/std.php:	 * \todo make a list of error codes, and equivalents.
+include/std.php:	 * \todo allow show/hide debug info
+include/std.php:	 * \todo on delete r u sure you'll delete: xxx with gender
+include/std.php:	var $silent=0;					///<whether or not to display messages on new2, et al, \\todo et al
+include/std.php:	 * \todo 1125 this function is very limited, and not very configurable, making it useless, improve it.
+include/std.php:			///\todo 261 make this a func 
+include/std.php:	 * @todo 3002 make function get view:this or this
+include/std.php:	 * \todo 1302 privilege. on VIEW: check if view exists.
+include/std.php:		///@todo 1129 allow eclude_fields and allcombination to be used in other places, as a replacement for field repetition!
+include/std.php:	 * \todo 1301 remove 1=1 where possible
+include/std.php:	 * \todo 291 this is a WEAK method, must a find a better one!
+include/std.php:	/** \todo 1124 implement find*/
+include/std.php:	/**\todo 258 implement
+include/std.php:	 * \todo 129372 allow override
+include/std.php:	 * \todo 190283 make this unnecesarry on load_file
+include/std.php:	 * \todo add error level filters on VIEW*/
+include/std.php:			//@todo 8000 multiple action to different modules
+include/std.php:	 * @todo make an object to handle all this stuff?
+include/std.php:			//todo 4000 send fix to func
+include/std.php:	 * \todo 1128 make this work in priv add, etc
+include/std.php:	 * \todo do something when is_guest ==1 (like a guest menu?9
+include/std.php:			/** \todo do something about it. (user being Guest) */
+include/std.php:	 * \todo 232 _id2, _id3
+include/std.php:	 * \todo 232
+include/std.php:		\todo 3001 try to find a way not to load modules twice, 
+include/std.php:		\todo 3002 remove odd characters like pipe, .. etc from mod name.
+include/std.php:	 * \todo instead of all, .* (regexp) (slower, but cooler)
+include/std.php:	 * \todo where can I sue that? submods / * ??
+include/std.php:					///\todo if not loaded
+include/std.php:					///\todo, WE KNOW WERE YOU COME FROM, go aback to list is possible!!!
+include/std.php:	 * \todo 280 if not exist, trow runtime exception,and be done with it
+include/std.php:	 * \todo 245 document, and explain how to add stuff to the std class.
+include/std.php:	 * \todo load input
+include/std.php:	 * \todo better error msg
+include/std.php:	 * \todo 232 _id3
+include/std.php:	 * \todo 302 countless validation schemes., telephone, ac, etc 
+include/std.php:	 * \todo 303 validate data within range, make sense feb31
+include/std.php:	 * \todo 304 send an error message.
+include/std.php:	 * \todo 1120 validate data within range, make sense feb31
+include/std.php:			/** \todo 1120 validate data within range, make sense feb31*/
+include/std.php:	 * \todo 235 some projects have not defined an $ifield, since they are lod syntax, must check for those.
+include/std.php:	 * \todo 263 how to support multiple DB interoperation?
+include/std.php:	 * \todo 265 if all info is goven, do we *need* to load the mod?,
+include/std.php:	 * \todo 236 IMPLEMENT THIS FUNCTION:which field are aliased aliased_fields()???
+include/std.php:	 * \todo 272 foreign_select() explain this better
+include/std.php:		\todo 267 allow restrictions on foreign fields, restrict. (a lot of editown goes here, right?)
+include/std.php:		$join=array('1 = 1');/// \todo 1101 do I need this?
+include/std.php:			/// \todo 236 memorize/cache function output,fcache()?
+include/std.php:	 * 	\todo 237 viewport ids, and viewport identification
+include/std.php:	 * \todo 238 can we extend this concept,  into stuff like: ac* -> ac_a ac_b ac_c, or variable fieldes, etc?
+include/std.php:	 * \todo 239 poc view FIELD.name: 1+1 :
+include/std.php:		////todo function have_relations()
+include/std.php:					"is_late_addition"=>1,///@todo document
+include/std.php:					//todo configurability?
+include/std.php:	 * \todo 1123 example code!
+include/std.php:	 * \todo this goes in the ME section?
+include/std.php:	 * \todo other filters, in the View section?
+include/std.php:	 * \todo filter_link 241 how do we disable this?
+include/std.php:	 * \todo filter_link 1122 link class?
+include/std.php:				//todo6
+include/std.php:	 * \todo filter_highlight_search_terms() 1121 those that are only searched on ONE place, must be highlited in only ONE place (a unique field) so I need to pass field information along with the words...
+include/std.php:	 * \todo 2 242 remove dependencies with foreign_select
+include/std.php:	 * @todo 1200 must fix: get_view_contents()
+include/std.php:	 * @todo 1200 must fix: get_view_contents()
+include/std.php:	 * \todo finish 
+include/std.php:	 *	\todo save register,  in Session, then check if the information is the same, before insert, if different, warn about changes.
+include/std.php:		\todo on view myself, there must be a , that send you to edit2own, so you cant tamper that either. listown / editmyself, that checks that you dont edit other's people stuff
+include/std.php:		\todo allow foreign with ranges.
+include/std.php:				//todo what bhappens otherwise, user entered input?
+include/std.php:	/** \todo 243 how are specifid views inside files handled? */
+include/std.php:	 * \todo 244 make that possible [config?]
+include/std.php:	 * \todo 245
+include/std.php:	 * \todo 249 grid, calendar, etc
+include/std.php:	 \todo autodetect?
+include/std.php:	\todo add nobr
+include/std.php:				///\todo 255 wtf is going on here: this is bad?
+include/std.php:	 * \todo 1127 further docs, examples
+include/std.php:		\todo 256 check if class was created
+include/std.php:		\todo 9876  add prefix
+include/std.php:		///\todo 257 change / to # ?
+include/std.php:	 * \todo 262 allow user to set more add_key?()
+include/std.php: * @todo 1130 samples required widget
+include/std_record.php: * \todo put ed here*/
+include/std_tab.php:	 * \todo horizontal, vertical.
+include/std_tab.php:	 * \todo allow multiple instances
+include/std_tab.php:	 * \todo allow multiple instances, with equal tab names to work.
+include/std_view.php: * \todo 300 consider moving get_i18n_text to common, consider table problems, if any
+include/std_view.php: * \todo 301 explain what the caller must implement: [WHICH]/all std functions
+include/std_view.php:	 * \todo allow user settings to override $i18n_std['list']	
+include/std_view.php:	 * \todo 301 _GET soft direction must be changes, to allow multiple MLs in a form.
+include/std_view.php:		/** \todo 302 log minor hack attempt? */
+include/std_view.php:	 * \todo allow per/app another template file
+include/std_view.php:	 * the .....@todo wtf?
+include/std_view.php:		@todo 4003 logo means main->menu()!
+include/std_view.php:		@todo 4002 view functions
+include/std_view.php:	\todo 1101 ALLOW SESSION DATE TO BE FIRST OVER the other data.
+include/std_view.php:	\todo 1102  search
+include/std_view.php:	\todo 1103  send to template
+include/std_view.php:	\todo 1104  allow customization, @ app level OK , mod level OK , & view level NO (kindof, using view.type: view handlers)
+include/std_view.php:	\todo 1105  checkbox for selecting multiple items
+include/std_view.php:	\todo 1106  security? wtf is this about?
+include/std_view.php:	\todo 1107  multiple filters, separated by ,
+include/std_view.php:	\todo 9876
+include/std_view.php:	\todo allow serialization: get_ml()
+include/std_view.php:		 * \todo if @ last page, and there are previous pages, and there are no records, 
+include/std_view.php:		 * \todo if not aliased check, s
+include/std_view.php:		 * @todo 3010 sadly, i must replicate functionality described @ foreign_select, fix that (somehow...)
+include/std_view.php:		 * @todo 3020 MUST SOMEHOW GET THE HEADERS DATA FROM FOREGN_SELECT
+include/std_view.php:			//\todo2 must be in options: current view
+include/std_view.php:			\todo allow customization of list in link, so you can have different views right there.
+include/std_view.php:			\todo add help here:link.
+include/std_view.php:			\todo make_link instead of A
+include/std_view.php:		//\todo
+include/std_view.php:		///\todo allow multiple filters, separated by , or if filter is array, etc
+include/std_view.php:		//\todo when link filter enabled 9876
+include/std_view.php:		//\todo TEST 
+include/std_view.php:				//\todo makelink here
+include/std_view.php:		 * \todo ADD hidden inputs for state, like sort field, sort ac, and search term. to t6
+include/std_view.php:			/** \todo 1005 allow CHECKBOX in templates (for now it's only in table())*/
+include/std_view.php:					'style'=>'list',	/** \todo 1004 own style, LIST*/
+include/std_view.php:			//	///\todo allow JUST certain fields to be "searchable", to be define on the FORM.
+include/std_view.php:		\todo 10928 multiple pagination schemes.
+include/std_view.php:		\todo 10289 what if im beyond, or below the limit?
+include/std_view.php:	 * \todo disable search term highlighting (and searching)
+include/std_view.php:	 * \todo improve this, use class
+include/std_view.php:		///\todo a combo box with all previous searches.
+include/std_view.php:	 * \todo multiple views get saved.
+include/std_view.php:		///\todo if nothing is selected, create the selection
+include/std_view.php:		///\todo validate.
+include/std_view.php:			//\todo 6.2 except those that are marked as NOT in view by default, on the view marker
+include/std_view.php:	 * \todo views have fields that show ONLY on list, not by default.
+include/std_view.php:	 * \todo 901 validate $_GET
+include/std_view.php:	 * \todo 902 validate fields in range (in available)
+include/std_view.php:	 * \todo 903 save that to .rc.php file
+include/std_view.php:	 * \todo turn dates into date-ranges: [ymd] becomes [ymd to ymd]
+include/std_view.php:	 * \todo add option [exact match/contains/starts with/ends with]
+include/std_view.php:	 * \todo define what you want: custom fields
+include/std_view.php:			//\WARNING todo2 bug fix fuck!!!!THIS get_ed might go somewherelse!
+shared/components/i18n/EN.js: * \todo 295 TODO allow this to be first PHP then js, so we can edit it too.
+shared/components/i18n/ES.js: * \todo 295 TODO allow this to be first PHP then js, so we can edit it too.
+shared/components/js.js:	\todo masc/fem
+shared/components/js.js:	\todo fix bug at generator
+shared/components/tree.js://todo
+shared/components/tree.js:* \todo instead of this, we could use a small form, to appear next to the mouse?
+shared/controller/edit.controller.php:	 * @todo drop fields alter table aviso drop die;
+shared/controller/edit.controller.php:	 * @todo 6001 allow add foreign fields
+shared/controller/edit.controller.php:	 * @todo 6100 allow fields to set size, allow fields to have maxlength
+shared/controller/edit.controller.php:			##@todo WARNING: THIS IS OBSCENELY UNSAFE; PLEASE MAKE SURE YOU HAVE THE RIGHT SECURITY SYSTEM ENABLED!			
+shared/controller/edit.controller.php:			//@todo escape!
+shared/controller/privilege.controller.php:	\todo automagically add this.has_many to ALL vh_record views. (that's what it's for!)
+shared/controller/role2priv.controller.php:		 * \todo on update, and on delete
+shared/controller/usr.controller.php:	 * \todo 3100 show also roles available
+shared/controller/usr.controller.php:	 *\todo SET: 
+shared/controller/usr.controller.php:	 * \todo validate role is valid role id.
+shared/controller/util.controller.php:	 * @todo mod_del
+shared/controller/util.controller.php:	 * @todo mod edit
+shared/controller/util.controller.php:	 * @todo mod_stats
+shared/controller/view.controller.php: * @todo translate: 
+shared/controller/view.controller.php: * @todo set visibility: some actions to be insisible (from certain view_types)
+shared/controller/view.controller.php:	 * @todo move code to array2file
+shared/controller/view.controller.php:	 * @todo move this to i18n mod
+shared/controller/view.controller.php:			$m=$this->load_file($mod);///@todo 7100 unsafe
+shared/controller/view.controller.php:			$v=$m->load_view($m->program_name(),$view);///@todo 7100 unsafe
+shared/controller/view.controller.php:			$m=$this->load_file($mod);///@todo 7100 unsafe
+shared/controller/view.controller.php:			$v=$m->load_view($m->program_name(),$view);///@todo 7100 unsafe
+shared/controller/view.controller.php:				///@todo 7101 delete role2priv, add stuff
+todo.make.sh: grep -r todo *>2007.txt 
+util/deprecated.php:					//\todo 259 expose thie functionality (AR proxy?)
+util/deprecated.php:					//\todo 260 MUST NOT USE THIS ON INSERT VIEWS
+util/deprecated.php:								#todo fix edit_all: must be configurable
+util/deprecated.php:			//\todo allow user to set HBM on view level
+util/deprecated.php:						"i18n_help"=>"something...",//todo here
+util/deprecated.php:						"value"=>$this->rel["hbm"],//todo allow user to set this to: something else.
+util/doclogs.txt:todo:354: Warning: explicit link request to 'This' could not be resolved
+util/doclogs.txt:todo:458: Warning: Found unknown command `\send2ml'
+util/doclogs.txt:todo:493: Warning: Found unknown command `\TODO'
+util/gen.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+util/gen.cfg~:# disable (NO) the todo list. This list is created by putting \todo 
+util/latex1.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+util/minimal.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+util/minimal.cfg~:# disable (NO) the todo list. This list is created by putting \todo 
+util/minimal_doclogs.txt:todo:354: Warning: explicit link request to 'This' could not be resolved
+util/minimal_doclogs.txt:todo:458: Warning: Found unknown command `\send2ml'
+util/minimal_doclogs.txt:todo:493: Warning: Found unknown command `\TODO'
+util/php.test3.php:			//todo log loaded modules
+util/see_toto.bat:\grep  \todo * >doc\todo.grep.txt
+util/wtf.txt:TODO.txt:include/std.php:		\todo security? wtf is this about?
+util/wtf.txt:doc/todo.grep.txt:TODO.txt:include/std.php:		\todo security? wtf is this about?
+util/wtf.txt:include/std.php:				///\todo 255 wtf is going on here: this is bad?
+util/wtf.txt:include/std_view.php:	\todo 1106  security? wtf is this about?

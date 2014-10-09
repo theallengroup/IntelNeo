@@ -1,0 +1,105 @@
+TODO.txt:include/common.php:	 * \todo add support for iframe fix borders.
+TODO.txt:include/common.php:	 * \todo fix width handling
+TODO.txt:include/form.php:		* \todo put a small icon, for help here, when help data is found
+TODO.txt:include/form.php:		 * \todo optgroup
+TODO.txt:include/form.php:		 * @todo make this bandwidth-friendly!
+TODO.txt:include/form.php:		 * \todo showdate ymd
+TODO.txt:include/form.php:		 * \todo a small calendar in JS
+TODO.txt:include/form.php:		\todo allow multiple formats (JSON?,XML?)
+TODO.txt:include/form.php:		\todo save to file, form cacheing.
+TODO.txt:include/form.php:		\todo allow groups
+TODO.txt:include/form.php:		\todo reuse Xform framework. ???
+TODO.txt:include/form.php:			\todo add checklist events so that they are run before/after my evts
+TODO.txt:include/form.php:		\todo button's help
+TODO.txt:include/form.php:		 \todo required
+TODO.txt:include/form.php:		 \todo range
+TODO.txt:include/form.php:		 \todo 
+TODO.txt:include/std.php:	 * \todo 001 help in checklist for EACH item.
+TODO.txt:include/std.php:	 * \todo include form.php ? only when actually USED ??its almost always used...
+TODO.txt:include/std.php:	 * \todo allow detection, and user setting. standard language stuff.
+TODO.txt:include/std.php:	 * \todo allow show/hide debug info
+TODO.txt:include/std.php:	 * \todo on delete r u sure you'll delete: xxx with gender
+TODO.txt:include/std.php:	 * \todo put more. styles
+TODO.txt:include/std.php:	 * \todo allow template.headerinfo, so we can see the names of the fields, in the field AND in the template.
+TODO.txt:include/std.php:	 * \todo make a list of error codes, and equivalents.
+TODO.txt:include/std.php:	 * \todo allow show/hide debug info
+TODO.txt:include/std.php:	 * \todo on delete r u sure you'll delete: xxx with gender
+TODO.txt:include/std.php:		 * \todo multiple vies get saved.
+TODO.txt:include/std.php:		 *\todo this goes at RIGHT
+TODO.txt:include/std.php:			///\todo if nothing is selected, create the selection
+TODO.txt:include/std.php:		 * \todo add error level filters on VIEW*/
+TODO.txt:include/std.php:		 * \todo do something when is_guest ==1 (like a guest menu?9
+TODO.txt:include/std.php:				/** \todo do something about it. (user being Guest) */
+TODO.txt:include/std.php:		 * \todo i18n
+TODO.txt:include/std.php:			\todo try to find a way not to load modules twice, 
+TODO.txt:include/std.php:			\todo remove odd characters like pipe, .. etc from mod name.
+TODO.txt:include/std.php:			\todo 923 check for existance of such function.
+TODO.txt:include/std.php:				/*WHAT IS THIS??? todo remove html */
+TODO.txt:include/std.php:		 * \todo allow multiple ac
+TODO.txt:include/std.php:		 * \todo views have fields that show ONLY on list, not by default.
+TODO.txt:include/std.php:		 * \todo 901 validate $_GET
+TODO.txt:include/std.php:		 * \todo 902 validate fields in range (in available)
+TODO.txt:include/std.php:		 * \todo 903 save that to .rc.php file
+TODO.txt:include/std.php:		 * \todo load input
+TODO.txt:include/std.php:		 * \todo countless validation schemes., telephone, ac, etc 
+TODO.txt:include/std.php:		 * \todo validate data within range, make sense feb31
+TODO.txt:include/std.php:				/** \todo validate data within range, make sense feb31*/
+TODO.txt:include/std.php:			\todo allow restrictions on foreign fields, restrict. (a lot of editown goes here, right?)
+TODO.txt:include/std.php:			\todo title, tooltip, etc.
+TODO.txt:include/std.php:			\todo use this EVERYWHERE.
+TODO.txt:include/std.php:					/** \todo if not in list, warn user about changed database, send email admin*/
+TODO.txt:include/std.php:						 * \todo add foreign stuff here
+TODO.txt:include/std.php:		 * \todo finish 
+TODO.txt:include/std.php:		 *	\todo save register,  in Session, then check if the information is the same, before insert, if different, warn about changes.
+TODO.txt:include/std.php:			\todo on view myself, there must be a , that send you to edit2own, so you cant tamper that either. listown / editmyself, that checks that you dont edit other's people stuff
+TODO.txt:include/std.php:			\todo allow foreign with ranges.
+TODO.txt:include/std.php:		 * \todo grid, calendar, etc
+TODO.txt:include/std.php:		 * \todo click on "id" to "check all", 
+TODO.txt:include/std.php:		 * \todo confirm page
+TODO.txt:include/std.php:								/** \todo handle GUEST case.*/
+TODO.txt:include/std.php:				/** \todo look for allows lists, show that one.*/
+TODO.txt:include/std.php:		 * \todo :remove old exports
+TODO.txt:include/std.php:		 * \todo add 'back2list'
+TODO.txt:include/std.php:				/** \todo check if not in array warn, program malformation.*/
+TODO.txt:include/std.php:		 * \todo data validations according to Type
+TODO.txt:include/std.php:				if($field['type']=='password'){	/** \todo more validation schemes, a validation function, validate dates within ranges, validate stuff within ranges, validate within lists, etc, remove errors like feb 31, etc.*/
+TODO.txt:include/std.php:						$failed_field_value=$_GET[$field['name']];/**\todo  i18n*/
+TODO.txt:include/std.php:		* \todo better system: do not display
+TODO.txt:include/std.php:		 \todo autodetect?
+TODO.txt:include/std.php:		\todo add nobr
+TODO.txt:include/std.php:		\todo ALLOW SESSION DATE TO BE FIRST OVER the other data.
+TODO.txt:include/std.php:		\todo search
+TODO.txt:include/std.php:		\todo send to template
+TODO.txt:include/std.php:		\todo allow customization, @ app level OK , mod level OK , & view level NO (kindof, using view.type: view handlers)
+TODO.txt:include/std.php:		\todo checkbox for selecting multiple items
+TODO.txt:include/std.php:		\todo security? wtf is this about?
+TODO.txt:include/std.php:		\todo multiple filters, separated by ,
+TODO.txt:include/std.php:		\todo on foreign collumn: click to view item.
+TODO.txt:include/std.php:			 * \todo if @ last page, and there are previous pages, and there are no records, 
+TODO.txt:include/std.php:			 * \todo if not aliased check, s
+TODO.txt:include/std.php:			/**\todo sadly, i must replicate functionality described @ foreign_select, fix that (somehow...)*/
+TODO.txt:include/std.php:			/**\todo MUST SOMEHOW GET THE HEADERS DATA FROM FOREGN_SELECT*/
+TODO.txt:include/std.php:				\todo allow customization of list in link, so you can have different views right there.
+TODO.txt:include/std.php:				\todo add help here:link.
+TODO.txt:include/std.php:				\todo make_link instead of A
+TODO.txt:include/std.php:			/** \todo ADD hidden inputs for state, like sort field, sort ac, and search term. to t6
+TODO.txt:include/std.php:			 * \todo allow user settings to override $i18n_std['list']
+TODO.txt:include/std.php:			///\todo ALLOW THIS PROCCESS TO BE SIMPLER!.
+TODO.txt:include/std.php:				/** \todo allow CHECKBOX in templates (for now it's only in table())*/
+TODO.txt:include/std.php:						'style'=>'list',			/** \todo own style, LIST*/
+TODO.txt:include/std.php:			\todo multiple pagination schemes.
+TODO.txt:include/std.php:			\todo make this a range: 1 ... x-5 , x-4 ... x , x+1,x+2, ... x+5, last
+TODO.txt:include/std.php:			\todo what if im beyond, or below the limit?
+TODO.txt:include/std.php:			\todo check if class was created
+TODO.txt:include/std.php:			\todo 9876  add prefix
+TODO.txt:projects/shared/controller/view.controller.php: * todo translate: 
+TODO.txt:projects/shared/controller/view.controller.php: * todo set visibility: some actions to be insisible (from certain view_types)
+TODO.txt:projects/gen/gen_base.php:#todo link to application on step5
+TODO.txt:projects/gen/controller/gen.controller.php:			#todo save field length.?
+TODO.txt:projects/gen/controller/gen.controller.php:			$f->add_field(array('type'=>'text','name'=>"appfolder",'value'=>"app001"));/*todo auto numeric*/
+TODO.txt:tags:failed_field_value	include/std.php	/^						$failed_field_value=$_GET[$field['name']];\/**\\todo  i18n*\/$/;"	v
+TODO.txt:util/doxigen_log.txt:Adding todo/test/bug list items...
+TODO.txt:util/doxigen_log.txt:Generating docs for page todo...
+TODO.txt:util/gen.cfg:# disable (NO) the todo list. This list is created by putting \todo 
+TODO.txt:util/instructions.txt:todo.
+TODO.txt:util/1gen.cfg:# disable (NO) the todo list. This list is created by putting \todo 

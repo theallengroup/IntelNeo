@@ -1,0 +1,20 @@
+this.default_module
+currebnt_action
+
+get_mod
+program_name
+get_role_name
+mod_and_ac
+load_file
+
+
+	function call looks like this:
+	function add_privilege($privilege_structure){
+	function ap($ac,$prefix='form',$role='@search',$table='@me'){
+	function ap_login(){
+	function retrieve_privilege_list_from_db(){
+	function rebuild_privileges(){
+	function menu_is_cached(){
+	function get_privileges_from_cache(){
+	function get_menu_options(){
+	function privilege_manager(&$me){

@@ -1,0 +1,510 @@
+DONT LEAVEANYSPACES< BROWSE WITH }
+May 27 2006
+	Agregado: cual es mi IP:/include/common.php:get_ip()
+	Agregado: programa para administrar privilegios,usuarios y roles, /projects/shared/controller/priv_manager.php
+	Agregado: /include/db/mysql.php:last_id()	ultimo ID insertado.
+May 29 2006
+	std.php:foreign_select() sql output tidyfy
+		this:
+			SELECT por_hacer.id AS por_hacer_id,por_hacer.nombre AS por_hacer_nombre,por_hacer.tiempo_requerido AS por_hacer_tiempo_requerido,por_hacer.importancia AS por_hacer_importancia,por_hacer.fecha_terminacion AS por_hacer_fecha_terminacion,por_hacer.fecha_programada AS por_hacer_fecha_programada,por_hacer.terminado AS por_hacer_terminado,usr.name AS usr_name,por_hacer.horas_reales AS por_hacer_horas_reales,por_hacer.descripcion AS por_hacer_descripcion FROM por_hacer,usr WHERE 1=1 AND usr.id = por_hacer.usr_id ORDER BY por_hacer.importancia ASC
+		becomes this:
+			SELECT 
+				por_hacer.id AS por_hacer_id,
+				por_hacer.nombre AS por_hacer_nombre,
+				por_hacer.tiempo_requerido AS por_hacer_tiempo_requerido,
+				por_hacer.importancia AS por_hacer_importancia,
+				por_hacer.fecha_terminacion AS por_hacer_fecha_terminacion,
+				por_hacer.fecha_programada AS por_hacer_fecha_programada,
+				por_hacer.terminado AS por_hacer_terminado,
+				usr.name AS usr_name,
+				por_hacer.horas_reales AS por_hacer_horas_reales,
+				por_hacer.descripcion AS por_hacer_descripcion
+			 FROM 
+				por_hacer,
+				usr
+			 WHERE 
+				1=1 AND
+				usr.id = por_hacer.usr_id
+			 ORDER BY por_hacer.importancia ASC
+	Removido:BUG:std.php:load_file():mensaje de error en ingles, cambia a español.
+	Agregado: programa de edicion de cadenas.
+	Cambiado: programa de edicion de cadenas ahora es un modulo compartido.
+	Argegado: texto de ayuda para /shared/controller/usr.php:login()
+	Agregado: textos de ayuda en el Generador
+	Agregado: edicion de cadenas con descripcion completa de cada campo.
+	Agregado: programa de edicion de cadenas ahora usa parametrizacion de textos, y tipos de datos, 
+	          usando tecnologia Xpath (o algo así), para determinar el tipo de dato de cada campo
+		  parametrizado en el archivo /shared/datatypes/* . los archivos de parametrizacion usan
+		  un arreglo de campos, cuya llave es el PATH a el campo, asi pues, los items marcado como /a/b/c =array(x=y)
+		  agregaran a la llave X el valor Y de cuyos arreglos se encuentren dentro del PATH /a/b/c, osea
+		  los arreglos dentro de: a=>array(b=>array(c=>array(.....)))
+		  si no lo entiende, no se preocupe, no se supone que lo haga.
+	Agregado: textos de "datatype" en $i18n_std (/include/i18n/<lang>.php)
+	Agregado: Edicion de Nodos, y no solo de hojas, en path()
+May 30 2006
+	Removido: BUG:std.php:menu():el rol se repite para cada item del menu.
+May 31 2006
+	Removido: BUG:form.php:confirm():no hay cadenas de descripcion para confirmacion de borrado de registro
+	Agregado: 1h boton de volver a la lsta de resultados, usando la interfase b2l y v2l_link en std.php 
+	Agregado: 0.5h parametrizacion de acciones en ac_list, parte inferior
+	Agregado: 1.5h Vistas de tipo:Lista
+	Removido: modo de ejecucion: <modulo>/list	ahora es invalido, en vez de eso debe usarse <modulo>/view:list_all
+	Removido: BUG:lista de resultados no se actualiza
+	Removido: modo de ejecucion /edit, debe usarse /view:edit_all
+	Agregado: multipes botones en form.php() envian a usuario a distintas acciones, emulando a POST.ac
+		  esto permitira crear interfaces con multiples puntos de salida, en muchos lugares,
+		  sin embargo, ese manejo se lo da el usuario del API, la ventaja de esto, es que funcin, sin JS
+	Agregado: funcion de agregar_boton() en form(), permite que el formulario posea multiples botones de envio.
+	Removido: BUG: login no funciona si usr no es default_module
+	Agregado: opcion de template en ml(), ahora es posible teer cualquier HTML, como plantilla para ml() en std.php
+	Agregado: filtro
+Jun 1 2006
+	Removido: BUG: error si no existe session, en std.php
+Jun 3 2006
+	Agregado: display_id en foreign field.
+	???que paso? BUG:no se ven los items del Menu	
+Jun 7 2006
+	Agregado: espacin entre roles, en el menu
+	Agregado: muestra el nombre de usuario en el menu
+	Agregado: 
+	Removido: NBSP en ultimo item del menu (salir)
+	Agregado: guarda lista de privilegios, en SESSION
+	Agregado: revisa que el usuario tenga privilegios suficientes, para ingresar a una accion dada.
+	Agregado: lista de Errores, con codigo y descripcion , para documentacion.
+	Agregado: formato para la funcion i_error, con este formato es posible enviar mensajes de error como: 
+		  "error en la linea XXX, codigo YYY" usando lo siguente: 
+		  $this->i_error('error [#l]','YYY',array('l'=>'XXX'))  , no es mu simple, pero sirve.
+Jun 9 2006
+	Cambiado: modo de ejecucion: end <proyecto>/controller/*:$default_module no necesita "ac_"
+Jun 10 2006
+	Removido: BUG: cambio de modo de ejecución causaba error en ac_list, debido al cambio en /model
+	Agregado: se puede hacer JOIN foraneo, usando fields.foreign="tabla.campo"
+	Agregado: referencias circulares, usando ALIAS, para seleccionar varias veces una tabla foranea, p.e. en la tabla de vendedores, hay campos: empleado, y jefe, ambos foraneos de la tabla de usuarios, 
+	Removido: BUG: no sirve el b2l
+Jun 12 2006
+	Removido: BUG: no se  	???
+Jun 14 2006
+	Agregado: funcion para incluir archivos, en sistema de plantilas: common.php:parse_add_files()
+	Agregado: funcion para agregar permisos a modulos publicos, std.php:add_public_module() ,  
+		  de esta manera, podemos autorizar a usuarios que no hayan hecho login, a ver secciones del sitio,
+		  que sean declaradas como "publicas", p.e. la pagina principal.
+	Agregado: parametro $role opcional, que permite indicar el ROL automaticamente, en std.php:ap() (add_privilege),
+		  para indicar roles "comunes" que no necesariamente están en la lista de ROLES, como por ejemplo "invitado", etc.
+	Removido: BUG: 	
+Jun 15 2006
+	Agregado: shared.usr.controller:change_password()
+	Agregado: se puede tener cadenas de los botones dentro de las cadenas del modulo, i8n, no solo en i8n_std,
+		  esto es importante, para botones especialzados, que no esten en mi lista, PRIMERO se busca en la lista
+		  del modulo, y luego en la lista i18n_std, para permitir Override cuando sea necesario, 
+	Cambiado: mensaje de Error std071, indicba que no hay error, pero no dice en que modulo	  
+Jun 17 2006
+	Removido: BUG: no se puede ordenar por campos, que no posean alias
+	Agregado: DEBUG solo es visible en localhost (/config/cf.php)
+Jun 20 2006
+	Agregado: view.sort_field & view.sort_direction: es posible dar un campo de ordenamiento por defecto en std.php:ml()
+	Agregado: Revisar si el Form() si tiene Strings /include/form.php:bare_fields()
+Jun 21 2006
+	Agregado: field.unique: si el campo tiene esta proppiedad, no se puede crear elemenos que contengan valores repetidos	
+Jun 22 2006
+	Agregado: boton de "click para agregar este privilegio a un ROL" en shared/controller/privilege.controller.php:ac_new2()
+	Agregado: opcion de "all" en std:form_from_fields()
+	Removido: BUG: std:form_from_fields() no acepta campos con llaves foraneas, redireccionado a ed()
+	Agregado: std:ed()$options[style],	para usar estilos como "shadow", "iframe", etc en los formularios creados por std:form_from_fields()
+	Agregado: opcion display_value en form.php:input_label(), que permite tener un valor real, distinto de un valor "que se muestra"
+	Agregado: opcion "label" para campos foráneos, que muestra la información foránea.
+	Agregado: botón de: borrar selección en std:ml(), y funcion de borado en std:ac_delete_selected()
+Jun 24 2006
+	Agregado:
+	removido: BUG: textos en /app/i18n/ES.php deberia ser ES.i18n.php, cambiado el programa y actualizadas las implementaciones.
+	Removido: BUG: cuando no hay 'items, no se puede agregar
+	
+Jun 26 2006
+	Cambiado: mensaje de error de "no autorizado"
+	Agregado: es posible guardar las URLs, cuando uno entra a /?mod=xx&ac=yy el muestra una patalla de Login, y luego, si tiene los permisos apropiados, entra ahí.
+	Agregado: base.$login_module : indica cual es el moulo de login.
+	BUG: edit, add new, delete, etc: debe guardarse TODOS los privilegios en la tabla, o hacer recursividad? como soluciono mi problema?
+	BUG: no funciona
+Jul 04 2006
+	Agregado: removido item "shared" de /index.php
+	Agregado: boton de "volver a la lista de resultados" en formulario de "Agregar"
+	Agregado: si estoy en la segunda pagina, o en la penultima pagina, no aparecen los links de siguiente, o anterior, respectivamente, ya que son redundantes.
+	Removido: BUG: si se usan varias aplicaciones al tiempo, los privilegios de una afectan a la otra, haciendo que los menus, se muestren mal
+	Agregado: funciones ssid(), ssname(), para simplificar el proceso de uso de IDs (la otra opcion es: global $mydir;$_SESSION[$mydir][usr][id])
+Jul 14 2006
+	Removido: BUG: no funciona checklist (form.php)
+	Agregado: cuando se desdelecciona una opción del checklist, si no están todas, entonces se desmarca la casilla de "todas".
+Jul 20 2006
+	Removido: BUG: Botónes de los formularios incorrectamente alineados.
+	Removido: BUG: Editor de cadenas genera salida incorrecta.
+	Removido: BUG: en la paginacion aparece el texto de "table_plural" y no el de "title", como debería. @include/std.php:pagination_scheme()
+	Removido: BUG: no aparece la información
+	Agregado: para ver la información de depuración, es necesario presionar Shift, y K, con Caps Lock ON
+	Cambiado: refactorización de distribución de funciones, en include/sd.php:ml()
+Aug 01 2006
+	Removido BUG: error en codificación de "configuracion" en /shared/install/install.sql
+	Agregado: inputs propios usando input_<tipo> en usr.controller
+	Agregado: input de acciones (lineal) en :./include/std.php:all_valid_actions
+Aug 04 2006
+	Agregado: mejoras a d2 (herramienta de depuración), remplazo de p2, en /include/common.php
+	Cambiado: Refactorización de /include/form.php items ahora son llamados usando input_*
+Aug 07 2006
+	Agregado: Input de tipo ComboBox
+Aug 08 2006
+	Agregado: JSON output	: include/std.php
+	Agregado: soporte de formulatrios usando POST y uploads de archivos. : include/form.php
+	Agregado: inputs de lista de tipo multiple (select), con multiples valores seleccionados por defecto : include/form.php
+	Agregado: ayuda sensible al contexto en los campos de los formularios.
+Aug 09 2006
+	Agregado: sistema de pestañas : /include/common.php
+Aug 10 2006
+	Cambiado: Index.php en / ahora con diseño distinto.
+Aug 22 2006
+	Agregado: Indique roles en add.user
+Aug 24 2006
+	Cambiado: campos no requeridos, removidos en add.user
+Aug 28 2006	
+	Removido: bug: no muestra los bordes de los formularios std.php@get_ed()
+	Removido: BUG: error en autenticación
+Aug 31 2006
+	?
+Sep 04 2006
+	Agregado: icono de la aplicación
+		Falta:icono en config
+	Agregado: funciona combobox
+		Falta:colores menos feos
+		Falta:position:relative para un mejor flujo
+		Falta:scrollbar para que no llene foda la pantalla, sino un pequeño sector	
+Sep 05 2006
+	Editor de Areglos n-dimensional
+	Editor: Borrar nodos
+	Agregado: archivo de Idioma i18n en javascript, para cadenas de programas y componentes en este lenguaje
+	Editor:iconos
+	Editor: algo de estilo
+Sep 11 2006
+	Editor: clonar nodos 
+	Editor: Renombrar nodos 
+Sep 12 2006
+	ayuda
+	Agregado: máximo texto que aparece en una cadena, usando trim
+	p.e. karim/cambios pagina centrodiesel aug30...
+Sep 13 2006
+	Agregado:búsqueda inteligente, (nombre campo:valor, campo_sql:valor)
+Sep 14 2006
+	Agregado: soporte para alias, en busqueda inteligente.
+	
+	mejoras al API de std::foreign_select(), con mucha más informacion, para fácilmente 
+	poder crear varios distintos campos
+Sep 15 2006
+	Agregado: parsing de la busqueda
+Sep 18 2006
+	Agregado: 
+			busqueda con comillas "a b c", y operadores BOOLEANOS (solo OR)
+			el nuevo lenguaje de bsuqueda es el siguente:
+			[campo:]valor [[OR] [campo:]valor] ...
+	Agregado: resaltado de los terminos de búsqueda, en la tabla de resultados.
+	Agregado: caso de prueba para tablas con referencias a si mismas (nodos de un árbol, con nodo padre), para probar funcionalidad de Alias.
+Sep 20 2006
+	función para cargar más rapidamente las fuentes, que solo carga lo absolutamente necesario .
+Sep 21 2006
+	10% menos de fuentes en std.php
+Sep 22 2006
+	clase view
+	+gen.ayuda	
+Sep 25  2006
+	+data.preserve
+	Removido:BUG: mensaje de error de borrado múltiple no esta internacionalizado
+Sep 26 2006
+	Editor de tablas, con agregar, y borrar, minimo y maximo
+Sep 27 2006
+	std::ml() ahora es view::ml() (mejoras al rendimiento de la aplicación)
+Oct 5 2006
+Oct 6 2006
+	std::dsl() display simple list
+Oct 9 2006
+	std::dsr() display simple record
+	std::g_table() display record info in a "mysql \G" like format
+Oct 10 2006
+	fixed bug: user password was being md5'd twice
+	fixed bug: user name was not unique
+	added: register form
+	fixed bug: 	STD_NOTABLE privilege got added erroneously when a public module 
+			was added by the "restrinctions->allow" method
+	fix
+	added: db.query count
+	added: 	edit2.field available if the field is not given by the user on GET, 
+		then the field is not updated in the database
+		this will allow us to show edit record views with just a few fields.	
+Oct 19  2006
+	added: allow fields missing from vh_record() (edit record form), NOT to set default values on the update,
+	       no longer need hidden fieldsm when you can remove them completely
+	added: error message can now reffer to string in the module's i18n.error array
+	added: msg() also has module's i18n access now.
+	added: usr/edit_profile : users can now dedit their names, emails, and passwords!
+Oct 31  2006
+	added: /rel (relationships between files)
+Nov 1	 2006
+	fixed: bug: rel does not load properly
+	added: users can now click the item's name, to edit it.
+Nov 04 2006
+	fixed: 
+		bug in gen that made no select all possible: 
+		due to "expand/collapse" stuff, that used table_\d , now moved to _std_table\d 
+Nov 07	 2006
+	HBM : insert works
+	HBM: edit shows info, but no update is possible yet
+Nov 08 2006
+	HBM : 
+	added: 
+		lots of events, on_before_xxx(), no_after_xxx(), for simpler overriding.
+	work on: protected fields
+	work on: hbm update: cascade and restrict modes.
+Nov 16,17 2006
+	added:
+		sqlobjects module
+	added:
+		the ability to load modules from another folder 
+		(needs some testing, but seems to work)
+--
+	modified:
+		filter_trough takes an array of functions
+		load_current_module() checks for existance of functions before execution.
+Nov 21  2006
+	added:
+		 default_display property of view's fields, 
+		so now you can say something like:
+		'usr_id'=>array('name'=>'usr_id','default_display'=>0),
+		and that will put the field in the view, but hidden by default,
+		in order to activate it, the user must go to the "Advanced Options" tab, and enable it.
+Nov 22 2006
+	added: 
+		allow host autoconfig:
+		./config.php 
+		now becomes
+		./config/default.config.php
+		./config/hostname.config.php
+		which simplifies the proccess of managing multiple host configurations
+	added: 	
+		mysql trace now reports the database name (so you don't 
+		make foolish mistakes by using the wrong database, etc.)
+Nov 23 2006
+	added:
+	fixed: bug that showed wrong title columns , on last data object being less than the rest, updated to sue max() @common:table()
+Nov 26 2006
+	fixed: 
+		moved the following functions:
+		
+		valid_page 
+		valid_sort_direction 
+		valid_sort_field 
+		get_field_info
+		get_info
+	to std_view, to improve performance.
+Nov 27 2006
+	finished show()
+Nov 28 2006
+	gstat()
+	now i18n takes mod
+	now get_i18n_list takes all, or takes nothing
+	added: load_module 
+Nov 29 2006
+	load_i18n now works no shared modules
+	minor documentation fixes
+	vh_record()
+	now ./core can live anywhere!
+	added STD_LOCATION, so now you can indicate the location of the core 
+	(and have multiple cores live together, to reuse media folders, etc)
+	added:		$dir param to get_valid_modules folder
+	improved:	ac parsing in menu()
+	added:		views can now disable menu() using 'no_menu'=1 on the view definition
+	added:		fmt() parsing to model, so you can set value=[#uid] (for model editing)
+Nov 30 2006
+	added: foreign select group_field parameter, and fields.sql_expression parameter
+		the road to calculated fields is just ahead	
+	SHARED_MODULES_DIR
+Dec 01 2006
+	fixed: bug: @get_kids error on ID
+	added: find [just a container, its still undone]
+	added: find_by_id @std
+Dec 04 2006
+	fixed: BUG: javascript load error
+	moved: various functions to .func files
+Dec 05 2006
+	uh?
+Dec 18 2006
+	Today link on input fields, sets the input's date to "today"	
+Dec 27  2006
+	fix: removed ugly error message in std_view when no records were found.
+Jan 02	 2007
+	fix: foreign_select dsl error, displayed IDs.
+Jan 03 2007
+	added new option to allow each app to define DEBUG
+Jan 04 2007
+	fixed BUG: foreign select data in include/func/std_get_ed() was wrong, displaying only the last record
+Jan 11 2007
+	fixed BUG: error in referential integrity due to program malfunction @system
+	fixed BUG: year_range in date fields.
+	fixed: made date field start in y2k @system	
+Jan 15 2007
+	added: black background template
+	added: auto images support
+Jan 16 2007
+	added: multiple prefixes support
+Jan 17 2007
+	added: row select
+Jan 18 2007
+	added: documentation in PDF, RTF, CHM, HTML and Latex Formats
+Jan 19 2007
+	added: more documentation fixes
+	added: b2() super duper backtrace 
+	added: common() instance count, now all we have to do is reduce the instance count trough 
+	proxying and instance re-use.
+Jan 25 2007
+	fixed: colors in not negative shadow
+	fixed: 	
+Jan 27
+	test: PHP5 tests seem to work flawlessly, except for some minor bugs
+Jan 29 was error on db connections	
+Jan 30
+	-
+Jan 31
+	-	
+Feb 1
+	added events on shared usr2role module
+feb 6
+Feb 7
+	added: help/help
+	mail_safe add field import
+Feb 8
+	fixed: login now is on POST, no longer passwords are stored in the user's history 
+		@ /core/shared/contrioller/usr.controller.php
+	added: mail_safe  /contact/ac_import (v1)
+	fixed: vendedor400. updated for 0.2.7.1 compatibility
+	fixed: search "" bug killed
+	added: shortcuts
+Feb 9
+	added: /doc/about.html functionality on /projects/index.php
+	added:
+		hide projects that begin with a dot.
+		so .gen is nowt shown on the project list (which is now cleaner.)
+	fixed: POST login busted logout link, fixed. @core/include/init.php
+	updated: user view to show more fields
+	added: filter_date(), whicih displays field data on table views without HMS
+	added:
+		some basic support for the English Language in i18n/EN
+		this needs lots and lots of work....
+	-
+	fixed:csv BUG
+	fixed:xls foreign ID bug
+	added:auto_login (/?blob='')
+	added:run_view()
+	added:On task management system: default entry point: por_haver/view:list_all2 (saves time)
+Feb 12
+	<-- that's my birthday right there
+Feb 13
+	seeking incompatibility changes, to enable multi prefix and single DB support in core/shared modules
+Feb 16 2007
+	added: better pluralization in .gen
+	fixed bug: form::add_separator() not dislaying table names @.gen
+	added: add a field from interface: edit/add_field
+	started:foxf4
+Feb 19 2007
+	added: module to [create table] out of a module (asumes lots of stuff, but kinds works)=> edit/csql
+Feb 23 2007
+	fixed: removed un-necesary query on std::vh_record()
+	fixed: major redesign: modified main controllers to display messages, plus the *_cmessage() functions
+	fixed: re-enabled hbm insert
+	added: allow admini to modify main tables on .gen/gen.controller.php	
+Mar 07 2007
+	added: view/copy
+Jul 18 2007
+	added: /projects/_util/upgrade/upgrade.php
+	-=-
+Jul 19 2007
+	fixed: /projects/_util/upgrade/upgrade.php missing ";"
+
+
+todo: add help/help & edit/add_field to install.sql
+todo: set install.sql edit/ed not edit/
+todo: view.new.[#now] is broken
+todo: warn on user same as password @ user.new2
+todo: problem with search: categoría padre:compra
+todo: search operators, le, ge etc
+todo: allow that inconfig!
+todo allow generator to create users.install.sql
+allow generator to create /doc/.about.html
+
+TODO fix cosasporhacer.tiempo.click in list_all2 (its foreign!)
+todo: dsl,dsr, etc go to std_simple
+
+TODO documentation non search, and search field: something, and quotes, etc.
+--	
+
+
+must: make get_info a different beast
+ 
+
+goal: 2000 lines
+
+END
+
+TODO
+	fix table  missing
+
+	fix: use htmlspecialchars on text that has HTML inside.
+	fix generator, add sql sentences to a log w/date
+	fix gen add .htaccess files everywhere
+	fix the generator, set STD_location to current STD location (gen's)
+	fix generator, entered table stuff+location breaks
+	a short video, explaining how to use this, (Wink?), 
+	make sure you show the generated SQL, etc- and show what the user didn't had to do.
+	fix bug \" in Search box
+
+
+-
+TODO: shared/edit/cf to see this change
+	
+
+RESTRICTIONS
+	no _std_table fields should be available. on expandible/collapsible tables.
+
+TODO replace class.name to class.ifield.
+--
+
+	+ more help stuff
+	
+	TODO: fix feb 31
+	TODO: validation
+
+
+	+view view.saveas
+	+documentation administration [i18n]
+
+	+shared.package.manager
+
+	+packager:
+		i18n privileges assosiated with it in an SQL file
+		files: model, view, controller, documents
+		all in a nice and simple tar.gz file.
+		+unpackager: unpacks, and makes backup copies, and executes sql files.
+
+
+
+		
+
+	--
+	BUG: los datos de entrada no son re-escritos en new.
+
+//
+EDIT
+cgangelog
+privilege model
+test controller
+js
+std
+system base
+common
+edit
+include
+
+
+EOF

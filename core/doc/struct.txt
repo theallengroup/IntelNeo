@@ -1,0 +1,30 @@
+[nombre] => Array
+        (
+            [simple_name] => nombre
+            [q] => por_hacer_nombre
+            [d] => por_hacer.nombre
+            [table] => por_hacer
+            [aliased_table] => por_hacer
+            [is_foreign] => 0
+            [is_aliased] => 0
+            [alias_path] => 
+            [alias_add] => 
+            [s] => por_hacer.nombre
+        )
+
+[proyecto_id] => Array
+        (
+            [simple_name] => proyecto_id
+            [is_aliased] => 0
+            [alias_path] => 
+            [alias_add] => 
+            [s] => proyecto.nombre
+            [table] => proyecto
+            [q] => proyecto_nombre
+            [d] => proyecto.nombre
+            [aliased_table] => proyecto
+            [is_foreign] => 1
+        )
+
+	*
+

@@ -1,0 +1,40 @@
+		$co1de='
+digraph G {
+
+	subgraph cluster_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+		a0 -> a1 -> a2 -> a3;
+		label = "process #1";
+	}
+
+	subgraph cluster_1 {
+		node [style=filled];
+		b0 -> b1 -> b2 -> b3;
+		label = "process #2";
+		color=blue
+	}
+	start -> a0;
+	start -> b0;
+	a1 -> b3;
+	b2 -> a3;
+	a3 -> a0;
+	a3 -> end;
+	b3 -> end;
+
+	start [shape=Mdiamond];
+	end [shape=Msquare];
+}
+		';
+
+
+		$code='
+			a [shape=record,label= "<f0> AAA|<f1> BBB|<f2>CCC"];
+			a1 [shape=record,label= "<f0> AAA|<f1> BBB|<f2>CCC"];
+			a2 [shape=record,label= "<f0> AAA|<f1> BBB|<f2>CCC"];
+			a3 [shape=record,label= "<f0> AAA|<f1> BBB|<f2>CCC"];
+			b[shape=rect];
+			b->a:f2;
+			';
+

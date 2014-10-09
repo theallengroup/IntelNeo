@@ -1,0 +1,8 @@
+bottom
+bottomLeft
+bottomRight
+left
+right
+top
+topLeft
+topRight

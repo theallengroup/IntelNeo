@@ -1,0 +1,137 @@
+C:/xampp/htdocs/project0.2.7.6/core/func/parse_search_string.func.php:201: Warning: end of file while inside a group
+
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:38: Warning: documented function `array zipfile::datasec' was not declared or defined.
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:45: Warning: documented function `array zipfile::ctrl_dir' was not declared or defined.
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:52: Warning: documented function `string zipfile::eof_ctrl_dir' was not declared or defined.
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:59: Warning: documented function `integer zipfile::old_offset' was not declared or defined.
+<std_set_select_value>:1: Warning: The following parameters of std_set_select_value(select_id,value) are not documented:
+  parameter value
+<std_set_select_value>:1: Warning: The following parameters of std_set_select_value(select_id,value) are not documented:
+  parameter value
+C:/xampp/htdocs/project0.2.7.6/core/include/actions/rss.php:2: Warning: explicit link request to 'Exports' could not be resolved
+C:/xampp/htdocs/project0.2.7.6/core/include/actions/rss.php:2: Warning: explicit link request to 'Exports' could not be resolved
+C:/xampp/htdocs/project0.2.7.6/core/shared/view/std.view.php:4: Warning: Unsupported xml/html tag <appname> found
+C:/xampp/htdocs/project0.2.7.6/core/shared/view/std.view.php:4: Warning: Unsupported xml/html tag <appname> found
+C:/xampp/htdocs/project0.2.7.6/core/shared/view/std.view.php:10: Warning: Unsupported xml/html tag <your> found
+C:/xampp/htdocs/project0.2.7.6/core/include/std_highlight.php:32: Warning: unable to resolve link to `http://aidanlister.com/repos/v/function.str_highlight.php' for \link command
+C:/xampp/htdocs/project0.2.7.6/core/include/std_highlight.php:33: Warning: Illegal command param as part of a \link
+C:/xampp/htdocs/project0.2.7.6/core/include/std_highlight.php:34: Warning: Illegal command param as part of a \link
+C:/xampp/htdocs/project0.2.7.6/core/include/std_highlight.php:35: Warning: Illegal command param as part of a \link
+C:/xampp/htdocs/project0.2.7.6/core/include/std_highlight.php:36: Warning: Illegal command param as part of a \link
+C:/xampp/htdocs/project0.2.7.6/core/include/std_highlight.php:37: Warning: Illegal command return as part of a \link
+C:/xampp/htdocs/project0.2.7.6/core/include/std_highlight.php:38: Warning: Unexpected end of comment while inside link command
+
+C:/xampp/htdocs/project0.2.7.6/core/shared/components/tree.js:154: Warning: The following parameters of std_tree_recurse_change(all2,prop,new_node,old_node,prefix) are not documented:
+  parameter prop
+  parameter new_node
+  parameter old_node
+  parameter prefix
+C:/xampp/htdocs/project0.2.7.6/core/shared/components/tree.js:154: Warning: The following parameters of std_tree_recurse_change(all2,prop,new_node,old_node,prefix) are not documented:
+  parameter prop
+  parameter new_node
+  parameter old_node
+  parameter prefix
+C:/xampp/htdocs/project0.2.7.6/core/shared/components/tree.js:154: Warning: The following parameters of std_tree_recurse_change(all2,prop,new_node,old_node,prefix) are not documented:
+  parameter all2
+todo:3011: Warning: unable to resolve reference to `error' for \ref command
+todo:62: Warning: Found unknown command `\TODO'
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:599: Warning: The following parameters of common::get_shadow_start($shadow_folder='shadow',$align='left',$width='') are not documented:
+  parameter shadow_folder
+  parameter align
+<unknown>:-1: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+<fields_transform>:1: Warning: The following parameters of std::fields_transform($fields,$context) are not documented:
+  parameter fields
+<fields_transform>:1: Warning: The following parameters of std::fields_transform($fields,$context) are not documented:
+  parameter fields
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:698: Warning: Found unknown command `\FIX'
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:698: Warning: Found unknown command `\FIX'
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:741: Warning: argument `key' of command @param is not found in the argument list of std::get_i18n_array()
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:710: Warning: unable to resolve reference to `module_name' for \ref command
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:807: Warning: The following parameters of std::log($txt,$lvl='NONE') are not documented:
+  parameter lvl
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:807: Warning: The following parameters of std::log($txt,$lvl='NONE') are not documented:
+  parameter lvl
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:807: Warning: The following parameters of std::log($txt,$lvl='NONE') are not documented:
+  parameter txt
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:1146: Warning: unable to resolve reference to `config' for \ref command
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:2179: Warning: Found unknown command `\none'
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:2179: Warning: Found unknown command `\none'
+C:/xampp/htdocs/project0.2.7.6/core/include/abstract_parser.php:13: Warning: Found unknown command `\text'
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:510: Warning: Found unknown command `\TODO'
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:510: Warning: Found unknown command `\TODO'
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:26: Warning: The following parameters of common::template($tfile,$t=array()) are not documented:
+  parameter t
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:173: Warning: The following parameters of common::cut($txt,$len) are not documented:
+  parameter len
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:510: Warning: Found unknown command `\TODO'
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:48: Warning: Found unknown command `\patram'
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:201: Warning: argument `cs' of command @param is not found in the argument list of common::parse_template($data,$template,$name='CONTENT',$char='_')
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:201: Warning: argument `cs2' of command @param is not found in the argument list of common::parse_template($data,$template,$name='CONTENT',$char='_')
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:201: Warning: The following parameters of common::parse_template($data,$template,$name='CONTENT',$char='_') are not documented:
+  parameter char
+<unknown>:-1: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:878: Warning: Unsupported xml/html tag <style> found
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:879: Warning: Unsupported xml/html tag <style> found
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:880: Warning: Unsupported xml/html tag <style> found
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:881: Warning: Unsupported xml/html tag <style> found
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:882: Warning: Unsupported xml/html tag <style> found
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:883: Warning: Unsupported xml/html tag <style> found
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:26: Warning: The following parameters of common::template($tfile,$t=array()) are not documented:
+  parameter t
+C:/xampp/htdocs/project0.2.7.6/core/include/common.php:26: Warning: The following parameters of common::template($tfile,$t=array()) are not documented:
+  parameter tfile
+C:/xampp/htdocs/project0.2.7.6/core/include/db/mysql.php:114: Warning: The following parameters of db::cnn($data1,$host1,$name1,$pwd1) are not documented:
+  parameter host1
+  parameter name1
+  parameter pwd1
+<unknown>:-1: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+C:/xampp/htdocs/project0.2.7.6/core/include/form.php:1043: Warning: explicit link request to '___blockX' could not be resolved
+C:/xampp/htdocs/project0.2.7.6/core/include/form.php:1043: Warning: explicit link request to '___blockX' could not be resolved
+C:/xampp/htdocs/project0.2.7.6/core/include/form.php:887: Warning: Unsupported xml/html tag <form> found
+<unknown>:-1: Warning: HTML tags may not use the 'empty tag' XHTML syntax.
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:1954: Warning: Found unknown command `\dsr'
+<fields_transform>:1: Warning: The following parameters of std::fields_transform($fields,$context) are not documented:
+  parameter fields
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:698: Warning: Found unknown command `\FIX'
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:2179: Warning: Found unknown command `\none'
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:807: Warning: The following parameters of std::log($txt,$lvl='NONE') are not documented:
+  parameter lvl
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:1953: Warning: The following parameters of std::dsr($fields='all',$restrict='1=1 ',$exclude_fields=array(),$title='table_plural',$filter='none',$options=array()) are not documented:
+  parameter title
+  parameter options
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:1946: Warning: Found unknown command `\dsr'
+C:/xampp/htdocs/project0.2.7.6/core/include/std.php:3361: Warning: The following parameters of std::get_shadow_start($shadow_folder='shadow',$align='left',$width='') are not documented:
+  parameter shadow_folder
+  parameter align
+C:/xampp/htdocs/project0.2.7.6/core/include/std_tab.php:44: Warning: The following parameters of tab::add_tab($title,$content) are not documented:
+  parameter content
+C:/xampp/htdocs/project0.2.7.6/core/include/std_tab.php:44: Warning: The following parameters of tab::add_tab($title,$content) are not documented:
+  parameter content
+C:/xampp/htdocs/project0.2.7.6/core/shared/controller/view.controller.php:2: Warning: Found unknown command `\TODO'
+C:/xampp/htdocs/project0.2.7.6/core/shared/controller/view.controller.php:3: Warning: Found unknown command `\TODO'
+C:/xampp/htdocs/project0.2.7.6/core/shared/controller/view.controller.php:4: Warning: Found unknown command `\TODO'
+C:/xampp/htdocs/project0.2.7.6/core/shared/controller/view.controller.php:10: Warning: Found unknown command `\TODO'
+C:/xampp/htdocs/project0.2.7.6/core/shared/controller/view.controller.php:12: Warning: Found unknown command `\TODO'
+C:/xampp/htdocs/project0.2.7.6/core/shared/controller/view.controller.php:13: Warning: Found unknown command `\TODO'
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:29: Warning: Found unknown command `\access'
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:91: Warning: argument `string' of command @param is not found in the argument list of zipfile::addFile($data,$name,$time=0)
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:91: Warning: argument `string' of command @param is not found in the argument list of zipfile::addFile($data,$name,$time=0)
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:91: Warning: argument `integer' of command @param is not found in the argument list of zipfile::addFile($data,$name,$time=0)
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:95: Warning: Found unknown command `\access'
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:91: Warning: The following parameters of zipfile::addFile($data,$name,$time=0) are not documented:
+  parameter data
+  parameter name
+  parameter time
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:194: Warning: argument `array' of command @param is not found in the argument list of zipfile::addFiles($files)
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:198: Warning: Found unknown command `\access'
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:194: Warning: The following parameters of zipfile::addFiles($files) are not documented:
+  parameter files
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:172: Warning: Found unknown command `\access'
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:215: Warning: argument `string' of command @param is not found in the argument list of zipfile::output($file)
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:219: Warning: Found unknown command `\access'
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:215: Warning: The following parameters of zipfile::output($file) are not documented:
+  parameter file
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:64: Warning: argument `integer' of command @param is not found in the argument list of zipfile::unix2DosTime($unixtime=0)
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:68: Warning: Found unknown command `\access'
+C:/xampp/htdocs/project0.2.7.6/core/include/zip.lib.php:64: Warning: The following parameters of zipfile::unix2DosTime($unixtime=0) are not documented:
+  parameter unixtime

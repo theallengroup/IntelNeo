@@ -1,0 +1,179 @@
+
+Event System Proposal
+Draft 1
+Date:Jul 11 2006
+Author:F3l
+
+An Event system to handle and simplify the events of the application is required, such system would allows us to:
+
+. Easily (graphically, trough a WEB interface, provided by the ArrayEdit Interface) edit a module's events
+
+Although all of these actions can be performed trough standard and old fashioned PHP programming
+users lacking such skills, that need to run the platform and make minor changes, will be allowed to do about 80% of
+special cases should be covered (and only places where REAL programming, and complex stuff is needed should require
+PHP programming skill sand time (20% of the cases (hopefully)))
+
+
+Events can be classified by:
+
+Server side events
+------------------
+
+	server side events hook to actions (ac_*) i.e. 
+
+	the events will be stored in a PHP array, under the /events/ folder (/<appname>/event/<module_name>.server.event.php), of the application.
+	entry of these cases should be done with the [client side events tool], so that the inputs change depending
+	on the context: (i.e. if you select as condition: sql, the following fields should be made visible: sql_textarea,
+		but if you choose "php", an php text entry should be made available, etc)
+
+	events have 2 main clauses:
+	1. Conditions
+		conditions can range in:
+		+ field [operator] [another_field|fixed_value]
+		+ a php function call's return value
+		+ sql sentence, returning record count
+		+ 
+
+
+
+	2. Effects	
+
+	Effects will follow this syntax:
+
+	"modifier","action","function",["aditional_parameter1","aditional_parameter2", ... ]
+
+	"modifier"	one of the following: "before, after"
+
+	"action"	regexp? view:*_all
+
+			an "ac_*" function name or a "ac_view:*" element
+			for instance new,create,update,delete,list,grid,view:edit_all,xls,etc
+		
+			NOTE: 	in the UI, these actions must not appear, but instead their names, in the Privilege table,
+				or Lang relatives, users must never be concerned about our implementation, or jargon.
+				also, the entry for that data, must be a <select>, not an <input>, since we don't want any screw ups.
+
+	"function"	
+			NOTE: a framework must be made so that its possible to create new functions, to handle this events,
+				should the need of more handlers arrive.
+			"function", is a handler, handlers should be something like "ev_*"
+				so we can extend current functionality from base, std, and module scopes easily and
+				consistently.
+			
+			any of these:
+
+			"email"		would send an email, using a template file, to an specified destination(a field_name)
+					use cases: registration, changing sensitive data, help desk: alerts
+					future: email many items, from other tables (SQl?)
+					use cases: on new user, send email to all interested in user, that showed interest
+					on field1=value1 and field2=value2 (jobs search, notifications, matching, etc)
+		
+
+			"SQL"		runs an arbitrary SQL command
+					use cases: 	+ Update an item's "view_count", and "last_viewed_date" fields, 
+							  using the current system date
+							+ Before you delete a record from table B, select ites from table A
+							  where a.foreign_field_from_B equals to "current item ID",
+							  and if any is found, 
+								a. cancel operation
+								b. delete those as well
+							  its a complex example, but not impossible to implement, if
+							  you have something like: ""
+
+			"cancel"	IF the modifier is set to "before", some circumstances might cause the action
+					to be cancelled altogether, like: 
+
+					use cases:"impossible to perform action, due to business logic rule XYZ"
+
+			"call"		calls a PHP function
+			"redirect"	sends the user to another page
+			"shell"		runs a Shell Command 
+					use cases: (create a folder, a file, delete folder, file?,copy files? rename, etc)
+					Create a cron job, run a shell command in another process (for batch stuff, like email, etc)
+			"include"	would include a PHP file, or  static HTML to the current page
+					use cases: warnings, etc
+	
+			"write"		would use a template file, and an array of data (usually, the session data,
+					the record's data, and date(), among others), and a destination file.
+			"run"		a php snippet, using php's eval()?
+					use cases:
+					$field_a = $field_b + $field_c
+			"append"	should append another form,perhaps a small list of "child" items?
+	
+					use cases: a user's data, and his "payments" "payments where user_id=current_user_id"
+			"ac"		should call another action, like "xyz" (a user defined action)
+
+			and any other you can think of, that's implementable.
+			
+			this framework should allow you to add items to a form ,
+			that's about to be shown."$this->fields"
+		
+	Some Examples:
+
+	+ "on update, notify"
+	
+	+ on before show_add: add fields
+	  on before add 2: do calculations with fields.
+
+
+	"before","new","call","some_function"
+	"before","new","SQL","update table set a=b where c=d" 
+
+			(note, this requires us to expose current data, and user given data, to the sql, in some way FMT?)
+
+	"after",'update','email','template1'
+
+		template1 is a file with something like:
+		"dear [#field1] you must: [#field2] "
+	"before"
+
+	-
+	
+	one action, might have many events hooked to it, so you could:
+		on insert:
+			send email
+			create a file
+			copy a template file from known location, to newly created file
+			write some stuff (template), to the current user's file.
+			update user's record: "last_post_date", to now, and "post_count" to "post_count" + 1
+			send a message.
+
+
+TO DO: variables?, labels?, branching?, YA(Graphic)PL?			
+
+Client side events
+------------------
+
+	Client side events, are also stored as a PHP array, in /<appname>/event/<module_name>.client.event.php
+	such array is later turned into JSON and sent along with the form, when appropiate.
+	fields,can include events, using: $this->fields[field_name][events] , this is important, 
+	because re-utilization of fields with events should be possible, if not encouraged.
+
+
+
+
+	function:
+		condition:
+		JS function
+
+Client and server side events, should be hooked up in someway (ajax?)
+
+Tasks
+-----
+	add auto_include functionality (the system MUST work without them, )
+		if you edit a module's event that has no event's file, user must be prompted to create this file.
+		all events editions, and states must be saved in /misc/deprecated (and/or optionally sent trough email)
+	add /event/*.(client|server).php	template files to the Generator	
+		(I just noticed how nuts I am, putting file names as regexps..... never mind)
+
+
+
+
+
+
+
+
+
+
+
+

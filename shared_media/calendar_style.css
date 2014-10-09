@@ -1,0 +1,35 @@
+/*calendar action style: list */
+.calendar_table{ width:100%}
+.calendar_row{ }
+.calendar_title{ 
+	text-decoration:underline;
+	text-align:right;
+	font-family:tahoma;
+	font-size:15pt;
+	font-weight:bold;
+	padding:10px;
+}
+.calendar_head{ 
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+	padding:3px;
+	text-decoration:underline;
+	font-family:tahoma;
+	font-size:12pt;
+}
+.calendar_foot{
+	text-align:right;
+	font-family:tahoma;
+	font-size:10pt;
+}
+.calendar_cell{ 
+
+	border-width:1px;
+	border-style:solid;
+	border-color:black;
+	padding:3px;
+	font-family:tahoma;
+	font-size:10pt;
+
+}

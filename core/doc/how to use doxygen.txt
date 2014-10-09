@@ -1,0 +1,14 @@
+ cd /www/project0.2.7.0/core/util/
+ doxygen new.cfg
+ cd ~/www/doc/latex/
+ make
+
+
+
+just std:
+
+cat new.cfg std.cfg |doxygen -
+
+--
+\private
+

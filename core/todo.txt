@@ -1,0 +1,78 @@
+TODO:
+	parent
+		parent.property 1
+		parent.property 2
+		parent.property 3
+	
+	children
+		child1
+		child2
+		child3
+	<a>add a child	</a>
+
+
+		-- add a child will suggest the parent ID, and return to THIS Screen
+
+		?
+		mod=child
+		ac=all_new
+		encode(suggest[parent_id]=$id)
+		b2p = THIS URL; URL_ENCODED: 
+			?mod=this&ac=all_edit
+
+	on 
+		get_ed
+	see
+		$_GET['suggest']
+		turn it into a label
+		make b2l have a special behavior
+		more like b2parent, instead of b2l
+		when you get 	
+			$_get[B2P]
+
+		
+		SAVE IT IN 
+			$_session['PREVIOUS'][CURRENT_URL] = PREVIOUS_URL, UNENCODED
+
+		the form buttons:
+			b2l
+			save
+		
+
+		user enters data. ..... 
+
+
+	
+		THEN, he hits 
+			b2l: 
+				read 
+					session[refferer]
+				see if there is anything in there!
+				if you find anything, re-direct him to the url stored there
+				trash the url stored there
+			save
+				save the data, and run ac_b2l
+
+		this should effectively return the user to thre previous-previous url
+		remember to save the whole URL, not just parts of it like mod and ac, since the shole url may be
+		neede to reconstruct the previous behavior, given special params that you might not be entering!
+
+
+	this sounds like major surgery, but it isnt, and it allows us to help the user manage better his workflow
+	
+------------
+
+
+
+on foreign field, 
+	modify the label, and let the iser, IF ALLOWED!!! this->privilege_manager->is_allowed() , to go to the parent id
+
+	field   _____
+	field 2 _______			
+	<a mod=parent&ac=all_edit&id=CURRENT_ID onclick=location.href='?parent&ac=all_edit&id=CURRENT_ID' + document.getValue(id) >LABEL</a>
+	this will allow users to enter the parent with and without javascript
+	having the javascript ENHANCE the experience, but not be the only way IN
+	having NO javascript, the system would be somewhat harder to use, but still helpful, mostly for STATIC data
+	(this applies to MOST of the data)
+							
+		

@@ -1,0 +1,58 @@
+
+para permitir multiples clases en un form, haga lo siguiente:
+
+style : "clase1 clase2 clase3 form"
+(form debe ser el ultimo, si desea reutilizar las formas existentes, y solod esea cambiar un pequeño detalle)
+
+
+
+para colocar saltos de linea en la ayuda de los campos, use \\n
+
+--
+de una lista de campos:
+a
+b
+c
+d
+
+saca el formulario:
+:s/\s*\(.*\)\s*/<td>[#_label_\1]<br\/>[#_input_\1]<\/td>/
+luego de una revision manual, a cada linea, le agrega inicio y fibnd de fila:
+s/.*/<tr>\0<\/tr>/g
+
+
+
+to save the file:
+tar -cf v2.2.tar v2.2 && gzip v2.2.tar
+
+to unzip:
+
+gzip -d v2.2.tar.gz && tar -xvf v2.2.tar
+
+
+
+doxygen
+
+	\todo
+	///
+	//!
+	@todo
+	\brief
+	@param
+	@see std::log()
+	@return
+	///<	previous
+
+automagic lists
+	- a
+	- b
+	- c
+		-# d
+		-# e
+
+vim
+	/\tfunction_name
+	seeks not commented function name.
+	like \td2
+	etc
+

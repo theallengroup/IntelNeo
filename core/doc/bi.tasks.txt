@@ -1,0 +1,35 @@
+
+
+	
+
+
+OK:	design database
+ok:	generate modules
+OK:	fill with random data
+MISSING:do ETL process 
+	where does the data comes from ?
+MIGHT SKIP:
+	make dtable/ftable.load()
+	make datamart.load()
+	
+
+
+
+OK:	make a path by hand
+ON IT:	path_executor
+OK:	cube by hand
+ON IT:	cube executor
+	cube to path saveBox
+OK:	path2role
+	path2rolemenu
+	
+
+	
+
+
+
+
+
+
+
+

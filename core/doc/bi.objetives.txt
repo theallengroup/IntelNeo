@@ -1,0 +1,25 @@
+
+
+objetivos
+---------
+
+1. eliminar la complejidad
+2. usabilidad por personas no expertas, en *TODOS* los pasos del proceso
+3. orientarlo a procesos
+4. extensibilidad
+5. resultados
+6. estéticamente agradable
+
+
+usuarios:
+---------
+	- los programadores de auditor400??? NO!
+	- los clientes!
+
+	
+
+
+
+
+
+

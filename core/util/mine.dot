@@ -1,0 +1,10 @@
+digraph G {
+	a[shape=box,weight=20];
+	a->b[label=extends,weight=20];
+	c->d[label=includes,style=dotted];
+	d->a[label=contains];
+	b->c;
+	c->a[color=blue];
+	a->d;
+	b->d
+}

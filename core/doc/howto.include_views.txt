@@ -1,0 +1,6 @@
+function ac_die(){
+	$a = $this->get_view_contents('list_all');
+	echo('nice!<hr>');
+	echo($a);
+}
+

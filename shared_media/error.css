@@ -1,0 +1,28 @@
+/* error_ codes */
+
+.error_text{
+	font-family:tahoma;
+	font-size:12pt;
+	font-weight:bold;
+	vertical-align:top;
+}
+.error_container{
+	width:100%;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.error_table{
+	width:95%;
+	border-width:1px;
+	border-style:dotted;
+	border-color:rgb(150,0,0);
+}
+.error_title{
+	padding:3px;
+	color:white;
+	background-color:rgb(150,0,0);
+	font-family:tahoma;font-size:12pt;
+	text-align:right;
+	font-weight:bold;
+}
+

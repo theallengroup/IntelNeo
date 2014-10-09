@@ -1,0 +1,39 @@
+<?php
+global $std_views;
+$std_views["event"]=array(
+	'edit_all'=>array(
+		'kids'=>'model',
+		'type'=>'record',
+		'actions'=>array('all_b2l','all_edit2','all_delete','all_configure','all_clean'),
+		'title'=>'edit_table_title',
+		'fields'=>array(
+			'id'=>array('name'=>'id','type'=>'label'),
+			'name'=>array('name'=>'name'),
+			'table_name'=>array('type'=>'list','name'=>'table_name','options'=>$this->get_mlist()),
+			'function_name'=>array('name'=>'function_name','options'=>$this->get_valid_event_handlers(),'type'=>'list'),
+			'enabled'=>array('name'=>'enabled','type'=>'list','options'=>array(0,1)),
+			'event_type'=>array('name'=>'event_type','type'=>'list','options'=>array('before'=>'before','after'=>'after')),
+			'secuence'=>array('name'=>'secuence'),
+			'info'=>array('name'=>'info','type'=>'textarea'),
+		),
+	),
+	'list_all'=>array(
+		'type'=>'table',
+		'order_field'=>'secuence',
+		'side_actions'=>array('all_configure','all_edit','all_delete','all_clean'),
+		'down_actions'=>array('all_delete_selected','all_xls','all_event_new'),
+		'title'=>'table_plural',
+		'fields'=>array(
+			'id'=>array('name'=>'id'),
+			'name'=>array('name'=>'name'),
+			'table_name'=>array('name'=>'table_name'),
+			'function_name'=>array('name'=>'function_name'),
+			'function_parameters'=>array('name'=>'function_parameters'),
+			'enabled'=>array('name'=>'enabled'),
+			'event_type'=>array('name'=>'event_type'),
+			'secuence'=>array('name'=>'secuence'),
+			'info'=>array('name'=>'info'),
+		)
+	),
+);
+?>

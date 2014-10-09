@@ -1,0 +1,325 @@
+http://www.ultrapico.com/Expresso.htm
+
+ok $this->before_edit2()
+memory_get_usage()
+
+graphs
+http://www.phphacks.com/content/view/50/33/
+
+
+
+icon vertical alignment in phparrayedit
+
+this.Behaviors.externalLink = function()
+{
+    $("a[@rel='external']").click(function(){window.open(this.href); return false;});
+}
+
+
+
+function sendmsg($to, $subject, $text, $from, $file, $type) {
+    $content = fread(fopen($file,"r"),filesize($file));
+    $content = chunk_split(base64_encode($content));
+    $uid = strtoupper(md5(uniqid(time())));
+    $name = basename($file);
+    $header = "From: $from\nReply-To: $from\n";
+    $header .= "MIME-Version: 1.0\n";
+    $header .= "Content-Type: multipart/mixed; boundary=$uid\n";
+    $header .= "--$uid\n";
+    $header .= "Content-Type: text/plain\n";
+    $header .= "Content-Transfer-Encoding: 8bit\n\n";
+    $header .= "$text\n";
+    $header .= "--$uid\n";
+    $header .= "Content-Type: $type; name=\"$name\"\n";
+    $header .= "Content-Transfer-Encoding: base64\n";
+    $header .= "Content-Disposition: attachment;
+filename=\"$name\"\n\n";
+    $header .= "$content\n";
+    $header .= "--$uid--";
+    mail($to, $subject, "", $header);
+    return true;
+}
+-- 
+/fel
+
+--
+OK tab de ayuda en : ml()
+OK ayuda por tabla
+ayuda por tabla en el generador.
+--editor de cadenas:
+los campo, y la ayuda.
+si no hay ayuda, no debe aparecer nada...
+
+BUG: login has no default role name
+
+BUG: information on help "cascades" on the next element(s) when nothing is written on them:
+GEN.BUG: administrator becomes administrador (put on i18n)
+
+a help+'aaa'
+b help ""
+c help ""
+d help ""
+
+output:
+
+b help "aaa"
+c help "aaa"
+d help "aaa"
+
+
+BUG: user.preffered_lang,usr.timezone (-5gmt),, for date translation,usr.
+
+BUG: client side event system
+	 * on Value Disable:
+	 * if a given value is selected in a given input, 
+	 * another input (or lists of inputs) must be disabled.
+	 *
+	 * allow disabling CERTAIN ITEMS from list a(1,2,3), if list B(b1,b2,b3) is checked value B1
+
+
+
+
+BUG: search
+BUG: hidden input, no send, use session., form_id?
+BUG: allowed IDs
+BUG: query by example
+BUG: open window
+BUG: privilege system: cannot go back just after logging in
+BUG: privilege system: non-operative
+BUG: privilege system: STD_NO_TABLE/usr is added
+BUG: some sectinos have no title
+BUG: the whole thing is hacky and undocumented
+BUG: login with previous URL does not work.
+
+
+BUG: integridad referencial: permitir que no se borren las categorias, cuando hayan productos, con categoria X.
+se necesita: relaciones.
+tabla?
+
+Agregar: poder indicar que un campo no debe ser inmediatamente visible en una vista
+BUG:	session prima sobre all
+BUG: formulario de opciones avanzadas aparece en lado derecho en IE6
+
+POR HACER: on fail.back: add login2 priv.
+	on loginok: add login2
+	BUG: on paginate 2 pages when no record are found, sent to page -10(last page/first page?)
+	dual select
+	n-size select
+	
+	add edit2.unique_check
+	fix no no priv show login
+	fix login.title	[Wtf is wrong?]
+
+---------
++generator
+	output a log, describing what was made.
+	MakeFile
+		-what gets generated when, and how many times.
+	Generate (and RUN) Security System intructions Automagically.
+	R W X
+	[][][]
+
+ROLE vs TABLE permissions
+ + show in menu
+ + can List | Enter ID trough input
+ + can View | can Edit | None
+ + can Add: no|from List|from Menu
+
+
+ROLE vs Field (Properties of the View that's Generated.) View.
+ + show in LIst
+ + show in Item View : show(Label) | Edit | Hidden
+ + 
+
+ -
++ create 
++ create roles if they dont exists (Roles prepend App name: so application poll has poll_admin, poll_guest, etc)
++ create a default View (defView) (for each Role), 4 views
++ create a default List (defList) (for each Role), 4 lists
++ Add permisions, to the Roles, on the Views AND  the lists (4x2)
++ create default users, if they dont exist.
++ add the roles, to the created users, if not privileged already
+
+
++Security System
+
+	roles
+		default roles:
+			usr,supporter,admin,guest
+	users
+		admin,defusr,defsupporter,guest
+	actions		
+		all related to db admin
+
+--
+as/400 setup
+
+banner auditor400 on index.php, w/ addr
+
+--
+client access
+pdf print
+acceso remoto
+programa de oscar (opcional)
+
+sesiones
+vnc
+
+as400 spool
+1 campo - salto de linea
+2 campo - numero de linea
+3 campo - linea
+
+--
+
+lo del qry
+
+
+0. colocar las direcciones nuevas
+1. manual de como usar el editor de texto rico del ALPHA.
+2. email a todos @valerie + @josue
+
+-
+decompilador
+sobre la foto del tipo, convertir a flash
+colocar nueva direccion.
+luego va la foto: a la izquierda
++40s , luego foto.
+
+.
+convertir eso a HTML.
+se mueve: lo de abajo.
+==
+llegar mas temprano+1
+
+-- llamar carlos torres, a que hora.
+-- hora de sapiens.
+
+--
+ajax espanol
+http://marianov.wordpress.com/2006/02/21/tutorial-de-ajax-con-php-y-json/
+php functions
+http://zugeschaut-und-mitgebaut.de/php/a.html
+
+
+
+TODOWN
+phpgen
+http://www.dbqwiksite.com/download.html
+http://www.zend.com/products/zend_studio
+http://www.codegeneration.net/generators-by-language.php?language=22
+http://www.websitedatabases.com/
+http://www.bigprof.com/appgini/index.php
+http://project.zoe.co.nz/patrick/mydbo/
+http://www.yessoftware.com/products/product_detail.php?product_id=1
+http://www.phpobjectgenerator.com/plog/article/108/php-crud
+
+http://ajaxian.com/archives/scriptaculous-162-released
+
+
+TOSUB
+http://marc.theaimsgroup.com/?l=php-general&r=1&b=200608&w=2
+toread
+http://developer.mozilla.org/es/docs/AJAX
+
+TOCHECK [VERY IMPOTANT]
+http://www.allthingsweb2.com/component/option,com_mtree/task,listcats/cat_id,60/Itemid,26/
+
+TOSTEAL
+view.isFilteredBy: field_name
+
+http://www.dbqwiksite.com/Livedemo/UsedCars/index.asp
+
+[category:select a,b,c,d] [ok]
+[list]
+
+a'b
+a'c
+a'd
+
+
+
+4class
+http://leadership.findingsdirect.com/2006/05/30/insider-secrets-to-interviewing-success/
+http://leadership.findingsdirect.com/2006/06/20/become-a-computer-programmer/
+
+
+--
+http://www.sapiens.com.co/index.htm
+
+
+auditor400.800
+
+
+--
+4class
+
+http://techrepublic.com.com/5254-6257-0.html?forumID=99&threadID=184332&messageID=2078226&id=2926438&tag=nl.e055
+http://techrepublic.com.com/5254-6257-0.html?forumID=99&threadID=185989&messageID=2077287&id=969373&tag=nl.e055
+
+
+
+remove crap and download
+http://it-mystic.com/testing-mystic/economics/Software-Testing-Principles.htm
+http://it-mystic.com/testing-mystic/test-case-design/test-case-design.htm
+
+
+running water web design
+ttp://techrepublic.com.com/5254-6257-0.html?forumID=99&threadID=184332&messageID=2063085&id=2926438
+
+
+
+4class:reflection:
+how can i make my webapp/site more usable:
+http://techrepublic.com.com/5254-6257-0.html?forumID=99&threadID=184332&messageID=2065273&id=2926438
+
+sell
+http://www.10000reasons.org/
+
+todown
+http://orbit.medphys.ucl.ac.uk/orbit.html
+
+tocheck
+http://www.awaretek.com/tutorials.html
+
+scrabble
+http://games.atari.com/playgames/registration1.jsp
+
+and endless root of ever changing crap
+
+todown
+http://www.gentoo.org/main/en/mirrors.xml
+http://digg.com/spy
+
+
+
+opwershell
+http://www.microsoft.com/technet/scriptcenter/hubs/msh.mspx
+http://www.microsoft.com/technet/technetmag/issues/2005/11/Scripting/default.aspx
+
+http://channel9.msdn.com/tags/monad
+
+java code repository
+http://codehaus.org/
+http://powershell.wiki.com/
+
+http://blogs.msdn.com/PowerShell
+
+
+/
+to check, does this work in IE?
+http://manual.dojotoolkit.org/WikiHome/DojoDotBook/Book25
+
+--
+el que mas subscriba 100 les damos dominio
+
+http://www.somacon.com/p141.php
+http://www.blooberry.com/indexdot/css/properties/extensions/nsextensions.htm
+
+http://www.htmldog.com/
+http://www.blooberry.com/indexdot/css/properties/extensions/nsextensions.htm
+
+
+http://www.alistapart.com/articles/customcorners/
+http://juglar103.blogsome.com/
+

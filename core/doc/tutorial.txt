@@ -1,0 +1,205 @@
+
+
+				STD Class tutorial
+
+
+					f3l (2006)
+
+
+In order to use STD you must have this LAMP:
+
+	mysql	3.23+
+	php	4.3+
+	apache	1.3+
+
+you also need a database called demo, to use with the generator.
+WARNING: this is not tested in PHP5 yet.
+
+CREATION
+--------
+
+first you must create a mysql database, I recommend wwwsqldesigner for that.
+once you've created your database, proceed to:
+
+http://yourhost/[INSTALLED STD PATH]/projects/gen/
+
+now select your database from the database list, fill in the blanks, and click "all" in generation options.
+
+step 2 will prompt you for which tables in your app would you like to create programs:just hit all.
+step 3 will ask you for table names
+step 4 will ask you for field names, rememeber to put useful comments in the help fields.
+step 5 generates the app, to login to your app use: 
+
+USER:root
+PWD:letmein
+
+OR
+
+USER:<your_app_name>_admin
+PWD:nothing	(the word "nothing", not nothing)
+
+if you login as root, you won't be able to see your data, if you wish to see your data from root enter:
+
+roles per user -> add
+and give Administrator the <your_app>_admin role
+press OK.
+
+
+to reload the privilege table usually you should logout, but sometimes its not necessary.
+
+
+now you have access to your data.
+if the tables are empty, you can add stuff to them.
+
+
+VIEW CUSTOMIZATION
+------------------
+
+if you'd like a field not to be shown ni a particular view, do this:
+
+enter /projects/<your_app>/view/<some_table>.view.php
+
+
+change list_custom to list_all, this overrides the default view (list_all) which displays all the fields.
+now comment the line where the fiel(s) that you want to hide is.
+if you to hide a field, but let the user later activate it, trough "advanced options", just add a key like this:
+
+
+'default_display'=>0
+
+to the field array (the line).
+
+
+you must re-login to see these type of changes.
+
+
+
+DEFAULT ACTION
+--------------
+
+override [your_app]_base::ac_main() 
+
+
+
+
+
+
+
+FIELD DATATYPES	
+---------------
+
+various datatypes are provided, and more can be created
+
+
+rich_text
+	in order to use the rich text datatype, allow=>html must be provided
+
+
+
+
+
+APPLICATION CUSTOMIZATION
+-------------------------
+
+if you want your app to by default run something, override base::ac_main(),
+make sure you call menu() from there!
+
+MODULE CUSTOMIZATION
+--------------------
+
+if you'd like to override a module's code, for instance, by creating a new action,
+enter:
+
+/projects/<your_app>/controller/<some_table>.controller.php
+
+
+
+and add a method like this one:
+
+
+function ac_your_action(){
+	$this->menu();
+
+	//your code here
+}
+
+
+now save the file, and go to the privileges menu
+add a privilege like this one:
+
+name: 		Your Privilege Name
+action:		<some_table>/your_action
+
+after you hit OK, make shure you grant this privilege to some role (your role, perhaps?)
+re-login to see the cnages, now you should see a link pointing to your_action that's named "Your Privilege Name"
+hit it, and you should the run your code.
+
+insert stuff
+--------------
+$this->silent = 1;
+$this->ac_new2();
+$this->do_something_else();
+
+
+
+
+
+
+EXTENDING VIEWS 
+---------------
+that is, edit forms, insert forms, list views, and almost ANYTHING that is done in a view)
+(somewhat innefficient, since its run lots of times)
+
+
+	function on_after_view(){
+		if($this->program_name()=='lote' && $this->current_view == 'edit_all'){
+			//stuff that happens after the form.
+		}
+	}
+
+
+DATABASE LAYER
+--------------
+
+to keep things nice and compatible, I've created a database abstraction layer (/core/include/db/mysql.php)
+to use this abstraction, refer to the documentation to the following fucntions:
+
+
+q2obj 	(query to object)
+q2op 	(query to option list (<select>))
+table() (in /core/include/common.php)
+
+
+FORM HELPER
+-----------
+see the docs for the 'form' class
+
+in brief, the for class is use like this
+
+
+$f = new form();
+
+//...
+
+$f->add_field(array('name'=>'field_name'));
+
+$f->shtml();
+
+if you want javascript, use this:
+
+$f->add_field(array( ... 'events'=>array('blur'=>'alert(123)')))
+	DO NOT USE THIS CHAR: ' 
+	BUT THIS ONE: "
+	INSIDE THE JAVASCRIPT!
+	it is recomemded that you just call a function, and do a jsc() first.
+
+
+
+checklist usage:$an_array
+			$f->add_field(array('name'=>'fields','check_all'=>1,
+				'type'=>'checklist',
+				'options'=>$this->aa(array_keys($an_array)),
+				'values'=>array_keys($an_array),
+				'i18n_text'=>'Campos',
+				'i18n_help'=>'Campos'));
+

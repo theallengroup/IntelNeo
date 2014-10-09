@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<script src='../shared/components/js.js'></script>
+<script>
+function getoffsetLeft(element){/* Calculate the offsetLeft sum of all
+offsetParents.
+The result is element.style.left
+*/
+if(!element) return 0;
+return element.offsetLeft + getoffsetLeft(element.offsetParent);
+}
+
+function getoffsetTop(element){/* Calculate the offsetTop sum of all
+offsetParents.
+The result is element.style.top
+*/
+if(!element) return 0;
+return element.offsetTop + getoffsetTop(element.offsetParent);
+}
+function test(){
+	$a = document.getElementById('a');
+	$a_options = document.getElementById('a_options');
+
+	var x_offset = 5;
+	var y_offset = 0;
+	$a_options.className='blank';
+	$a_options.style.position='absolute';
+	
+	$a_options.style.top = getoffsetTop($a) + 25 ;
+	$a_options.style.left = getoffsetLeft($a);
+	$a_options.innerHTML='HELLO';
+	for(var i in $a.style){
+		if(i.match("eight")){
+			//alert(i);
+		}
+
+	}
+}
+
+</script>
+<style>
+	.blank {
+		border:1px solid black;
+		background-color:white;
+	}
+</style>
+</head><body>
+</body>
+
+	<div>
+		<h1>This is a test, click the TEST button</h1>
+	<input type=text id=a>
+	<div id=a_options></div>
+	</div>
+	
+	Other Stuff
+<input type=button onclick=test() value=test>
+
+
+</html>

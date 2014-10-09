@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mozilla.org/NONSGML Mozilla Calendar V1.0//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID
+  :9363BE64-E919-11D7-AF7F-000A27E16A94
+SUMMARY
+  :SAT I&II
+DESCRIPTION
+  :Deadlines:\nUS Regular:  Oct. 30\, 2003\nUS Late:  Nov. 12\, 2003\nIntl
+   Early: Oct. 8\, 2003\nIntl Regular: Oct. 30\, 2003\n\nGo to
+  URL for specific details on application deadlines and test 
+administration\n
+  \n\n\n
+URL:http://www.collegeboard.com/student/testing/sat/calenfees.html
+CLASS:PUBLIC
+X-MOZILLA-RECUR-DEFAULT-INTERVAL:0
+DTSTART;VALUE=DATE:20061212
+DTEND;VALUE=DATE:20061113
+DTSTAMP:20060917T141559Z
+END:VEVENT
+END:VCALENDAR

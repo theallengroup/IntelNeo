@@ -1,0 +1,59 @@
+<script>
+/** 
+* @param id is node or node name
+*/
+function std_make_menu(id){
+	if(id.tagName){
+		$id=id;
+	}else{
+		$id = document.getElementById(id);
+	}
+	$id.className='parentMenu';
+	for(var i=0;i<$id.childNodes.length;i++){
+		kid = $id.childNodes[i];
+		if(kid.nodeType==1){
+			alert(kid.nodeType+"+"+kid.tagName+"."+kid.innerHTML);
+			if(kid.tagName=='LI'){
+				kid.className='parentMenu';
+				std_make_menu($kid);	
+			}else{
+				if(kid.tagName=='UL'){
+					kid.className='parentMenu';
+					std_make_menu($kid);	
+				}
+			}
+		}
+	}
+}
+</script>
+<style>
+	.parentMenu{
+		background-color:red;
+		color:blue;
+		padding:10px;
+	}
+	.childMenu{
+		background-color:green;
+		color:yellow;
+		padding:10px;
+		font-weight:bold;
+	}
+</style>
+<body>
+	<ul id='menu'>
+		<li>hola
+		<ul>
+			<li>hola 1
+			<li>hola 2
+			<li>hola 3
+		</ul>
+		<li>Adios
+		<ul>
+			<li>Adios 1
+		</ul>
+	</ul>
+	<script>;std_make_menu('menu');</script>
+</body>
+		
+
+

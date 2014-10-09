@@ -1,0 +1,84 @@
+                                          
+
+
+procedimiento para instalar programas
+
+1. base de datos, cpanel
+
+2. instalar la base de datos en localhost
+si no lo hace, aparecera esto:
+
+Warning: mysql_connect(): Access denied for user 'auditor_pendien'@'localhost' (using password: YES) in c:\appserv\www\0274\core\include\db\mysql.php on line 120
+error 1:Access denied for user 'auditor_pendien'@'localhost' (using password: YES)
+
+
+
+para importar la base de datoa, use SOURCE "nombre_archivo"
+
+
+para verificar que la base de datos fue importada correctamente, use 
+
+SHOW TABLES
+
+
+3. modificar el archivo de configuracion, en nombre_proyecto/config/
+el  archivo debe llamarse nombre_del_host.config.php
+p.e. localhost.config.php
+
+
+4. si la base de datos ya tiene permisos, ylos permisos poseen el formato
+de versiones anteriores a 0.2.7.4 entonces debe ejecutar este script
+
+http://localhost/0274/projects/_util/upgrade/upgrade.php
+
+
+2. 
+
+C:\AppServ\www\0274\projects\system4\config
+
+
+
+
+---
+
++crear vistas
+	A) manual
+		ingrese a /nombre_proyecto/view/nombre_tabla.view.php
+		y modifique.
+	B) automatica
+		use el menu de Administrador llamado Copiar Vista
+
+
+
+----
+crear Modulo
+
+A)
+copiar 
+	/controller/*.controller.php
+	/model/*.model.php
+	/view/*.view.php
+	/i18n/ES/*.i18n.php
+b)
+usar el generador
+solo debe seleccionar las siguientes opciones de generacion
+
+ Modelo
+ Vista
+ Controlador
+ Textos (i18n)
+ Relaciones
+ Privilegios
+
+
+deben existir las carpetas,
+
+debe agregar los privilegios necdesarios para que la nieva tabla aparezca en el menu, y sea modificable
+
+
+modificar base de datos
+-----------------------
+
+por convencion el dump de la base de datos debe llamarse install.sql, y debe estar ubicado en /nombre_tabla/install/
+los cambios a la aplicacion deben guardarse en nombre_proyecto/install/patch###.sql
+

@@ -1,0 +1,18 @@
+<html><head><script>
+function mine(){
+	document.getElementById('b').style.left++;
+	document.getElementById('b').style.left--;
+	var l = document.getElementById('b').style.left
+	document.getElementById('b').style.top++;
+	document.getElementById('b').style.top--;
+	var r= document.getElementById('b').style.top;
+	document.getElementById('b').style.height++;
+	alert(document.getElementById('b').style.height);
+}
+		</script></head><body>
+		<input type=text id=b>
+
+		<div id=a style='width:200;height:200;border:1px solid black'>a</div>
+	
+			<input type=text onclick='mine()'>
+	</body></html>

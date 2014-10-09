@@ -1,0 +1,13 @@
+57 ../shared/view/campo_de_agrupamiento.view.php
+17 ../shared/view/drill_down_report/edit_all.view.php
+40 ../shared/view/drill_down_report/list_all.view.php
+35 ../shared/view/drill_down_report/runit.view.php
+39 ../shared/view/event.view.php
+10 ../shared/view/informe/edit_all.view.php
+14 ../shared/view/informe/informes.view.php
+24 ../shared/view/informe/list_all.view.php
+20 ../shared/view/privilege.view.php
+81 ../shared/view/std.view.php
+57 ../shared/view/userfilter.view.php
+127 ../shared/view/userquery.view.php
+99 ../shared/view/usr.view.php

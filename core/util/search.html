@@ -1,0 +1,74 @@
+<html><head>
+		<script src='getpos.function.js'> </script>
+
+		<script src='get_boundaries.function.js'> </script>
+
+		<script>
+			//init
+			sniffBrowsers();
+			var searching=0;
+			function std_search(id){
+				searching=1;
+				var me = document.getElementById(id);
+				std_create_search_box(me);
+				std_show_search_box(me);				
+				std_get_search_box().innerHTML='<div class="std_search_container">RESULTS for:'+me.value+"</div>";
+			}
+			function std_get_search_box(){
+				return(document.getElementById('container'));
+			}
+			function std_create_search_box(me){
+				if(!document.getElementById('container')){
+					var a=document.createElement('div');
+					//a.className='std_search_container';
+					a.id='container';
+					a.style.position='absolute';
+					var root=document.getElementsByTagName('body')[0];
+					root.appendChild(a);
+					//alert(root.innerHTML);
+				}			
+			}
+			function std_show_search_box(me){
+				var a= std_get_search_box();
+				var p=getPos(me);
+				a.style.left=p.x;
+				a.style.top=p.y+getElementHeight(me.id)+0;
+				a.style.width=getElementWidth(me.id)+8
+				a.style.overflow='auto';
+				a.style.display='block';
+			}
+			function std_hide_search_box(){
+				searching=0;
+				if(document.getElementById('container')){
+					document.getElementById('container').style.display="none";
+				}
+			}
+			function go(){
+				return(searching==0);
+			}
+		</script>
+		<style>
+			.std_search_container {
+				background-color:gray;
+				border:2px solid red;
+				width:90%;
+			}
+		</style>
+		</head><body>
+
+		<form id=form1 onsubmit='return go()'>
+			<table><tr><td width=50%>
+						space</td><td>
+			<h1>Form</h1>
+			a <input autocomplete=off onblur='std_hide_search_box()' onkeyup='std_search(this.id)' id=search1 name=search1><br>
+			<h2>This is something else!</h2>
+			b <input autocomplete=off onblur='std_hide_search_box()' onkeyup='std_search(this.id)' id=search2 name=search2><br>
+			c <input autocomplete=off onblur='std_hide_search_box()' onkeyup='std_search(this.id)' id=search3 name=search3><br>
+			d <input name=search4><br>
+			d <input type=submit><br>
+</td></tr></table>
+		</form>
+<!--do not touch-->
+
+</body></html>
+	

@@ -1,0 +1,6 @@
+todo 
+fix color on clone
+fix add key
+fix removal
+fix separation of layers
+ 

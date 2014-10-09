@@ -1,0 +1,111 @@
+
+
+pattern 1
+
+polymorphism
+
+
+instead of 
+
+function a(x,y,z)
+
+use 
+
+function a($options)
+	$x=$options["x"];
+	$y=$options["y"];
+	$z=$options["z"];
+
+longer?, yes
+better?, by far.
+
+
+
+
+advantages:
+	1. optional parameters
+
+		if(!array_key_exists('z',$options)){$z='default_value_for_z';}else{$z=$options["z"];}
+
+	2. verbose
+
+		you don't need to remember parameter positions,like
+		was was it, a(x,y,z) , or, a(x,z,y) ? i dont remember, lets check te docs.
+
+	3. extensibility / future proof
+
+		if i add a new parameter, none of the curent code breaks.
+
+disadvantages:
+	function call becomes.
+		a(array("x"=>$value_for_x,"y"=>$value_for_y,"z"=>$value_for_z));
+
+	so you can sort it like:
+
+		a(array(
+			"x"=>$value_for_x,
+			"y"=>$value_for_y,
+			"z"=>$value_for_z
+		));
+
+	which is somewhat more readable, when there are may parameters.
+
+---------
+
+pattern # 2
+
+instead of 
+
+class x{
+
+	function something($param){
+		if($param=='a'){
+			$this->do_a();
+		}elseif($param=='b'){
+			$this->do_b();
+		}else{
+			$this->error("whatever");
+		}
+
+}
+
+
+do this:
+
+class x{
+	function some_a(){
+	
+	}
+
+	function some_b(){
+	
+	}
+
+
+	function something($param){
+	
+		$f="some_".$param;
+		if(in_array($f,get_class_methods("x"))){
+			$this->$f();
+		}else{
+			$this->error("whatever");
+		}	
+	}
+
+}
+
+
+advantages:
+
+
+
+	1. security
+		the some_ prefix dissallows arbitrary command execution
+	2. extensibility
+		you can extend class x, and have it do also some_y() and some_z(),
+		without changing, the current code.
+disadvantages:
+	
+	1. pollutes namespace
+	2. more code
+	
