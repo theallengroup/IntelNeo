@@ -1393,7 +1393,7 @@ var_dump($user_data[0]); exit;*/
 			echo("<script>;location.href='?mod=usr2session&ac=r_home';</script>");
 			return;
 		}
-
+        
 		$this->s_header();
 
 		# slider menu removed for all activities
@@ -1428,12 +1428,28 @@ var_dump($user_data[0]); exit;*/
 			$this->render_photo_op($s[0]);
 		}
 		if(AT_QR == $at){
+            if(isset($_GET['doScore'])){
+                $this->score_qr($s[0]['puntaje']);
+            }
 			$this->s_slider_menu();
 			$this->render_qr($s[0]);
 		}
 		$this->s_footer();
 	}
-
+    
+    function score_qr($ac_points)
+    {
+		$score= $activity_value = $ac_points;
+	    $rank = $this->earn_points($score);
+		$all_correct = '1';
+		$rank_changed = $rank;
+		$total_score  = $user_score = $score;
+		$total_questions = 4;
+		$query_string = "&mm={$all_correct}&rank_changed={$rank_changed}&total_score={$total_score}&user_score={$user_score}&questions={$total_questions}&activity_val={$activity_value}";
+        
+        echo("<script>;location.href='?mod=usr2session&ac=r_score_read{$query_string}';</script>");
+    }
+    
 	function render_photo_op($activity) {
 		$this->render_something($activity, "photo_op","photo_op");
 	}

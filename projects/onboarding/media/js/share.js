@@ -1,5 +1,5 @@
 Share = {
-      base_url: 'http://www.outsourcing.pressstart.co/PJCTS/NewIntelNEO/test/projects/onboarding/',
+      base_url: 'http://neo.allengroupdev.com/',//'http://www.outsourcing.pressstart.co/PJCTS/NewIntelNEO/test/projects/onboarding/',
       link: 'images_photo_chose/snapshot1921.png',
       title: 'Intel Neo App',
       description: 'http://www.outsourcing.pressstart.co/PJCTS/NewIntelNEO',

@@ -12,7 +12,7 @@ var v=null;
 
 
 var imghtml='<div id="qrfile"><canvas id="out-canvas" width="100%" height="100%"></canvas>'+
-    '<div id="imghelp">Select a file'+
+    '<div id="imghelp" class="btn-submit">Load QR Code'+
 	'<input type="file" onchange="handleFiles(this.files)"/>'+
 	'</div>'+
 '</div>';
@@ -111,6 +111,7 @@ function read(a)
         html+="<b>"+htmlEntities(a)+"</b><br><br>";
         }
     document.getElementById("result").innerHTML=html;
+    $('#qr_complete').show();
 }	
 
 function isCanvasSupported(){
@@ -164,6 +165,13 @@ function setimg()
     qrfile.addEventListener("dragenter", dragenter, false);  
     qrfile.addEventListener("dragover", dragover, false);  
     qrfile.addEventListener("drop", drop, false);
+    $('.container > .row > *').hide();
+    $('button[onClick="setimg()"').hide();
+    var qrfile = document.getElementById("qrfile");
+    qrfile.addEventListener("dragenter", dragenter, false);  
+    qrfile.addEventListener("dragover", dragover, false);  
+    qrfile.addEventListener("drop", drop, false);
+    $('#qr_instruct').show();
     stype=2;
 }
 

@@ -13,10 +13,10 @@ class conexion
         $this->con->PConnect($Host, $User, $Pass, $BaseDatos);
         $this->con->execute("SET NAMES utf8");
 	     */
-		$User = 'ps_out01';
-        $Pass = 'intelnuevofelipesux';
+		$User = 'root';//'ps_out01';
+        $Pass = 'N1XkafyY';//'intelnuevofelipesux';
         $BaseDatos = 'onboarding2023';
-        $Host = 'mysql.outsourcing.pressstart.co';
+        $Host = 'localhost';//'mysql.outsourcing.pressstart.co';
         $this->con = ADONewConnection('mysql');
         $this->con->PConnect($Host, $User, $Pass, $BaseDatos);
         $this->con->execute("SET NAMES utf8");

@@ -4,7 +4,50 @@
 <script type="text/javascript" src="./media/js/llqrcode.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 <script type="text/javascript" src="./media/js/webqr.js"></script>
-
+<style>
+    #imghelp{
+        font-family: IntelRegular;
+        color: white;
+        width: 9.6em;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 6px;
+        padding-bottom: 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        height:2.2em;
+    }
+    #imghelp >input{
+        display: block !important;
+        width: 157px !important;
+        height: 57px !important;
+        position:relative;
+        top: -2.4em;
+        opacity: 0 !important;
+        overflow: hidden !important;
+    }
+    h2#qr_instruct { 
+        position: relative;
+        top: 1em;
+        display:none; 
+        font-size:24px;
+        /*left: .3em;*/
+    }
+    #code_img {
+        width: 100%;
+        /*margin-left: .54em;*/
+    }
+    #qrfile{width:11em;}
+    #qr_complete{display:none;}
+    #outdiv{width: 11em;}
+    #out-canvas{
+       margin: auto;
+        margin-left: 1.1em; 
+        width: 9em;
+    }
+    
+</style>
 <div class="principal_container scan">
     <div class="container">
         <header id="header" class="header_p">
@@ -17,7 +60,7 @@
               <h3>New Employee <span>Orientation</span></h3>
             </div>
         </header>
-
+        <h2 id="qr_instruct">Select a QR image or Take a picture of one with your camera</h2>
         <div id="code_img" class="center-block">
         <canvas id="qr-canvas" width="800px" height="600px" style="display: none;"></canvas>
         	<div id="outdiv" class="center-block">
@@ -32,10 +75,15 @@
             <p class="center-block">When you have your badge<br/>scan the QR code</p>
         </div>
             <button class="btn-submit" type='button' onclick='setimg()'>Use QR camScan</button>
-           
+           <button class="btn-submit" id='qr_complete' type='button' >Submit Your Result</button>
      </div>
 
 	<script type="text/javascript">load();</script>
+    <script>
+    $('#qr_complete').on('click',function(){
+        location.href = "/?mod=usr2session&ac=r_run_activity&activity_id=54&status=Active&doScore=1";
+    });
+    </script>
 </div>
 
 <!--CONTENT_END-->
