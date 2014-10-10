@@ -100,8 +100,8 @@ class onboarding_base extends std{
 	 * returns 1 if rank changed and
 	 * 0 if ranks stayed the same.
 	 * */
-	function earn_points($points){
-		$old_rank = $this->get_rank_by_score($this->get_score());
+	function earn_points($points){ 
+        $old_rank = $this->get_rank_by_score($this->get_score());
 		$this->sql("update usr_status set score = score + '".((int)$this->remove_strange_chars($points))."' where usr_id='".ssid()."'");
 		$new_rank = $this->get_rank_by_score($this->get_score());
 		$this->set_rank($new_rank);
@@ -139,6 +139,7 @@ class onboarding_base extends std{
 			$message_id = $this->remove_strange_chars($message_id);
 			$s = "and message.id='$message_id'";
 		}
+        
 		$messages =  $this->q2obj("SELECT
 				message.*, message.answer mensaje,
 				usr.name as source,
@@ -155,13 +156,15 @@ class onboarding_base extends std{
 					usr.id = message.source and message.respuesta <> 'n/a'
 					and source='".ssid()."' $s
 				order by id desc ");
-
+        
 		foreach($messages as $k=>$message){
 			if( $message['anonymous'] == 1 ) {
-				$messages[$k]["source"] = 'Anonymous';
+                $messages[$k]["body"] = 'Anonymous';
+                //$messages[$k]["source"] = 'Anonymous';
 			}
 			$messages[$k]["creation_time"] = date('g:i A', strtotime($message["creation_date"]));
 		}
+        
 		return $messages;
 	}
 
@@ -348,7 +351,18 @@ class onboarding_base extends std{
         
 		$count = 1;
 		foreach($messages as $k=>$message){
-			$messages[$k]["body"] = substr($message["body"],0,40)."...";
+            // check if string have more than 40 characters then replace the rest of string with dots.
+            if (strlen($message["body"]) > 40) {
+                $messageFromName = substr($message["body"],0,40)."...";
+            }
+            else {
+                $messageFromName = $message["body"];
+            }
+            
+            $message["body"] = $messageFromName;
+
+//            $messages[$k]["body"] = substr($message["body"],0,40)."...";
+            // $messages[$k]["source"] = substr($message["body"],0,40)."...";
 			// $messages[$k]["klass"] = $message["view_date"] == '2000-01-01 00:00:00' ? 'unread' : 'read';
 			// $messages[$k]["creation_date"] = $this->time_elapsed_string($messages[$k]["creation_date"]);
 		}
@@ -1129,7 +1143,7 @@ var_dump($user_data[0]); exit;*/
 
 		$usr_id = ssid();
 		$team = $this->remove_strange_chars($_REQUEST["team_id"]);
-
+        
 		//insertar en actividad completada actividad poll
 		$this->sql("INSERT INTO completed_activity (usr_id, activity_id, activity_date) VALUES('".ssid()."','".$activity["id"]."', '".date("Y-m-d H:i:s")."')");
 
@@ -1241,7 +1255,7 @@ var_dump($user_data[0]); exit;*/
 		# activity value for spin is random
 		$activity_value = $activity["activity_type_id"] == AT_SPIN
 			? $this->remove_strange_chars($_REQUEST["value"])
-			: $activity["activity_value"];
+			: $activity["puntaje"];
 
 		$user_score = 0;
 		if( in_array($activity["activity_type_id"], array(AT_READ, AT_POLL, AT_SCAVENGER)) ){
@@ -1256,6 +1270,7 @@ var_dump($user_data[0]); exit;*/
 		if(isset($_GET['team_id'])) {
             $this->earn_team_points($user_score,$_GET['team_id']);
         }
+        
         $rank_changed = $this->earn_points($user_score);
 		if($wdbg == 1){
 			echo("The GET:");
