@@ -94,8 +94,9 @@ function shuffle_start() {
 }
 
 function moveAnimate(elements, newParent, is_single_answer) {
-	element 				= $(elements).first(); //Allow passing in either a JQuery object or selector
-	newParent				= $(newParent); //Allow passing in either a JQuery object or selector
+	
+	element 	= $(elements).first(); //Allow passing in either a JQuery object or selector	
+	newParent	= $(newParent); //Allow passing in either a JQuery object or selector
 	var oldOffset 			= element.offset();
 	var temp 				= element.clone();
 
@@ -131,7 +132,7 @@ function moveAnimate(elements, newParent, is_single_answer) {
 				'top': newOffset.top, 
 				'left': newOffset.left
 			},
-			100, 
+			300, 
 			'easeInOutQuad', 
 			function() { // Animation callback.
 				if(is_single_answer == false) {
@@ -149,7 +150,7 @@ function moveAnimate(elements, newParent, is_single_answer) {
 				element.css('zIndex', 3100).animate(
 					{opacity: 1},
 					100, 
-					'easeInOutQuad', 
+					'easeInOutQuad',
 					function() {}
 				);
 				setTimeout(function () {
@@ -157,8 +158,9 @@ function moveAnimate(elements, newParent, is_single_answer) {
 				}, 500);
 				
 			}
-		);	
+		);
 }
+
 
 function removeAnimate(element) {
 	ballList = SHUFFLE_OBJ.content_shuffle.find('.shuffle_ob').get();
