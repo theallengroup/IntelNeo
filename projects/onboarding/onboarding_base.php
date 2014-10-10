@@ -232,7 +232,7 @@ class onboarding_base extends std{
 	function ac_r_take_photo_choose(){
 		if(isset($_GET['shared'])){
 			$activ = $this->get_activity($_REQUEST["activity_id"]);
-			$score= $activ[0]['activity_value'];
+			$score= $activ[0]['puntaje'];
 			$rank = $this->earn_points($score);
 			$res = array('result'=>'success');
 			if($_GET['shared'] == 1){
@@ -1240,8 +1240,17 @@ var_dump($user_data[0]); exit;*/
 				$total_score += $score;
 			}else{ //WAGER ONLY
 				//var_dump($_REQUEST['wager_total']); exit;
-				if(!isset($_REQUEST['wager_total'])) $_REQUEST['wager_total'] = '360';
-				$score = $_REQUEST['wager_total'] / $total_questions;
+//                if(!isset($_REQUEST['wager_total'])){
+//                    $_REQUEST['wager_total'] = '360';
+//                }
+//                
+				$score = $_REQUEST['wager_total'];
+                
+//                $score = $_REQUEST['selected_value'];
+
+                //echo '<pre>';
+//                print_r($score);
+//                exit;
 			}
 
 			if( $activity["activity_type_id"] != AT_READ ) {
@@ -1261,11 +1270,12 @@ var_dump($user_data[0]); exit;*/
 		if( in_array($activity["activity_type_id"], array(AT_READ, AT_POLL, AT_SCAVENGER)) ){
 			$user_score = $activity_value;
 		}else if($activity["activity_type_id"] == AT_WAGER) {//WAGER ONLY
-			$user_score = $total_score = $_REQUEST['wager_total'];
+//			$user_score = $total_score = $_REQUEST['wager_total'];
+            $user_score = $score;
 		}else{
 			$user_score = round($activity_value * ($total_score / $total_questions));
 		}
-
+        
 		#echo("Total Processed: $c");
 		if(isset($_GET['team_id'])) {
             $this->earn_team_points($user_score,$_GET['team_id']);

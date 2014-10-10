@@ -74,8 +74,10 @@ function show_next_section()
 	}
 
 	var s = get_next_section();
-			//console.log(s);
-	if(s == 999){
+    console.log(s);
+	
+    if(s == 999){
+        update_wager_score(s-1,section);
 		document.forms[0].submit();
 	} else {
         //---- If is current activity is TLA delay (2000 ms) showing next section.
@@ -86,7 +88,7 @@ function show_next_section()
                 show_section(sectionID);
             }, 2000);
         } else {
-            show_section("section_" + s);
+           show_section("section_" + s);
         }
         
 		// If current activity type is Poll...
@@ -244,8 +246,9 @@ function update_score(section_num){
 function update_wager_score(section_num, section){
 	var $scoreContainer		= $('#nav_score');
 	var is_correct = $(section + " input:checked").parent().hasClass('is_correct-Y');
-
-
+    
+    console.log(is_correct);
+    
 	if(is_correct){
 		var maxScore			= parseInt( $('#score_data').attr('data-maxScore') );
 		var countQuestions		= parseInt( $('#score_data').attr('data-countQuestions') );
@@ -269,7 +272,7 @@ function update_read_score(section_num, isGoingBack)
 	var countQuestions		= parseInt( $('#act_nav').attr('data-activity_count') );
 	var scorePerQuestion 	= parseInt( maxScore / countQuestions );
 	var currentScore 		= parseInt( $scoreContainer.text() );
-
+    
 	if (isGoingBack == true) {
 		// Decrease score.
 		var newScore = currentScore - scorePerQuestion;
@@ -315,6 +318,8 @@ function submitPoll() {
 	POLL_OBJ.content_shuffle.addClass('submitted');
 	POLL_OBJ.content_shuffle.click(false);		
 	
+    
+    
 	//highlightAnswers();
 	setTimeout(function () {
 		show_next_section();

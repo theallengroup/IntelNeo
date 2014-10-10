@@ -18,7 +18,7 @@
 	<div class="content container">
 		[#navigation]
 
-		<form method=GET  action="?" id='wager' class="activity_count_[#activity_count]">
+		<form method=GET action="?" id='wager' class="activity_count_[#activity_count]">
 			<input type=hidden name=ac value=r_run_activity />
 			<input type=hidden name=pf value='1' />
 			<input type=hidden name=team_id value='[#team_id]' />
@@ -41,8 +41,8 @@
 <script>
 	$(document).ready(function(){
 		var score = getUrlParameter('value');
-		$('input#score_data').attr('data-maxscore',score);
-		$('#nav_score').html('0');
+        $('input#score_data').attr('data-maxscore',score);
+		$('#nav_score').html(score);
 	})
 function getUrlParameter(sParam)
 {
